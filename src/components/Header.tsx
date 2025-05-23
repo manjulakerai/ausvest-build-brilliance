@@ -56,6 +56,7 @@ const Header = () => {
             servicePages={servicePages}
             navItems={navItems}
             isHomepage={isHomepage}
+            scrolled={scrolled}
           />
 
           {/* Mobile menu button */}
@@ -64,6 +65,7 @@ const Header = () => {
               isOpen={mobileMenuOpen}
               onClick={toggleMobileMenu}
               isHomepage={isHomepage}
+              scrolled={scrolled}
             />
           </div>
         </div>

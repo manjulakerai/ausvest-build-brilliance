@@ -3,13 +3,17 @@ interface MobileMenuButtonProps {
   isOpen: boolean;
   onClick: () => void;
   isHomepage?: boolean;
+  scrolled?: boolean;
 }
 
-const MobileMenuButton = ({ isOpen, onClick, isHomepage = false }: MobileMenuButtonProps) => {
+const MobileMenuButton = ({ isOpen, onClick, isHomepage = false, scrolled = false }: MobileMenuButtonProps) => {
+  // Use white text only on homepage when not scrolled, otherwise use dark blue
+  const textColor = isHomepage && !scrolled ? 'text-white' : 'text-blue-900';
+
   return (
     <button 
       onClick={onClick}
-      className={`${isHomepage ? 'text-white' : 'text-slate-700'} focus:outline-none`}
+      className={`${textColor} focus:outline-none`}
     >
       <svg 
         xmlns="http://www.w3.org/2000/svg" 

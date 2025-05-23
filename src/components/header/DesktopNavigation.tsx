@@ -13,14 +13,19 @@ interface DesktopNavigationProps {
     link: string;
   }[];
   isHomepage?: boolean;
+  scrolled?: boolean;
 }
 
-const DesktopNavigation = ({ servicePages, navItems, isHomepage = false }: DesktopNavigationProps) => {
+const DesktopNavigation = ({ servicePages, navItems, isHomepage = false, scrolled = false }: DesktopNavigationProps) => {
+  // Use white text only on homepage when not scrolled, otherwise use dark blue
+  const textColor = isHomepage && !scrolled ? 'text-white' : 'text-blue-900';
+  const hoverColor = 'hover:text-[#3b62c0]';
+
   return (
     <nav className="hidden lg:flex items-center space-x-8">
       <Link 
         to="/"
-        className={`${isHomepage ? 'text-white' : 'text-slate-700'} hover:text-[#3b62c0] font-medium transition-colors relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-[#3b62c0] after:transition-all hover:after:w-full`}
+        className={`${textColor} ${hoverColor} font-medium transition-colors relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-[#3b62c0] after:transition-all hover:after:w-full`}
       >
         Home
       </Link>
@@ -29,7 +34,7 @@ const DesktopNavigation = ({ servicePages, navItems, isHomepage = false }: Deskt
       <div className="relative group">
         <Link 
           to="/services"
-          className={`${isHomepage ? 'text-white' : 'text-slate-700'} hover:text-[#3b62c0] font-medium transition-colors flex items-center gap-1 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-[#3b62c0] after:transition-all group-hover:after:w-full`}
+          className={`${textColor} ${hoverColor} font-medium transition-colors flex items-center gap-1 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-[#3b62c0] after:transition-all group-hover:after:w-full`}
         >
           Services <ChevronDown className="h-4 w-4" />
         </Link>
@@ -53,7 +58,7 @@ const DesktopNavigation = ({ servicePages, navItems, isHomepage = false }: Deskt
         <Link 
           key={item.name}
           to={item.link}
-          className={`${isHomepage ? 'text-white' : 'text-slate-700'} hover:text-[#3b62c0] font-medium transition-colors relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-[#3b62c0] after:transition-all hover:after:w-full`}
+          className={`${textColor} ${hoverColor} font-medium transition-colors relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-[#3b62c0] after:transition-all hover:after:w-full`}
         >
           {item.name}
         </Link>
