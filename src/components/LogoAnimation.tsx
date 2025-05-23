@@ -62,11 +62,11 @@ const LogoAnimation = () => {
               <img 
                 src="/lovable-uploads/f2cf4cca-6d64-4692-8a1f-c68bffa3edee.png"
                 alt="Gray link 1"
-                className="w-3/4 h-auto transform -translate-x-12" /* Increased size and moved further left */
+                className="w-3/4 h-auto transform -translate-x-16" /* Moved further left */
               />
             </motion.div>
 
-            {/* Second Gray Link - further spread to touch the right edge */}
+            {/* Second Gray Link - much further spread to touch the right edge */}
             <motion.div
               className="absolute inset-0"
               initial={{ opacity: 0, y: 40 }}
@@ -76,7 +76,7 @@ const LogoAnimation = () => {
               <img 
                 src="/lovable-uploads/d94d808e-1eed-4566-9498-54699d91705c.png"
                 alt="Gray link 2"
-                className="w-3/4 h-auto transform translate-x-12" /* Increased size and moved further right */
+                className="w-3/4 h-auto transform translate-x-16" /* Moved much further right */
               />
             </motion.div>
           </div>
