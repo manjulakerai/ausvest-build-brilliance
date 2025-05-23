@@ -2,7 +2,6 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-import { Link } from "react-router-dom";
 
 const OurStory = () => {
   return (
@@ -42,12 +41,10 @@ const OurStory = () => {
               commercial developments, and specialty projects. Our team's collective expertise and unwavering commitment to quality 
               have established Ausvest as a leader in the Australian construction industry.
             </p>
-            <Link to="/team">
-              <Button className="group bg-[#3b62c0] hover:bg-blue-700">
-                Meet Our Team
-                <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-              </Button>
-            </Link>
+            <Button className="group bg-[#3b62c0] hover:bg-blue-700">
+              Meet Our Team
+              <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+            </Button>
           </motion.div>
         </div>
       </div>

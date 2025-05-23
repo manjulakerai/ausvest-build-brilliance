@@ -17,7 +17,7 @@ const directors: Director[] = [
   {
     initials: "MP",
     name: "Manish Pindoria",
-    position: "Managing Director",
+    position: "Construction Manager",
     description: "Expert in contract management, costing, and fit-out delivery. Manish brings precision and efficiency to every project, from residential builds to complex commercial fitouts.",
     projects: ["Toongabbie Townhouses", "Sunboost Office Fitout", "Multiple Commercial Projects"],
     color: "bg-blue-100",

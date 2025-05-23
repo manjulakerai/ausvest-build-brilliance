@@ -1,7 +1,6 @@
 
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
 
 const AboutCTA = () => {
   return (
@@ -17,11 +16,9 @@ const AboutCTA = () => {
           <p className="text-xl text-blue-200 max-w-3xl mx-auto mb-8">
             Let's discuss how our 30+ years of expertise can bring your dream project to life.
           </p>
-          <Link to="/contact">
-            <Button size="lg" className="bg-[#3b62c0] hover:bg-blue-700 px-8 py-3 text-white">
-              Contact Us Today
-            </Button>
-          </Link>
+          <Button size="lg" className="bg-[#3b62c0] hover:bg-blue-700 px-8 py-3 text-white">
+            Contact Us Today
+          </Button>
         </motion.div>
       </div>
     </section>

@@ -6,6 +6,7 @@ import TeamHero from "@/components/team/TeamHero";
 import LeadershipTeam from "@/components/team/LeadershipTeam";
 import CoreTeam from "@/components/team/CoreTeam";
 import ProjectGallery from "@/components/team/ProjectGallery";
+import LogoAnimation from "@/components/LogoAnimation";
 
 const Team = () => {
   useEffect(() => {
@@ -14,6 +15,7 @@ const Team = () => {
   
   return (
     <div className="min-h-screen bg-white">
+      <LogoAnimation />
       <Header />
       
       {/* Page Content with top padding to account for the fixed header */}
