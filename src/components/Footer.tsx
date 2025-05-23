@@ -25,10 +25,10 @@ const Footer = () => {
               Services
             </h4>
             <div className="space-y-2 text-gray-400">
-              <Link to="/services" className="block hover:text-white transition-colors">Luxury Home Construction</Link>
-              <Link to="/services" className="block hover:text-white transition-colors">Duplex & Multi-Home Development</Link>
-              <Link to="/services" className="block hover:text-white transition-colors">Home Renovation & Extension</Link>
-              <Link to="/services" className="block hover:text-white transition-colors">Commercial Construction</Link>
+              <Link to="/services/luxury-home-construction" className="block hover:text-white transition-colors">Luxury Home Construction</Link>
+              <Link to="/services/multi-home-construction" className="block hover:text-white transition-colors">Duplex & Multi-Home Development</Link>
+              <Link to="/services/home-renovation" className="block hover:text-white transition-colors">Home Renovation & Extension</Link>
+              <Link to="/services/commercial-construction" className="block hover:text-white transition-colors">Commercial Construction</Link>
             </div>
           </div>
           <div>
@@ -51,7 +51,7 @@ const Footer = () => {
             <div className="space-y-2 text-gray-400">
               <a href="tel:0412995208" className="hover:text-white transition-colors">0412 995 208</a>
               <a href="mailto:hello@ausvestprojects.com.au" className="block hover:text-white transition-colors">hello@ausvestprojects.com.au</a>
-              <div className="hover:text-white transition-colors">Sydney, NSW</div>
+              <div className="hover:text-white transition-colors">38/1 Limestone Road, Rouse Hill, 2155</div>
             </div>
           </div>
         </div>

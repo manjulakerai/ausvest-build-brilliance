@@ -56,7 +56,7 @@ const ContactInfo = () => {
             
             <div className="text-center">
               <h3 className="font-semibold text-slate-900 mb-3">Visit Us</h3>
-              <p className="text-xl text-gray-600">Sydney, NSW</p>
+              <p className="text-xl text-gray-600">38/1 Limestone Road, Rouse Hill, 2155</p>
             </div>
           </div>
         </div>
