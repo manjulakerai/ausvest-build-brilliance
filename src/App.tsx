@@ -12,6 +12,14 @@ import Team from "./pages/Team";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 
+// Service Pages
+import LuxuryHomeConstruction from "./pages/services/LuxuryHomeConstruction";
+import DuplexConstruction from "./pages/services/DuplexConstruction";
+import MultiHomeConstruction from "./pages/services/MultiHomeConstruction";
+import HomeRenovation from "./pages/services/HomeRenovation";
+import CommercialConstruction from "./pages/services/CommercialConstruction";
+import MaintenanceServices from "./pages/services/MaintenanceServices";
+
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -27,7 +35,16 @@ const App = () => (
           <Route path="/about" element={<About />} />
           <Route path="/team" element={<Team />} />
           <Route path="/contact" element={<Contact />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+          
+          {/* Service Pages */}
+          <Route path="/services/luxury-home-construction" element={<LuxuryHomeConstruction />} />
+          <Route path="/services/duplex-construction" element={<DuplexConstruction />} />
+          <Route path="/services/multi-home-construction" element={<MultiHomeConstruction />} />
+          <Route path="/services/home-renovation" element={<HomeRenovation />} />
+          <Route path="/services/commercial-construction" element={<CommercialConstruction />} />
+          <Route path="/services/maintenance-services" element={<MaintenanceServices />} />
+          
+          {/* Catch-all route */}
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

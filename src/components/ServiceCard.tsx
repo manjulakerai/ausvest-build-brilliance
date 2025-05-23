@@ -14,7 +14,7 @@ interface ServiceCardProps {
   linkTo?: string;
 }
 
-const ServiceCard = ({ icon, color, title, description, delay, linkTo = "/services" }: ServiceCardProps) => {
+const ServiceCard = ({ icon, color, title, description, delay, linkTo = "/services/luxury-home-construction" }: ServiceCardProps) => {
   const { ref, inView } = useInView({
     triggerOnce: true,
     threshold: 0.1,

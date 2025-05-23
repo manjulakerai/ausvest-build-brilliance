@@ -31,322 +31,63 @@ const Services = () => {
           </div>
         </section>
 
-        {/* Services Content */}
+        {/* Services Overview */}
         <section className="py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid gap-20">
-              {/* Luxury Home Building */}
-              <div>
-                <motion.div 
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.6 }}
-                  className="grid md:grid-cols-5 gap-8 items-center"
-                >
-                  <div className="md:col-span-3">
-                    <div className="inline-block px-4 py-1 bg-blue-50 rounded-full text-[#3b62c0] font-medium mb-4">
-                      Luxury Living
-                    </div>
-                    <h2 className="text-3xl font-bold text-slate-900 mb-4">Luxury Home Construction</h2>
-                    <div className="h-1 w-20 bg-[#3b62c0] mb-6"></div>
-                    <p className="text-gray-600 mb-6">
-                      For over three decades, Ausvest has crafted stunning luxury residences across Sydney and surrounding suburbs. 
-                      Our impeccable attention to detail and commitment to excellence have established us as Sydney's premier luxury 
-                      home builder. We create sophisticated living spaces that exceed expectations and stand the test of time.
-                    </p>
-                    <ul className="space-y-3 mb-6">
-                      <li className="flex items-start">
-                        <div className="w-5 h-5 bg-[#3b62c0] mt-1 mr-3 flex items-center justify-center">
-                          <div className="w-2 h-2 bg-white"></div>
-                        </div>
-                        <span className="text-gray-700">Custom luxury homes</span>
-                      </li>
-                      <li className="flex items-start">
-                        <div className="w-5 h-5 bg-[#3b62c0] mt-1 mr-3 flex items-center justify-center">
-                          <div className="w-2 h-2 bg-white"></div>
-                        </div>
-                        <span className="text-gray-700">Complete home renovations</span>
-                      </li>
-                      <li className="flex items-start">
-                        <div className="w-5 h-5 bg-[#3b62c0] mt-1 mr-3 flex items-center justify-center">
-                          <div className="w-2 h-2 bg-white"></div>
-                        </div>
-                        <span className="text-gray-700">Home extensions & additions</span>
-                      </li>
-                      <li className="flex items-start">
-                        <div className="w-5 h-5 bg-[#3b62c0] mt-1 mr-3 flex items-center justify-center">
-                          <div className="w-2 h-2 bg-white"></div>
-                        </div>
-                        <span className="text-gray-700">Premium finishes & materials</span>
-                      </li>
-                    </ul>
-                    <Link to="/projects">
-                      <Button className="group bg-[#3b62c0] hover:bg-blue-700">
-                        View Luxury Projects
-                        <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                      </Button>
-                    </Link>
-                  </div>
-                  <div className="md:col-span-2">
-                    <div className="bg-gray-200 rounded-md aspect-[4/3] flex items-center justify-center">
-                      <p className="text-gray-500 text-center p-4">
-                        [Suggested image: Modern luxury home with elegant façade]
-                      </p>
-                    </div>
-                  </div>
-                </motion.div>
-              </div>
+            <div className="grid md:grid-cols-3 gap-8 mb-16">
+              <ServiceCard
+                icon="building"
+                color="bg-blue-100"
+                title="Luxury Home Construction"
+                description="Custom-designed luxury residences with premium finishes and exceptional attention to detail, built to exacting standards."
+                delay={0.2}
+                linkTo="/services/luxury-home-construction"
+              />
+              
+              <ServiceCard
+                icon="office"
+                color="bg-indigo-100"
+                title="Duplex Construction"
+                description="Specialized duplex developments that maximize land value and deliver exceptional living spaces for multiple families."
+                delay={0.4}
+                linkTo="/services/duplex-construction"
+              />
+              
+              <ServiceCard
+                icon="building"
+                color="bg-purple-100" 
+                title="Multi-Home Development"
+                description="Premium multi-dwelling developments that provide excellent investment returns while maintaining quality construction."
+                delay={0.6}
+                linkTo="/services/multi-home-construction"
+              />
 
-              {/* Duplex & Multi-Home Development */}
-              <div>
-                <motion.div 
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.6 }}
-                  className="grid md:grid-cols-5 gap-8 items-center"
-                >
-                  <div className="md:col-span-2 md:order-2">
-                    <div className="bg-gray-200 rounded-md aspect-[4/3] flex items-center justify-center">
-                      <p className="text-gray-500 text-center p-4">
-                        [Suggested image: Modern duplex development with contemporary architecture]
-                      </p>
-                    </div>
-                  </div>
-                  <div className="md:col-span-3 md:order-1">
-                    <div className="inline-block px-4 py-1 bg-indigo-50 rounded-full text-indigo-600 font-medium mb-4">
-                      Multi-Dwelling
-                    </div>
-                    <h2 className="text-3xl font-bold text-slate-900 mb-4">Duplex & Multi-Home Development</h2>
-                    <div className="h-1 w-20 bg-indigo-600 mb-6"></div>
-                    <p className="text-gray-600 mb-6">
-                      Recognizing the rising popularity of dual occupancy dwellings in Sydney, we specialize in creating 
-                      premium duplex and multi-home developments that maximize land value and provide exceptional living 
-                      environments. Our developments blend quality construction with intelligent design to create beautiful, functional spaces.
-                    </p>
-                    <ul className="space-y-3 mb-6">
-                      <li className="flex items-start">
-                        <div className="w-5 h-5 bg-indigo-600 mt-1 mr-3 flex items-center justify-center">
-                          <div className="w-2 h-2 bg-white"></div>
-                        </div>
-                        <span className="text-gray-700">Duplex construction specialists</span>
-                      </li>
-                      <li className="flex items-start">
-                        <div className="w-5 h-5 bg-indigo-600 mt-1 mr-3 flex items-center justify-center">
-                          <div className="w-2 h-2 bg-white"></div>
-                        </div>
-                        <span className="text-gray-700">Multi-home developments</span>
-                      </li>
-                      <li className="flex items-start">
-                        <div className="w-5 h-5 bg-indigo-600 mt-1 mr-3 flex items-center justify-center">
-                          <div className="w-2 h-2 bg-white"></div>
-                        </div>
-                        <span className="text-gray-700">Land optimization strategies</span>
-                      </li>
-                      <li className="flex items-start">
-                        <div className="w-5 h-5 bg-indigo-600 mt-1 mr-3 flex items-center justify-center">
-                          <div className="w-2 h-2 bg-white"></div>
-                        </div>
-                        <span className="text-gray-700">Investment property developments</span>
-                      </li>
-                    </ul>
-                    <Link to="/projects">
-                      <Button className="group bg-indigo-600 hover:bg-indigo-700">
-                        Explore Multi-Dwelling Projects
-                        <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                      </Button>
-                    </Link>
-                  </div>
-                </motion.div>
-              </div>
+              <ServiceCard
+                icon="tools"
+                color="bg-emerald-100" 
+                title="Home Renovation & Extension"
+                description="Transform your existing home with expertly crafted renovations, extensions, and additions that enhance livability and value."
+                delay={0.2}
+                linkTo="/services/home-renovation"
+              />
 
-              {/* Home Renovation & Extension */}
-              <div>
-                <motion.div 
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.6 }}
-                  className="grid md:grid-cols-5 gap-8 items-center"
-                >
-                  <div className="md:col-span-3">
-                    <div className="inline-block px-4 py-1 bg-purple-50 rounded-full text-purple-600 font-medium mb-4">
-                      Transformation
-                    </div>
-                    <h2 className="text-3xl font-bold text-slate-900 mb-4">Home Renovation & Extension</h2>
-                    <div className="h-1 w-20 bg-purple-600 mb-6"></div>
-                    <p className="text-gray-600 mb-6">
-                      Give your home the complete transformation it deserves. Whether you need more space with a home extension, 
-                      a second-story addition, or a comprehensive renovation, our team creates tailored solutions that perfectly 
-                      blend with your existing structure while enhancing functionality and value.
-                    </p>
-                    <ul className="space-y-3 mb-6">
-                      <li className="flex items-start">
-                        <div className="w-5 h-5 bg-purple-600 mt-1 mr-3 flex items-center justify-center">
-                          <div className="w-2 h-2 bg-white"></div>
-                        </div>
-                        <span className="text-gray-700">Full home renovations</span>
-                      </li>
-                      <li className="flex items-start">
-                        <div className="w-5 h-5 bg-purple-600 mt-1 mr-3 flex items-center justify-center">
-                          <div className="w-2 h-2 bg-white"></div>
-                        </div>
-                        <span className="text-gray-700">Second-story additions</span>
-                      </li>
-                      <li className="flex items-start">
-                        <div className="w-5 h-5 bg-purple-600 mt-1 mr-3 flex items-center justify-center">
-                          <div className="w-2 h-2 bg-white"></div>
-                        </div>
-                        <span className="text-gray-700">Ground floor extensions</span>
-                      </li>
-                      <li className="flex items-start">
-                        <div className="w-5 h-5 bg-purple-600 mt-1 mr-3 flex items-center justify-center">
-                          <div className="w-2 h-2 bg-white"></div>
-                        </div>
-                        <span className="text-gray-700">Heritage home restoration</span>
-                      </li>
-                    </ul>
-                    <Link to="/projects">
-                      <Button className="group bg-purple-600 hover:bg-purple-700">
-                        View Transformation Projects
-                        <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                      </Button>
-                    </Link>
-                  </div>
-                  <div className="md:col-span-2">
-                    <div className="bg-gray-200 rounded-md aspect-[4/3] flex items-center justify-center">
-                      <p className="text-gray-500 text-center p-4">
-                        [Suggested image: Before/after comparison of home renovation]
-                      </p>
-                    </div>
-                  </div>
-                </motion.div>
-              </div>
+              <ServiceCard
+                icon="office"
+                color="bg-amber-100"
+                title="Commercial Construction"
+                description="Office fitouts, hospitality refurbishments, and retail transformations that maximize your ROI with minimal disruption."
+                delay={0.4}
+                linkTo="/services/commercial-construction"
+              />
 
-              {/* Commercial Construction */}
-              <div>
-                <motion.div 
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.6 }}
-                  className="grid md:grid-cols-5 gap-8 items-center"
-                >
-                  <div className="md:col-span-2 md:order-2">
-                    <div className="bg-gray-200 rounded-md aspect-[4/3] flex items-center justify-center">
-                      <p className="text-gray-500 text-center p-4">
-                        [Suggested image: Modern retail or commercial space with premium finishes]
-                      </p>
-                    </div>
-                  </div>
-                  <div className="md:col-span-3 md:order-1">
-                    <div className="inline-block px-4 py-1 bg-emerald-50 rounded-full text-emerald-600 font-medium mb-4">
-                      Commercial
-                    </div>
-                    <h2 className="text-3xl font-bold text-slate-900 mb-4">Retail & Commercial Construction</h2>
-                    <div className="h-1 w-20 bg-emerald-600 mb-6"></div>
-                    <p className="text-gray-600 mb-6">
-                      Ausvest has delivered top-rated retail and commercial projects across Sydney, Bella Vista, and Orange. 
-                      Our expert team offers premium-quality, long-term commercial construction solutions from site clearance 
-                      to final execution, with a focus on pristine fit-outs and presentable spaces.
-                    </p>
-                    <ul className="space-y-3 mb-6">
-                      <li className="flex items-start">
-                        <div className="w-5 h-5 bg-emerald-600 mt-1 mr-3 flex items-center justify-center">
-                          <div className="w-2 h-2 bg-white"></div>
-                        </div>
-                        <span className="text-gray-700">Retail store fit-outs</span>
-                      </li>
-                      <li className="flex items-start">
-                        <div className="w-5 h-5 bg-emerald-600 mt-1 mr-3 flex items-center justify-center">
-                          <div className="w-2 h-2 bg-white"></div>
-                        </div>
-                        <span className="text-gray-700">Restaurant & cafe construction</span>
-                      </li>
-                      <li className="flex items-start">
-                        <div className="w-5 h-5 bg-emerald-600 mt-1 mr-3 flex items-center justify-center">
-                          <div className="w-2 h-2 bg-white"></div>
-                        </div>
-                        <span className="text-gray-700">Office & commercial spaces</span>
-                      </li>
-                      <li className="flex items-start">
-                        <div className="w-5 h-5 bg-emerald-600 mt-1 mr-3 flex items-center justify-center">
-                          <div className="w-2 h-2 bg-white"></div>
-                        </div>
-                        <span className="text-gray-700">Gym & fitness center construction</span>
-                      </li>
-                    </ul>
-                    <Link to="/projects">
-                      <Button className="group bg-emerald-600 hover:bg-emerald-700">
-                        Explore Commercial Projects
-                        <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                      </Button>
-                    </Link>
-                  </div>
-                </motion.div>
-              </div>
-
-              {/* Maintenance Services */}
-              <div>
-                <motion.div 
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.6 }}
-                  className="grid md:grid-cols-5 gap-8 items-center"
-                >
-                  <div className="md:col-span-3">
-                    <div className="inline-block px-4 py-1 bg-amber-50 rounded-full text-amber-600 font-medium mb-4">
-                      Maintenance
-                    </div>
-                    <h2 className="text-3xl font-bold text-slate-900 mb-4">Tailored Maintenance Services</h2>
-                    <div className="h-1 w-20 bg-amber-600 mb-6"></div>
-                    <p className="text-gray-600 mb-6">
-                      Our dedicated maintenance team specializes in providing tailored services for residential 
-                      and commercial buildings across Sydney, including large commercial and industrial properties. 
-                      With both reactive and planned maintenance options, we ensure your property remains in peak condition.
-                    </p>
-                    <ul className="space-y-3 mb-6">
-                      <li className="flex items-start">
-                        <div className="w-5 h-5 bg-amber-600 mt-1 mr-3 flex items-center justify-center">
-                          <div className="w-2 h-2 bg-white"></div>
-                        </div>
-                        <span className="text-gray-700">Residential maintenance</span>
-                      </li>
-                      <li className="flex items-start">
-                        <div className="w-5 h-5 bg-amber-600 mt-1 mr-3 flex items-center justify-center">
-                          <div className="w-2 h-2 bg-white"></div>
-                        </div>
-                        <span className="text-gray-700">Commercial property upkeep</span>
-                      </li>
-                      <li className="flex items-start">
-                        <div className="w-5 h-5 bg-amber-600 mt-1 mr-3 flex items-center justify-center">
-                          <div className="w-2 h-2 bg-white"></div>
-                        </div>
-                        <span className="text-gray-700">Reactive maintenance services</span>
-                      </li>
-                      <li className="flex items-start">
-                        <div className="w-5 h-5 bg-amber-600 mt-1 mr-3 flex items-center justify-center">
-                          <div className="w-2 h-2 bg-white"></div>
-                        </div>
-                        <span className="text-gray-700">Planned maintenance programs</span>
-                      </li>
-                    </ul>
-                    <Button className="group bg-amber-600 hover:bg-amber-700">
-                      Schedule Maintenance
-                      <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                    </Button>
-                  </div>
-                  <div className="md:col-span-2">
-                    <div className="bg-gray-200 rounded-md aspect-[4/3] flex items-center justify-center">
-                      <p className="text-gray-500 text-center p-4">
-                        [Suggested image: Maintenance professionals working on a property]
-                      </p>
-                    </div>
-                  </div>
-                </motion.div>
-              </div>
+              <ServiceCard
+                icon="tools"
+                color="bg-blue-100" 
+                title="Maintenance Services"
+                description="Tailored maintenance solutions for residential and commercial properties that ensure your building remains in perfect condition."
+                delay={0.6}
+                linkTo="/services/maintenance-services"
+              />
             </div>
           </div>
         </section>
@@ -364,9 +105,11 @@ const Services = () => {
               <p className="text-xl text-blue-200 max-w-3xl mx-auto mb-8">
                 Let us handle everything from conceptualization to completion with our end-to-end project management solutions.
               </p>
-              <Button size="lg" className="bg-[#3b62c0] hover:bg-blue-700 rounded-none text-white px-8">
-                Book a Consultation
-              </Button>
+              <Link to="/contact">
+                <Button size="lg" className="bg-[#3b62c0] hover:bg-blue-700 rounded-none text-white px-8">
+                  Book a Consultation
+                </Button>
+              </Link>
             </motion.div>
           </div>
         </section>
