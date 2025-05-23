@@ -29,11 +29,15 @@ const LogoAnimation = () => {
       style={{ pointerEvents: animationComplete ? 'none' : 'auto' }}
     >
       {animationComplete ? (
-        <Logo variant="full" className="scale-150" />
+        <img 
+          src="/lovable-uploads/777d067c-3a81-40fb-8266-253cfd8a34bb.png"
+          alt="Ausvest Projects"
+          className="w-64 h-auto"
+        />
       ) : (
         <div className="relative w-64 h-64 flex flex-col items-center">
           {/* Logo Links Animation */}
-          <div className="relative w-32 h-32 mb-6"> {/* Increased margin between logo and text */}
+          <div className="relative w-32 h-32 mb-8"> {/* Increased margin between logo and text */}
             {/* Blue Link */}
             <motion.div
               className="absolute inset-0"
@@ -58,7 +62,7 @@ const LogoAnimation = () => {
               <img 
                 src="/lovable-uploads/f2cf4cca-6d64-4692-8a1f-c68bffa3edee.png"
                 alt="Gray link 1"
-                className="w-4/5 h-auto transform -translate-x-2" // Made smaller and positioned to meet edge
+                className="w-3/5 h-auto transform -translate-x-6 translate-y-1" /* Made smaller and positioned further from center */
               />
             </motion.div>
 
@@ -72,14 +76,14 @@ const LogoAnimation = () => {
               <img 
                 src="/lovable-uploads/d94d808e-1eed-4566-9498-54699d91705c.png"
                 alt="Gray link 2"
-                className="w-4/5 h-auto transform translate-x-2" // Made smaller and positioned to meet edge
+                className="w-3/5 h-auto transform translate-x-6 translate-y-1" /* Made smaller and positioned further from center */
               />
             </motion.div>
           </div>
 
           {/* AUSVEST Text */}
           <motion.div
-            className="w-full mb-3" // Added margin between AUSVEST and PROJECTS
+            className="w-full mb-4" /* Increased margin between AUSVEST and PROJECTS */
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: "easeOut", delay: 1.4 }}
