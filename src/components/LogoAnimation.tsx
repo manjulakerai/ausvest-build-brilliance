@@ -36,57 +36,26 @@ const LogoAnimation = () => {
         />
       ) : (
         <div className="relative w-64 h-64 flex flex-col items-center">
-          {/* Logo Links Animation */}
-          <div className="relative w-32 h-32 mb-8"> {/* Maintaining container size */}
-            {/* Blue Link */}
-            <motion.div
-              className="absolute inset-0"
-              initial={{ opacity: 0, x: -40 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
-            >
-              <img 
-                src="/lovable-uploads/bbcb5ffa-b10c-4e01-aa48-c9c88f9a6341.png"
-                alt="Blue link"
-                className="w-full h-auto"
-              />
-            </motion.div>
-
-            {/* First Gray Link - further spread to touch the left edge */}
-            <motion.div
-              className="absolute inset-0"
-              initial={{ opacity: 0, x: 40 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, ease: "easeOut", delay: 0.6 }}
-            >
-              <img 
-                src="/lovable-uploads/f2cf4cca-6d64-4692-8a1f-c68bffa3edee.png"
-                alt="Gray link 1"
-                className="w-3/4 h-auto transform -translate-x-16" /* Moved further left */
-              />
-            </motion.div>
-
-            {/* Second Gray Link - much further spread to touch the right edge */}
-            <motion.div
-              className="absolute inset-0"
-              initial={{ opacity: 0, y: 40 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, ease: "easeOut", delay: 1.0 }}
-            >
-              <img 
-                src="/lovable-uploads/d94d808e-1eed-4566-9498-54699d91705c.png"
-                alt="Gray link 2"
-                className="w-3/4 h-auto transform translate-x-16" /* Moved much further right */
-              />
-            </motion.div>
-          </div>
-
+          {/* Logo Animation */}
+          <motion.div
+            className="w-44 h-44 mb-8"
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+          >
+            <img 
+              src="/lovable-uploads/f15f540a-d742-4f95-9720-3db9dc53146c.png"
+              alt="Ausvest Projects Logo"
+              className="w-full h-full object-contain"
+            />
+          </motion.div>
+          
           {/* AUSVEST Text */}
           <motion.div
-            className="w-full mb-4" /* Increased margin between AUSVEST and PROJECTS */
+            className="w-full mb-4"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, ease: "easeOut", delay: 1.4 }}
+            transition={{ duration: 0.6, ease: "easeOut", delay: 0.8 }}
           >
             <img 
               src="/lovable-uploads/4f0e137a-c204-4ad2-a00c-d8b690718c79.png"
@@ -100,7 +69,7 @@ const LogoAnimation = () => {
             className="w-3/4"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 0.4, delay: 1.8 }}
+            transition={{ duration: 0.4, delay: 1.2 }}
           >
             <img 
               src="/lovable-uploads/8e0311d4-ea7b-4da9-8528-d73e23b27f16.png"
