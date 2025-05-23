@@ -1,4 +1,3 @@
-
 import { motion } from "framer-motion";
 
 interface ValueCardProps {
@@ -16,7 +15,16 @@ const ValueCard = ({ title, description, index }: ValueCardProps) => {
       transition={{ duration: 0.6, delay: index * 0.1 }}
       className="bg-white p-8 shadow-lg border-b-4 border-[#3b62c0]"
     >
-      <h3 className="text-xl font-bold text-slate-900 mb-4">{title}</h3>
+      <div className="flex items-center mb-4">
+        <div className="w-5 h-5 mr-2 flex-shrink-0">
+          <img 
+            src="/lovable-uploads/1e3b15f4-e23c-4368-8a8d-a2364fd83747.png" 
+            alt="Bullet point" 
+            className="w-full h-full object-contain"
+          />
+        </div>
+        <h3 className="text-xl font-bold text-slate-900">{title}</h3>
+      </div>
       <p className="text-gray-600">{description}</p>
     </motion.div>
   );

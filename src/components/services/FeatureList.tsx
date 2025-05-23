@@ -26,7 +26,11 @@ const FeatureList = ({ features, iconColor, iconSize = "sm" }: FeatureListProps)
       {features.map((feature, index) => (
         <li key={index} className="flex items-start">
           <div className={`${sizeClass[iconSize]} ${iconColor} mt-1 mr-3 flex items-center justify-center`}>
-            <div className="w-2 h-2 bg-white"></div>
+            <img 
+              src="/lovable-uploads/1e3b15f4-e23c-4368-8a8d-a2364fd83747.png" 
+              alt="Bullet point" 
+              className="w-full h-full object-contain"
+            />
           </div>
           <div>
             {feature.title && (

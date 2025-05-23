@@ -1,4 +1,3 @@
-
 import { motion } from "framer-motion";
 
 interface ProcessStepProps {
@@ -21,7 +20,16 @@ const ProcessStep = ({ step, title, description, index }: ProcessStepProps) => {
         {step}
       </div>
       <div>
-        <h3 className="text-2xl font-bold text-slate-900 mb-2">{title}</h3>
+        <div className="flex items-center mb-2">
+          <div className="w-5 h-5 mr-2 flex-shrink-0">
+            <img 
+              src="/lovable-uploads/1e3b15f4-e23c-4368-8a8d-a2364fd83747.png" 
+              alt="Bullet point" 
+              className="w-full h-full object-contain"
+            />
+          </div>
+          <h3 className="text-2xl font-bold text-slate-900">{title}</h3>
+        </div>
         <p className="text-gray-600">{description}</p>
       </div>
     </motion.div>
