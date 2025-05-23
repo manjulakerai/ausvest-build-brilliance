@@ -12,7 +12,7 @@ const Logo = ({ className = "", style }: LogoProps) => {
       <img 
         src="/lovable-uploads/777d067c-3a81-40fb-8266-253cfd8a34bb.png" 
         alt="Ausvest Projects" 
-        className="h-10 w-auto" 
+        className="h-12 w-auto" /* Increased from h-10 to h-12 */
       />
     </div>
   );

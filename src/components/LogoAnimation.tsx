@@ -37,7 +37,7 @@ const LogoAnimation = () => {
       ) : (
         <div className="relative w-64 h-64 flex flex-col items-center">
           {/* Logo Links Animation */}
-          <div className="relative w-32 h-32 mb-8"> {/* Increased margin between logo and text */}
+          <div className="relative w-32 h-32 mb-8"> {/* Maintaining container size */}
             {/* Blue Link */}
             <motion.div
               className="absolute inset-0"
@@ -52,7 +52,7 @@ const LogoAnimation = () => {
               />
             </motion.div>
 
-            {/* First Gray Link - repositioned and resized */}
+            {/* First Gray Link - enlarged and moved to touch the left edge */}
             <motion.div
               className="absolute inset-0"
               initial={{ opacity: 0, x: 40 }}
@@ -62,11 +62,11 @@ const LogoAnimation = () => {
               <img 
                 src="/lovable-uploads/f2cf4cca-6d64-4692-8a1f-c68bffa3edee.png"
                 alt="Gray link 1"
-                className="w-3/5 h-auto transform -translate-x-6 translate-y-1" /* Made smaller and positioned further from center */
+                className="w-2/3 h-auto transform -translate-x-9" /* Made bigger and positioned to touch the left edge */
               />
             </motion.div>
 
-            {/* Second Gray Link - repositioned and resized */}
+            {/* Second Gray Link - enlarged and moved to touch the right edge */}
             <motion.div
               className="absolute inset-0"
               initial={{ opacity: 0, y: 40 }}
@@ -76,7 +76,7 @@ const LogoAnimation = () => {
               <img 
                 src="/lovable-uploads/d94d808e-1eed-4566-9498-54699d91705c.png"
                 alt="Gray link 2"
-                className="w-3/5 h-auto transform translate-x-6 translate-y-1" /* Made smaller and positioned further from center */
+                className="w-2/3 h-auto transform translate-x-9" /* Made bigger and positioned to touch the right edge */
               />
             </motion.div>
           </div>
