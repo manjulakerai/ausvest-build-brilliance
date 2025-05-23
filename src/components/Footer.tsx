@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Separator } from "@/components/ui/separator";
 import Logo from "@/components/Logo";
 import { motion } from 'framer-motion';
+import { servicePages } from './header/navigationData';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -25,10 +26,15 @@ const Footer = () => {
               Services
             </h4>
             <div className="space-y-2 text-gray-400">
-              <Link to="/services/luxury-home-construction" className="block hover:text-white transition-colors">Luxury Home Construction</Link>
-              <Link to="/services/multi-home-construction" className="block hover:text-white transition-colors">Duplex & Multi-Home Development</Link>
-              <Link to="/services/home-renovation" className="block hover:text-white transition-colors">Home Renovation & Extension</Link>
-              <Link to="/services/commercial-construction" className="block hover:text-white transition-colors">Commercial Construction</Link>
+              {servicePages.map((service, index) => (
+                <Link 
+                  key={index}
+                  to={service.link} 
+                  className="block hover:text-white transition-colors"
+                >
+                  {service.name}
+                </Link>
+              ))}
             </div>
           </div>
           <div>
