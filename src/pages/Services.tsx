@@ -6,6 +6,7 @@ import Header from "@/components/Header";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import Footer from "@/components/Footer";
+import { Phone } from "lucide-react";
 
 const Services = () => {
   useEffect(() => {
@@ -109,11 +110,11 @@ const Services = () => {
               <p className="text-xl text-blue-200 max-w-3xl mx-auto mb-8">
                 Let us handle everything from conceptualization to completion with our end-to-end project management solutions.
               </p>
-              <Link to="/contact">
-                <Button size="lg" className="bg-[#3b62c0] hover:bg-blue-700 rounded-none text-white px-8">
-                  Book a Consultation
+              <a href="tel:0412995208">
+                <Button size="lg" className="bg-[#3b62c0] hover:bg-blue-700 rounded-none text-white px-8 flex items-center gap-2">
+                  <Phone className="h-5 w-5" /> Call Us Now
                 </Button>
-              </Link>
+              </a>
             </motion.div>
           </div>
         </section>

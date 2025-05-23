@@ -1,7 +1,7 @@
 
 import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
-import { ChevronDown } from 'lucide-react';
+import { ChevronDown, Phone } from 'lucide-react';
 
 interface DesktopNavigationProps {
   servicePages: {
@@ -59,9 +59,11 @@ const DesktopNavigation = ({ servicePages, navItems, isHomepage = false }: Deskt
         </Link>
       ))}
       
-      <Button className="bg-[#3b62c0] hover:bg-blue-700 text-white px-6 py-2 rounded-none transition-all hover:-translate-y-0.5 shadow-lg">
-        Get Quote
-      </Button>
+      <a href="tel:0412995208">
+        <Button className="bg-[#3b62c0] hover:bg-blue-700 text-white px-6 py-2 rounded-none transition-all hover:-translate-y-0.5 shadow-lg flex items-center gap-2">
+          <Phone className="h-4 w-4" /> Call Us Now
+        </Button>
+      </a>
     </nav>
   );
 };

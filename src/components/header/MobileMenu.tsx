@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Button } from "@/components/ui/button";
 import { Link } from 'react-router-dom';
-import { ChevronDown } from 'lucide-react';
+import { ChevronDown, Phone } from 'lucide-react';
 
 interface MobileMenuProps {
   isOpen: boolean;
@@ -82,12 +82,13 @@ const MobileMenu = ({ isOpen, onClose, servicePages, navItems }: MobileMenuProps
           </Link>
         ))}
         
-        <Button 
-          className="w-full bg-[#3b62c0] hover:bg-blue-700 text-white rounded-none"
-          onClick={onClose}
-        >
-          Get Quote
-        </Button>
+        <a href="tel:0412995208" onClick={onClose}>
+          <Button 
+            className="w-full bg-[#3b62c0] hover:bg-blue-700 text-white rounded-none flex items-center justify-center gap-2"
+          >
+            <Phone className="h-4 w-4" /> Call Us Now
+          </Button>
+        </a>
       </div>
     </motion.div>
   );

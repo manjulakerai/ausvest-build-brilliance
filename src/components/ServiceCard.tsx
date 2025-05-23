@@ -30,7 +30,11 @@ const ServiceCard = ({ icon, color, title, description, delay, linkTo = "/servic
     >
       <div className="p-8">
         <div className={`w-16 h-16 ${color} rounded-none flex items-center justify-center mb-6 transition-all duration-300 group-hover:scale-110`}>
-          <div className="w-8 h-8 bg-current rounded-none"></div>
+          <img 
+            src="/lovable-uploads/1e3b15f4-e23c-4368-8a8d-a2364fd83747.png" 
+            alt="Bullet point" 
+            className="w-8 h-8 object-contain"
+          />
         </div>
         <h3 className="text-xl font-bold text-slate-900 mb-4">{title}</h3>
         <p className="text-gray-600 mb-6 line-clamp-3">
