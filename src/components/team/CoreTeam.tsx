@@ -10,52 +10,28 @@ interface TeamMember {
 
 const teamMembers: TeamMember[] = [
   {
-    name: "Sarah Johnson",
-    position: "Senior Project Manager",
+    name: "Dilip Hirani",
+    position: "Site Manager",
     color: "bg-orange-100",
-    description: "Specializes in complex commercial projects with multiple stakeholders."
+    description: "Experienced site manager ensuring all construction phases run smoothly and safely."
   },
   {
-    name: "Michael Chen",
-    position: "Lead Design Manager",
+    name: "Michael Edmon",
+    position: "Site Manager",
     color: "bg-green-100",
-    description: "Works with architects and engineers to create functional, beautiful spaces."
+    description: "Dedicated site manager focused on quality control and team coordination on-site."
   },
   {
-    name: "James Wilson",
-    position: "Site Supervisor",
-    color: "bg-blue-100",
-    description: "Ensures all on-site work meets our exceptional quality standards."
-  },
-  {
-    name: "Emma Rodriguez",
-    position: "Client Relations Manager",
+    name: "Phani Arya",
+    position: "Design/Contracts Manager",
     color: "bg-purple-100",
-    description: "Your dedicated point of contact throughout the project journey."
+    description: "Expert in design coordination and contract management, ensuring seamless project delivery."
   },
   {
-    name: "David Thompson",
-    position: "Remediation Specialist",
-    color: "bg-yellow-100",
-    description: "Expert in structural issues and complex building repairs."
-  },
-  {
-    name: "Lisa Patel",
-    position: "Quantity Surveyor",
-    color: "bg-indigo-100",
-    description: "Ensures your project stays on budget without compromising quality."
-  },
-  {
-    name: "Robert Kim",
-    position: "Safety Manager",
-    color: "bg-red-100",
-    description: "Maintains our exemplary safety record on all project sites."
-  },
-  {
-    name: "Stephanie Lee",
-    position: "Procurement Manager",
-    color: "bg-teal-100",
-    description: "Sources the highest quality materials at competitive prices."
+    name: "Manjula Kerai",
+    position: "Administrative Assistant",
+    color: "bg-blue-100",
+    description: "Provides essential administrative support and client communication coordination."
   }
 ];
 
@@ -100,14 +76,14 @@ const CoreTeam = () => {
           </motion.p>
         </div>
         
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-8">
+        <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-8">
           {teamMembers.map((member, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: index % 4 * 0.1 }}
+              transition={{ duration: 0.6, delay: index * 0.1 }}
               className={`${member.color} p-6 shadow-md`}
             >
               <div className="w-16 h-16 bg-white/80 rounded-full flex items-center justify-center mx-auto mb-4">

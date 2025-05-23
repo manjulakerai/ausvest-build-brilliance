@@ -10,9 +10,9 @@ const Logo = ({ className = "", style }: LogoProps) => {
   return (
     <div className={`flex items-center ${className}`} style={style}>
       <img 
-        src="/lovable-uploads/e3962a70-9d53-4d95-8cca-397f42ed0f0a.png" 
+        src="/lovable-uploads/efe4365f-10ee-45b4-a6c4-7d80dbdedad0.png" 
         alt="Ausvest Projects" 
-        className="h-14 w-auto"
+        className="h-16 w-auto"
       />
     </div>
   );

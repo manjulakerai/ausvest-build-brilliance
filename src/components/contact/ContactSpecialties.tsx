@@ -1,29 +1,37 @@
+
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const specialties = [
   {
     title: "Luxury Home Construction",
-    description: "Custom-designed luxury homes with premium finishes and features."
+    description: "Custom-designed luxury homes with premium finishes and features.",
+    link: "/services/luxury-home-construction"
   },
   {
     title: "Duplex Developments",
-    description: "Maximize your land value with our dual occupancy solutions."
+    description: "Maximize your land value with our dual occupancy solutions.",
+    link: "/services/duplex-construction"
   },
   {
     title: "Home Extensions & Additions",
-    description: "Expand your living space with seamlessly integrated extensions."
+    description: "Expand your living space with seamlessly integrated extensions.",
+    link: "/services/home-renovation"
   },
   {
     title: "Commercial Construction",
-    description: "Premium retail and office spaces built to exacting standards."
+    description: "Premium retail and office spaces built to exacting standards.",
+    link: "/services/commercial-construction"
   },
   {
     title: "Maintenance Services",
-    description: "Comprehensive maintenance for residential and commercial properties."
+    description: "Comprehensive maintenance for residential and commercial properties.",
+    link: "/services/maintenance-services"
   },
   {
     title: "Retail Fit-outs",
-    description: "Transform commercial spaces with our specialized fit-out services."
+    description: "Transform commercial spaces with our specialized fit-out services.",
+    link: "/services/commercial-construction"
   }
 ];
 
@@ -53,19 +61,23 @@ const ContactSpecialties = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="p-6 bg-white shadow-md border-l-4 border-[#3b62c0]"
             >
-              <div className="flex items-center mb-2">
-                <div className="w-5 h-5 mr-2 flex-shrink-0">
-                  <img 
-                    src="/lovable-uploads/1e3b15f4-e23c-4368-8a8d-a2364fd83747.png" 
-                    alt="Bullet point" 
-                    className="w-full h-full object-contain"
-                  />
+              <Link 
+                to={specialty.link}
+                className="block p-6 bg-white shadow-md border-l-4 border-[#3b62c0] hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
+              >
+                <div className="flex items-center mb-2">
+                  <div className="w-5 h-5 mr-2 flex-shrink-0">
+                    <img 
+                      src="/lovable-uploads/1e3b15f4-e23c-4368-8a8d-a2364fd83747.png" 
+                      alt="Bullet point" 
+                      className="w-full h-full object-contain"
+                    />
+                  </div>
+                  <h3 className="text-lg font-bold text-slate-900">{specialty.title}</h3>
                 </div>
-                <h3 className="text-lg font-bold text-slate-900">{specialty.title}</h3>
-              </div>
-              <p className="text-gray-600">{specialty.description}</p>
+                <p className="text-gray-600">{specialty.description}</p>
+              </Link>
             </motion.div>
           ))}
         </div>
