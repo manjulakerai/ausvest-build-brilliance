@@ -2,6 +2,7 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Button } from "@/components/ui/button";
+import { Link } from 'react-router-dom';
 import Logo from "./Logo";
 
 const Header = () => {
@@ -21,11 +22,12 @@ const Header = () => {
   }, [scrolled]);
 
   const navItems = [
-    { name: 'Services', link: '#services' },
-    { name: 'About', link: '#about' },
-    { name: 'Projects', link: '#projects' },
-    { name: 'Team', link: '#team' },
-    { name: 'Contact', link: '#contact' },
+    { name: 'Home', link: '/' },
+    { name: 'Services', link: '/services' },
+    { name: 'Projects', link: '/projects' },
+    { name: 'About', link: '/about' },
+    { name: 'Team', link: '/team' },
+    { name: 'Contact', link: '/contact' },
   ];
 
   return (
@@ -37,24 +39,24 @@ const Header = () => {
       }`}
       initial={{ y: -100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
-      transition={{ duration: 0.6, delay: 2.5 }}
+      transition={{ duration: 0.6 }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
-          <a href="#" className="flex items-center">
+          <Link to="/" className="flex items-center">
             <Logo />
-          </a>
+          </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-8">
             {navItems.map((item) => (
-              <a 
+              <Link 
                 key={item.name}
-                href={item.link}
+                to={item.link}
                 className="text-slate-700 hover:text-[#3b62c0] font-medium transition-colors relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-[#3b62c0] after:transition-all hover:after:w-full"
               >
                 {item.name}
-              </a>
+              </Link>
             ))}
             <Button className="bg-[#3b62c0] hover:bg-blue-700 text-white px-6 py-2 rounded-none transition-all hover:-translate-y-0.5 shadow-lg">
               Get Quote
@@ -108,14 +110,14 @@ const Header = () => {
       >
         <div className="px-4 py-4 space-y-4">
           {navItems.map((item) => (
-            <a 
+            <Link 
               key={item.name}
-              href={item.link}
+              to={item.link}
               className="block text-slate-700 hover:text-[#3b62c0] transition-colors"
               onClick={() => setMobileMenuOpen(false)}
             >
               {item.name}
-            </a>
+            </Link>
           ))}
           <Button 
             className="w-full bg-[#3b62c0] hover:bg-blue-700 text-white rounded-none"
