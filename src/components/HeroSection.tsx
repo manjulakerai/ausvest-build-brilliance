@@ -12,7 +12,7 @@ const HeroSection = () => {
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 0.8, delay: 2.8 }}
+            transition={{ duration: 0.8, delay: 3.8 }}
             className="inline-block mb-6 px-4 py-1.5 bg-[#3b62c0]/10 border border-[#3b62c0]/20 rounded-full text-[#6f8fda]"
           >
             Sydney's Premier Luxury Builder - Established 1993
@@ -22,7 +22,7 @@ const HeroSection = () => {
             className="text-4xl md:text-6xl xl:text-7xl font-bold text-white mb-6 leading-tight"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 3.0 }}
+            transition={{ duration: 0.8, delay: 4.0 }}
           >
             Crafting Luxury<br />
             <span className="text-[#6f8fda]">For Over 30 Years</span>
@@ -32,7 +32,7 @@ const HeroSection = () => {
             className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto lg:mx-0"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 3.2 }}
+            transition={{ duration: 0.8, delay: 4.2 }}
           >
             From stunning residential estates to premium commercial spaces — we create extraordinary 
             buildings with impeccable attention to detail, delivering exceptional quality on time and on budget.
@@ -42,7 +42,7 @@ const HeroSection = () => {
             className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 3.4 }}
+            transition={{ duration: 0.8, delay: 4.4 }}
           >
             <Button 
               size="lg" 
@@ -65,7 +65,7 @@ const HeroSection = () => {
         className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 0.8, delay: 3.6 }}
+        transition={{ duration: 0.8, delay: 4.6 }}
       >
         <motion.div
           animate={{ y: [0, 10, 0] }}
