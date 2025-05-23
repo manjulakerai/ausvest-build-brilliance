@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 const Team = () => {
   return (
@@ -260,6 +261,7 @@ const Team = () => {
           </div>
         </section>
       </div>
+      <Footer />
     </div>
   );
 };

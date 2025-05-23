@@ -1,9 +1,9 @@
-
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 // Sample project data - would be replaced with actual project data
 const projectsData = [
@@ -183,6 +183,7 @@ const Projects = () => {
           </div>
         </section>
       </div>
+      <Footer />
     </div>
   );
 };

@@ -1,4 +1,3 @@
-
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -11,7 +10,7 @@ const LuxuryHomeConstruction = () => {
     <div className="min-h-screen bg-white">
       <Header />
       
-      {/* Page Content with top padding to account for the fixed header */}
+      {/* Page Content */}
       <div className="pt-28 pb-20">
         {/* Hero */}
         <section className="py-12 bg-slate-900 text-white">
