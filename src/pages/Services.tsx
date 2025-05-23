@@ -1,5 +1,6 @@
 
-import { motion, useEffect } from "framer-motion";
+import { motion } from "framer-motion";
+import { useEffect } from "react";
 import ServiceCard from "@/components/ServiceCard";
 import Header from "@/components/Header";
 import { Button } from "@/components/ui/button";
