@@ -1,5 +1,5 @@
 
-import { useState } from "react";
+import { useEffect } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import TeamHero from "@/components/team/TeamHero";
@@ -9,6 +9,10 @@ import ProjectGallery from "@/components/team/ProjectGallery";
 import LogoAnimation from "@/components/LogoAnimation";
 
 const Team = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  
   return (
     <div className="min-h-screen bg-white">
       <LogoAnimation />

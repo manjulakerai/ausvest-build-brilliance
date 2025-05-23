@@ -2,6 +2,7 @@
 import { motion } from 'framer-motion';
 import { Button } from "@/components/ui/button";
 import { ArrowDown } from "lucide-react";
+import { Link } from 'react-router-dom';
 
 const HeroSection = () => {
   return (
@@ -44,19 +45,23 @@ const HeroSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 4.4 }}
           >
-            <Button 
-              size="lg" 
-              className="bg-[#3b62c0] hover:bg-blue-700 text-white px-8 py-6 text-lg rounded-none transition-all hover:-translate-y-0.5 shadow-lg"
-            >
-              Book Free Consultation
-            </Button>
-            <Button 
-              size="lg" 
-              variant="outline" 
-              className="border-white text-white hover:bg-white hover:text-slate-900 px-8 py-6 text-lg rounded-none transition-all hover:-translate-y-0.5"
-            >
-              View Our Projects
-            </Button>
+            <a href="tel:0412995208">
+              <Button 
+                size="lg" 
+                className="bg-[#3b62c0] hover:bg-blue-700 text-white px-8 py-6 text-lg rounded-none transition-all hover:-translate-y-0.5 shadow-lg"
+              >
+                Call Us Now
+              </Button>
+            </a>
+            <Link to="/projects">
+              <Button 
+                size="lg" 
+                variant="outline" 
+                className="border-white bg-white text-slate-900 hover:bg-white hover:text-slate-900 px-8 py-6 text-lg rounded-none transition-all hover:-translate-y-0.5"
+              >
+                View Our Projects
+              </Button>
+            </Link>
           </motion.div>
         </div>
       </div>

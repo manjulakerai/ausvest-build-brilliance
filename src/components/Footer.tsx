@@ -5,6 +5,8 @@ import Logo from "@/components/Logo";
 import { motion } from 'framer-motion';
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
     <footer className="bg-slate-900 text-white py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -47,15 +49,15 @@ const Footer = () => {
               Contact
             </h4>
             <div className="space-y-2 text-gray-400">
-              <div className="hover:text-white transition-colors">0411 123 456</div>
-              <div className="hover:text-white transition-colors">info@ausvestprojects.com.au</div>
+              <a href="tel:0412995208" className="hover:text-white transition-colors">0412 995 208</a>
+              <a href="mailto:hello@ausvestprojects.com.au" className="block hover:text-white transition-colors">hello@ausvestprojects.com.au</a>
               <div className="hover:text-white transition-colors">Sydney, NSW</div>
             </div>
           </div>
         </div>
         <Separator className="my-8 bg-gray-800" />
         <div className="flex flex-col md:flex-row justify-between items-center text-gray-500">
-          <p>&copy; {new Date().getFullYear()} Ausvest Projects. All rights reserved.</p>
+          <p>&copy; {currentYear} Ausvest Projects. All rights reserved.</p>
           <div className="flex space-x-4 mt-4 md:mt-0">
             <Link to="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
             <Link to="/terms" className="hover:text-white transition-colors">Terms of Service</Link>

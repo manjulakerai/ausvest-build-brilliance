@@ -1,7 +1,7 @@
 
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import Logo from "./Logo";
 import MobileMenu from './header/MobileMenu';
 import DesktopNavigation from './header/DesktopNavigation';
@@ -11,6 +11,8 @@ import { servicePages, navItems } from './header/navigationData';
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const location = useLocation();
+  const isHomepage = location.pathname === '/';
 
   useEffect(() => {
     const handleScroll = () => {
@@ -53,6 +55,7 @@ const Header = () => {
           <DesktopNavigation 
             servicePages={servicePages}
             navItems={navItems}
+            isHomepage={isHomepage}
           />
 
           {/* Mobile menu button */}
@@ -60,6 +63,7 @@ const Header = () => {
             <MobileMenuButton
               isOpen={mobileMenuOpen}
               onClick={toggleMobileMenu}
+              isHomepage={isHomepage}
             />
           </div>
         </div>

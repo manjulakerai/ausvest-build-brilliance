@@ -8,7 +8,7 @@ import ServicesSection from "@/components/sections/ServicesSection";
 import AboutSection from "@/components/sections/AboutSection";
 import TeamSection from "@/components/sections/TeamSection";
 import CtaSection from "@/components/sections/CtaSection";
-import ContactSection from "@/components/sections/ContactSection";
+import ContactInfo from "@/components/sections/ContactInfo";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -19,6 +19,10 @@ const Index = () => {
     const timer = setTimeout(() => {
       setIsLoading(false);
     }, 3000);
+
+    // Scroll to top when page loads
+    window.scrollTo(0, 0);
+    
     return () => clearTimeout(timer);
   }, []);
 
@@ -48,8 +52,8 @@ const Index = () => {
       {/* CTA Section */}
       <CtaSection />
 
-      {/* Contact Section */}
-      <ContactSection />
+      {/* Contact Info Section */}
+      <ContactInfo />
 
       {/* Footer */}
       <Footer />

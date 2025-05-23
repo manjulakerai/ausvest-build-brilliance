@@ -2,13 +2,14 @@
 interface MobileMenuButtonProps {
   isOpen: boolean;
   onClick: () => void;
+  isHomepage?: boolean;
 }
 
-const MobileMenuButton = ({ isOpen, onClick }: MobileMenuButtonProps) => {
+const MobileMenuButton = ({ isOpen, onClick, isHomepage = false }: MobileMenuButtonProps) => {
   return (
     <button 
       onClick={onClick}
-      className="text-slate-700 focus:outline-none"
+      className={`${isHomepage ? 'text-white' : 'text-slate-700'} focus:outline-none`}
     >
       <svg 
         xmlns="http://www.w3.org/2000/svg" 
