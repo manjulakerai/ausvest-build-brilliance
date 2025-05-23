@@ -15,7 +15,7 @@ const HeroSection = () => {
             transition={{ duration: 0.8, delay: 2.8 }}
             className="inline-block mb-6 px-4 py-1.5 bg-[#3b62c0]/10 border border-[#3b62c0]/20 rounded-full text-[#6f8fda]"
           >
-            Sydney's Tier 1 Construction Partner
+            Sydney's Premier Luxury Builder - Established 1993
           </motion.div>
           
           <motion.h1 
@@ -24,8 +24,8 @@ const HeroSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 3.0 }}
           >
-            Fast, Lean &<br />
-            <span className="text-[#6f8fda]">Built to Last</span>
+            Crafting Luxury<br />
+            <span className="text-[#6f8fda]">For Over 30 Years</span>
           </motion.h1>
           
           <motion.p 
@@ -34,8 +34,8 @@ const HeroSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 3.2 }}
           >
-            Construction, Fitouts & Refurbishments — We solve the biggest pain points: slow builds, 
-            budget overruns, and poor communication. Delivering quality builds within budget and on schedule.
+            From stunning residential estates to premium commercial spaces — we create extraordinary 
+            buildings with impeccable attention to detail, delivering exceptional quality on time and on budget.
           </motion.p>
           
           <motion.div 
@@ -55,7 +55,7 @@ const HeroSection = () => {
               variant="outline" 
               className="border-white text-white hover:bg-white hover:text-slate-900 px-8 py-6 text-lg rounded-none transition-all hover:-translate-y-0.5"
             >
-              View Our Work
+              View Our Projects
             </Button>
           </motion.div>
         </div>

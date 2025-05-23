@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -11,6 +10,8 @@ import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import StatsSection from "@/components/StatsSection";
 import ServiceCard from "@/components/ServiceCard";
+import Footer from "@/components/Footer";
+import { Link } from "react-router-dom";
 
 const Index = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -91,8 +92,7 @@ const Index = () => {
               transition={{ duration: 0.6, delay: 0.6 }}
               className="text-xl text-gray-600 max-w-3xl mx-auto"
             >
-              From residential builds to commercial fitouts and remediation work, 
-              we deliver quality construction across all sectors.
+              With over 30 years of experience, we deliver exceptional construction services across residential and commercial sectors.
             </motion.p>
           </div>
           
@@ -100,25 +100,28 @@ const Index = () => {
             <ServiceCard
               icon="building"
               color="bg-blue-100"
-              title="Residential Construction"
-              description="New builds, renovations, additions, and remediation. Quality homes built on time and on budget with premium finishes and attention to detail."
+              title="Luxury Home Construction"
+              description="Custom-designed luxury residences with premium finishes and exceptional attention to detail, built to exacting standards."
               delay={0.2}
+              linkTo="/services"
             />
             
             <ServiceCard
               icon="office"
               color="bg-indigo-100"
-              title="Commercial & Retail"
-              description="Office fitouts, hospitality refurbishments, and retail transformations that maximize your ROI with minimal disruption to your business."
+              title="Duplex & Multi-Home Development"
+              description="Specialized duplex and multi-dwelling developments that maximize land value and deliver exceptional investment returns."
               delay={0.4}
+              linkTo="/services"
             />
             
             <ServiceCard
               icon="tools"
               color="bg-purple-100" 
-              title="Remediation & Upgrades"
-              description="Structural repairs, insurance works, and defect rectification. We fix what others can't with our specialized team of experts."
+              title="Home Renovation & Extension"
+              description="Transform your existing home with expertly crafted renovations, extensions, and additions that enhance livability and value."
               delay={0.6}
+              linkTo="/services"
             />
           </div>
         </div>
@@ -138,22 +141,23 @@ const Index = () => {
                 About Ausvest
               </div>
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                We Flip the Script on <span className="text-[#6f8fda]">Traditional Construction</span>
+                Three Decades of <span className="text-[#6f8fda]">Construction Excellence</span>
               </h2>
               <div className="h-1 w-20 bg-[#3b62c0] mb-6"></div>
               <p className="text-xl text-gray-300 mb-6">
-                We created Ausvest Projects to deliver what the industry couldn't: quality builds that stay on budget, 
-                finish fast, and work harder for your bottom line.
+                Since 1993, Ausvest has been creating stunning luxury residences and commercial spaces across Sydney
+                that exceed expectations and stand the test of time.
               </p>
               <p className="text-gray-300 mb-8">
-                Our diverse team of engineers, builders, and quantity surveyors brings deep expertise across 
-                residential, civil, government, commercial, and remediation projects. No fluff, just results.
+                Our diverse team of engineers, builders, and project managers brings extensive expertise across
+                luxury residential, duplex developments, and premium commercial projects. Our focus on efficient communication
+                ensures 100% client satisfaction with every project.
               </p>
               <div className="space-y-4">
                 {[
-                  "One point of contact — no confusion",
-                  "Transparent communication — no surprises",
-                  "On-time delivery — no excuses"
+                  "Seamless end-to-end project management",
+                  "Transparent communication throughout",
+                  "Quality craftsmanship guaranteed"
                 ].map((item, index) => (
                   <motion.div 
                     key={index}
@@ -170,6 +174,13 @@ const Index = () => {
                   </motion.div>
                 ))}
               </div>
+              <div className="mt-8">
+                <Link to="/about">
+                  <Button className="bg-[#3b62c0] hover:bg-blue-700 rounded-none transform hover:-translate-y-0.5 transition-all">
+                    Learn Our Story
+                  </Button>
+                </Link>
+              </div>
             </motion.div>
             <motion.div
               custom={0.4}
@@ -180,12 +191,14 @@ const Index = () => {
             >
               <h3 className="text-2xl font-bold mb-6 text-[#6f8fda]">Our Promise</h3>
               <blockquote className="text-lg italic text-gray-300 mb-6 border-l-2 border-[#3b62c0] pl-4">
-                "Instead of delays and headaches, we deliver quality builds that stay on budget, 
-                finish fast, and work harder for your bottom line."
+                "We create luxury spaces that exceed expectations through impeccable craftsmanship and attention to detail.
+                Our commitment to excellence ensures your project is completed on time, on budget, and to your complete satisfaction."
               </blockquote>
-              <Button className="bg-[#3b62c0] hover:bg-blue-700 rounded-none transform hover:-translate-y-0.5 transition-all">
-                Meet Our Team
-              </Button>
+              <Link to="/projects">
+                <Button className="bg-[#3b62c0] hover:bg-blue-700 rounded-none transform hover:-translate-y-0.5 transition-all">
+                  View Our Projects
+                </Button>
+              </Link>
             </motion.div>
           </div>
         </div>
@@ -302,7 +315,7 @@ const Index = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            Ready to Start Your Project?
+            Ready to Create Your Dream Space?
           </motion.h2>
           <motion.p 
             className="text-xl text-blue-100 mb-8"
@@ -311,7 +324,7 @@ const Index = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            Let's build something brilliant together. Get your free consultation today.
+            Let's bring your vision to life with our 30+ years of luxury construction expertise.
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -319,12 +332,14 @@ const Index = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.4 }}
           >
-            <Button 
-              size="lg" 
-              className="bg-white hover:bg-gray-100 text-[#3b62c0] px-8 py-6 text-lg rounded-none shadow-xl transform hover:-translate-y-1 transition-all"
-            >
-              Book Free Consultation
-            </Button>
+            <Link to="/contact">
+              <Button 
+                size="lg" 
+                className="bg-white hover:bg-gray-100 text-[#3b62c0] px-8 py-6 text-lg rounded-none shadow-xl transform hover:-translate-y-1 transition-all"
+              >
+                Book Free Consultation
+              </Button>
+            </Link>
           </motion.div>
         </div>
       </motion.section>
@@ -426,57 +441,7 @@ const Index = () => {
       </section>
 
       {/* Footer */}
-      <footer className="bg-slate-900 text-white py-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-4 gap-8">
-            <div>
-              <div className="mb-4">
-                <Logo className="text-white" />
-              </div>
-              <p className="text-gray-400">
-                Sydney's trusted construction partner for residential, commercial, and remediation projects.
-              </p>
-            </div>
-            <div>
-              <h4 className="font-semibold mb-4 flex items-center">
-                <span className="w-4 h-0.5 bg-[#3b62c0] mr-2"></span>
-                Services
-              </h4>
-              <div className="space-y-2 text-gray-400">
-                <div>Residential Construction</div>
-                <div>Commercial Fitouts</div>
-                <div>Remediation Work</div>
-              </div>
-            </div>
-            <div>
-              <h4 className="font-semibold mb-4 flex items-center">
-                <span className="w-4 h-0.5 bg-[#3b62c0] mr-2"></span>
-                Company
-              </h4>
-              <div className="space-y-2 text-gray-400">
-                <div>About Us</div>
-                <div>Our Team</div>
-                <div>Projects</div>
-              </div>
-            </div>
-            <div>
-              <h4 className="font-semibold mb-4 flex items-center">
-                <span className="w-4 h-0.5 bg-[#3b62c0] mr-2"></span>
-                Contact
-              </h4>
-              <div className="space-y-2 text-gray-400">
-                <div>0411 123 456</div>
-                <div>info@ausvestprojects.com.au</div>
-                <div>Sydney, NSW</div>
-              </div>
-            </div>
-          </div>
-          <Separator className="my-8 bg-gray-800" />
-          <div className="text-center text-gray-500">
-            <p>&copy; {new Date().getFullYear()} Ausvest Projects. All rights reserved.</p>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 };

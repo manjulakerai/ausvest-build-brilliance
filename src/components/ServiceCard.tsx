@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { Button } from "@/components/ui/button";
 import { ChevronRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 interface ServiceCardProps {
   icon: string;
@@ -10,9 +11,10 @@ interface ServiceCardProps {
   title: string;
   description: string;
   delay: number;
+  linkTo?: string;
 }
 
-const ServiceCard = ({ icon, color, title, description, delay }: ServiceCardProps) => {
+const ServiceCard = ({ icon, color, title, description, delay, linkTo = "/services" }: ServiceCardProps) => {
   const { ref, inView } = useInView({
     triggerOnce: true,
     threshold: 0.1,
@@ -34,16 +36,18 @@ const ServiceCard = ({ icon, color, title, description, delay }: ServiceCardProp
         <p className="text-gray-600 mb-6 line-clamp-3">
           {description}
         </p>
-        <Button variant="ghost" className="group/btn p-0 text-[#3b62c0] hover:text-blue-700">
-          Learn More 
-          <motion.div
-            className="inline-block ml-1"
-            animate={{ x: [0, 5, 0] }}
-            transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut", repeatDelay: 0.5 }}
-          >
-            <ChevronRight className="h-4 w-4" />
-          </motion.div>
-        </Button>
+        <Link to={linkTo}>
+          <Button variant="ghost" className="group/btn p-0 text-[#3b62c0] hover:text-blue-700">
+            Learn More 
+            <motion.div
+              className="inline-block ml-1"
+              animate={{ x: [0, 5, 0] }}
+              transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut", repeatDelay: 0.5 }}
+            >
+              <ChevronRight className="h-4 w-4" />
+            </motion.div>
+          </Button>
+        </Link>
       </div>
     </motion.div>
   );

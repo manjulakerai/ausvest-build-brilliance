@@ -1,7 +1,9 @@
 
 import { motion } from "framer-motion";
 import Header from "@/components/Header";
-import StatsSection from "@/components/StatsSection";
+import Footer from "@/components/Footer";
+import { Button } from "@/components/ui/button";
+import { ArrowRight } from "lucide-react";
 
 const About = () => {
   return (
@@ -19,42 +21,29 @@ const About = () => {
               transition={{ duration: 0.6 }}
               className="text-center"
             >
-              <h1 className="text-4xl md:text-5xl font-bold mb-4">About Ausvest Projects</h1>
+              <h1 className="text-4xl md:text-5xl font-bold mb-4">About Ausvest</h1>
               <p className="text-xl text-blue-200 max-w-3xl mx-auto">
-                Our journey, values, and commitment to excellence in construction.
+                Three decades of creating exceptional buildings across Sydney and beyond.
               </p>
             </motion.div>
           </div>
         </section>
 
-        {/* About Content */}
+        {/* Our Story Section */}
         <section className="py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
+            <div className="grid md:grid-cols-2 gap-12 items-center">
               <motion.div
                 initial={{ opacity: 0, x: -30 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6 }}
               >
-                <div className="inline-block px-4 py-1 bg-blue-50 rounded-full text-[#3b62c0] font-medium mb-4">
-                  Our Story
+                <div className="bg-gray-200 aspect-[4/3] flex items-center justify-center">
+                  <p className="text-gray-500 text-center p-4">
+                    [Suggested image: Founders or leadership team in professional setting]
+                  </p>
                 </div>
-                <h2 className="text-3xl font-bold text-slate-900 mb-4">
-                  We Flip the Script on Traditional Construction
-                </h2>
-                <div className="h-1 w-20 bg-[#3b62c0] mb-6"></div>
-                <p className="text-gray-600 mb-6">
-                  We created Ausvest Projects to deliver what the industry couldn't: quality builds that stay on budget, 
-                  finish fast, and work harder for your bottom line. Born from a frustration with the status quo, 
-                  our founders set out to build a company that places transparency, efficiency, and client satisfaction 
-                  at the heart of everything we do.
-                </p>
-                <p className="text-gray-600 mb-6">
-                  With decades of combined experience across residential, commercial, and remediation projects, 
-                  our leadership team has assembled a network of skilled professionals who share our commitment 
-                  to doing construction differently.
-                </p>
               </motion.div>
               <motion.div
                 initial={{ opacity: 0, x: 30 }}
@@ -62,112 +51,190 @@ const About = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6 }}
               >
-                <div className="bg-gray-200 rounded-md aspect-[4/3] flex items-center justify-center">
-                  <p className="text-gray-500 text-center p-4">
-                    [Suggested image: Ausvest team on site reviewing plans or directors in discussion with clients]
-                  </p>
+                <div className="inline-block px-4 py-1 bg-blue-50 rounded-full text-[#3b62c0] font-medium mb-4">
+                  Our Legacy
                 </div>
+                <h2 className="text-3xl font-bold text-slate-900 mb-4">Three Decades of Excellence</h2>
+                <div className="h-1 w-20 bg-[#3b62c0] mb-6"></div>
+                <p className="text-gray-600 mb-4">
+                  For over 30 years, Ausvest has been crafting stunning and luxurious residential buildings across Sydney and its suburbs. 
+                  Our journey began with a simple mission: to create homes and buildings that exceed expectations through impeccable 
+                  craftsmanship and attention to detail.
+                </p>
+                <p className="text-gray-600 mb-6">
+                  Today, we stand as one of Sydney's most trusted construction partners, with a portfolio that spans luxury homes, 
+                  commercial developments, and specialty projects. Our team's collective expertise and unwavering commitment to quality 
+                  have established Ausvest as a leader in the Australian construction industry.
+                </p>
+                <Button className="group bg-[#3b62c0] hover:bg-blue-700">
+                  Meet Our Team
+                  <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                </Button>
               </motion.div>
             </div>
-
-            {/* Values */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-              className="mb-16"
-            >
-              <div className="text-center mb-12">
-                <div className="inline-block px-4 py-1 bg-blue-50 rounded-full text-[#3b62c0] font-medium mb-4">
-                  Our Values
-                </div>
-                <h2 className="text-3xl font-bold text-slate-900 mb-4">
-                  What Drives Us Forward
-                </h2>
-                <div className="h-1 w-20 bg-[#3b62c0] mx-auto mb-4"></div>
-              </div>
-              
-              <div className="grid md:grid-cols-3 gap-8">
-                {[
-                  {
-                    title: "Transparency",
-                    description: "We believe in clear communication and no surprises. You'll always know exactly where your project stands."
-                  },
-                  {
-                    title: "Efficiency",
-                    description: "We respect your time and budget. Our streamlined processes deliver quality results without unnecessary delays."
-                  },
-                  {
-                    title: "Excellence",
-                    description: "From materials to workmanship, we never compromise on quality. The details matter to us as much as they do to you."
-                  }
-                ].map((value, index) => (
-                  <motion.div
-                    key={index}
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.6, delay: index * 0.2 }}
-                    className="bg-white p-8 shadow-lg border-t-4 border-[#3b62c0]"
-                  >
-                    <h3 className="text-xl font-bold text-slate-900 mb-4">{value.title}</h3>
-                    <p className="text-gray-600">{value.description}</p>
-                  </motion.div>
-                ))}
-              </div>
-            </motion.div>
-
-            {/* Approach */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-              className="mb-16"
-            >
-              <div className="grid md:grid-cols-2 gap-12 items-center">
-                <div>
-                  <div className="bg-gray-200 rounded-md aspect-[4/3] flex items-center justify-center">
-                    <p className="text-gray-500 text-center p-4">
-                      [Suggested image: Ausvest team in a planning meeting or project management in action]
-                    </p>
-                  </div>
-                </div>
-                <div>
-                  <div className="inline-block px-4 py-1 bg-blue-50 rounded-full text-[#3b62c0] font-medium mb-4">
-                    Our Approach
-                  </div>
-                  <h2 className="text-3xl font-bold text-slate-900 mb-4">
-                    How We Work
-                  </h2>
-                  <div className="h-1 w-20 bg-[#3b62c0] mb-6"></div>
-                  <ul className="space-y-4">
-                    {[
-                      "Single point of contact for clear communication",
-                      "Detailed planning before breaking ground",
-                      "Regular progress updates and transparent reporting",
-                      "Proactive problem-solving to prevent delays",
-                      "Quality control at every project milestone",
-                      "Comprehensive handover and aftercare services"
-                    ].map((item, index) => (
-                      <li key={index} className="flex items-start">
-                        <div className="w-6 h-6 bg-[#3b62c0] mt-1 mr-3 flex items-center justify-center">
-                          <div className="w-2 h-2 bg-white"></div>
-                        </div>
-                        <span className="text-gray-700">{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-            </motion.div>
           </div>
         </section>
 
-        {/* Stats Section */}
-        <StatsSection />
+        {/* Our Values */}
+        <section className="py-16 bg-gray-50">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="text-center mb-12"
+            >
+              <div className="inline-block px-4 py-1 bg-blue-50 rounded-full text-[#3b62c0] font-medium mb-4">
+                Our Approach
+              </div>
+              <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">What Sets Us Apart</h2>
+              <div className="h-1 w-20 bg-[#3b62c0] mx-auto mb-4"></div>
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                At Ausvest, we take pride in our work culture that ensures efficient communication between you and our team,
+                delivering 100% satisfaction with every project.
+              </p>
+            </motion.div>
+
+            <div className="grid md:grid-cols-3 gap-8">
+              {[
+                {
+                  title: "Uncompromising Quality",
+                  description: "We maintain the highest standards across all our projects, from material selection to final execution."
+                },
+                {
+                  title: "Transparent Communication",
+                  description: "We believe in clear, honest dialogue throughout every phase of your construction journey."
+                },
+                {
+                  title: "Expert Craftsmanship",
+                  description: "Our team of skilled professionals brings decades of experience to every project we undertake."
+                },
+                {
+                  title: "Timely Delivery",
+                  description: "We understand the importance of deadlines and are committed to completing projects on schedule."
+                },
+                {
+                  title: "Client-Focused Approach",
+                  description: "Your vision and satisfaction are our top priorities from initial concept to final handover."
+                },
+                {
+                  title: "Innovative Solutions",
+                  description: "We embrace modern techniques and technologies to deliver superior construction outcomes."
+                }
+              ].map((value, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6, delay: index * 0.1 }}
+                  className="bg-white p-8 shadow-lg border-b-4 border-[#3b62c0]"
+                >
+                  <h3 className="text-xl font-bold text-slate-900 mb-4">{value.title}</h3>
+                  <p className="text-gray-600">{value.description}</p>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Our Process */}
+        <section className="py-16">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="text-center mb-12"
+            >
+              <div className="inline-block px-4 py-1 bg-blue-50 rounded-full text-[#3b62c0] font-medium mb-4">
+                Our Process
+              </div>
+              <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Simple & Flawless Construction Experience</h2>
+              <div className="h-1 w-20 bg-[#3b62c0] mx-auto mb-4"></div>
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                We understand that finding the right construction experts can be challenging. That's why we've created
+                a seamless end-to-end project management solution.
+              </p>
+            </motion.div>
+
+            <div className="space-y-12 mt-16">
+              {[
+                {
+                  step: "01",
+                  title: "Initial Consultation",
+                  description: "We begin with a detailed discussion to understand your vision, requirements, and budget."
+                },
+                {
+                  step: "02",
+                  title: "Concept Development",
+                  description: "Our design team works with you to create a concept that perfectly aligns with your goals."
+                },
+                {
+                  step: "03",
+                  title: "Detailed Planning",
+                  description: "We handle all paperwork, permits, and create comprehensive construction plans."
+                },
+                {
+                  step: "04",
+                  title: "Construction Phase",
+                  description: "Our expert team executes the project with precision, quality, and attention to detail."
+                },
+                {
+                  step: "05",
+                  title: "Quality Assurance",
+                  description: "Rigorous inspections ensure every element meets our high standards before completion."
+                },
+                {
+                  step: "06",
+                  title: "Project Handover",
+                  description: "We deliver your finished project on time, on budget, and to your complete satisfaction."
+                }
+              ].map((process, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6, delay: index * 0.1 }}
+                  className="flex flex-col md:flex-row gap-8 items-start"
+                >
+                  <div className="w-20 h-20 flex-shrink-0 bg-[#3b62c0] text-white text-2xl font-bold flex items-center justify-center">
+                    {process.step}
+                  </div>
+                  <div>
+                    <h3 className="text-2xl font-bold text-slate-900 mb-2">{process.title}</h3>
+                    <p className="text-gray-600">{process.description}</p>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* CTA Section */}
+        <section className="py-16 bg-slate-900 text-white">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+            >
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready to Transform Your Vision into Reality?</h2>
+              <p className="text-xl text-blue-200 max-w-3xl mx-auto mb-8">
+                Let's discuss how our 30+ years of expertise can bring your dream project to life.
+              </p>
+              <Button size="lg" className="bg-[#3b62c0] hover:bg-blue-700 px-8 py-3 text-white">
+                Contact Us Today
+              </Button>
+            </motion.div>
+          </div>
+        </section>
       </div>
+      <Footer />
     </div>
   );
 };
