@@ -31,7 +31,7 @@ const LogoAnimation = () => {
       <div className="relative w-64 h-64 flex flex-col items-center">
         {/* Logo Animation */}
         <motion.div
-          className="w-44 h-44 mb-8"
+          className="w-44 h-44 mb-2"
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
@@ -45,7 +45,7 @@ const LogoAnimation = () => {
         
         {/* AUSVEST Text */}
         <motion.div
-          className="w-full mb-4"
+          className="w-full mb-1"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut", delay: 0.8 }}

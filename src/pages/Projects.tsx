@@ -1,9 +1,11 @@
+
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import ProjectGallery from "@/components/team/ProjectGallery";
 
 // Sample project data - would be replaced with actual project data
 const projectsData = [
@@ -154,7 +156,7 @@ const Projects = () => {
                       <h3 className="text-xl font-bold mb-2">{project.title}</h3>
                       <p className="text-gray-600 mb-4">{project.description}</p>
                       
-                      <div className="space-y-4 mb-6">
+                      <div className="space-y-4">
                         <div>
                           <h4 className="font-semibold text-slate-900">Challenge:</h4>
                           <p className="text-gray-600">{project.challenge}</p>
@@ -168,13 +170,6 @@ const Projects = () => {
                           <p className="text-gray-600">{project.completion}</p>
                         </div>
                       </div>
-                      
-                      <Button 
-                        variant="outline" 
-                        className="w-full border-[#3b62c0] text-[#3b62c0] hover:bg-[#3b62c0] hover:text-white"
-                      >
-                        View Project Details
-                      </Button>
                     </CardContent>
                   </Card>
                 </motion.div>
@@ -182,6 +177,9 @@ const Projects = () => {
             </div>
           </div>
         </section>
+
+        {/* Portfolio Section */}
+        <ProjectGallery />
       </div>
       <Footer />
     </div>

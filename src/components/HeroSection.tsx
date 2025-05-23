@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 const HeroSection = () => {
   return (
     <section className="relative h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800 flex items-center">
-      <div className="absolute inset-0 bg-[url('/lovable-uploads/5b29a271-b608-416d-9d0a-c0b981181d66.png')] bg-cover bg-center opacity-20 mix-blend-overlay"></div>
+      <div className="absolute inset-0 bg-[url('/lovable-uploads/5b29a271-b608-416d-9d0a-c0b981181d66.png')] bg-cover bg-center opacity-40 mix-blend-overlay"></div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 relative z-10">
         <div className="text-center lg:text-left">
           <motion.div
