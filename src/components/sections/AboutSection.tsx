@@ -61,7 +61,7 @@ const AboutSection = () => {
                   animate={inView ? "visible" : "hidden"}
                   variants={fadeInUpVariants}
                 >
-                  <div className="w-6 h-6 flex-shrink-0 flex items-center justify-center mr-3">
+                  <div className="w-6 h-6 flex-shrink-0 mr-3">
                     <img 
                       src="/lovable-uploads/1e3b15f4-e23c-4368-8a8d-a2364fd83747.png" 
                       alt="Bullet point" 

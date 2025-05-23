@@ -25,7 +25,7 @@ const FeatureList = ({ features, iconColor, iconSize = "sm" }: FeatureListProps)
     <ul className="space-y-4 mb-6">
       {features.map((feature, index) => (
         <li key={index} className="flex items-start">
-          <div className={`${sizeClass[iconSize]} ${iconColor} mt-1 mr-3 flex items-center justify-center`}>
+          <div className={`${sizeClass[iconSize]} mt-1 mr-3 flex items-center justify-center`}>
             <img 
               src="/lovable-uploads/1e3b15f4-e23c-4368-8a8d-a2364fd83747.png" 
               alt="Bullet point" 
