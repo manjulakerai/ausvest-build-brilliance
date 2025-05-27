@@ -20,7 +20,6 @@ import MultiHomeConstruction from "./pages/services/MultiHomeConstruction";
 import HomeRenovation from "./pages/services/HomeRenovation";
 import CommercialConstruction from "./pages/services/CommercialConstruction";
 import MaintenanceServices from "./pages/services/MaintenanceServices";
-import FitoutCarpentry from "./pages/services/FitoutCarpentry";
 
 // ScrollToTop component to ensure all page changes start at the top
 function ScrollToTop() {
@@ -57,7 +56,6 @@ const App = () => (
           <Route path="/services/home-renovation" element={<HomeRenovation />} />
           <Route path="/services/commercial-construction" element={<CommercialConstruction />} />
           <Route path="/services/maintenance-services" element={<MaintenanceServices />} />
-          <Route path="/services/fit-out-carpentry" element={<FitoutCarpentry />} />
           
           {/* Catch-all route */}
           <Route path="*" element={<NotFound />} />
