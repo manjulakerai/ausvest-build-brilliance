@@ -28,7 +28,7 @@ const TeamSection = () => {
       name: "Andrew Beard",
       position: "Director",
       description: "Leadership excellence in WHS compliance and major education and public builds. Andrew's reputation for clear communication and on-time delivery is unmatched.",
-      projects: ["St Lukes School Project", "Wentworthville Public School", "ANSTO Facility"],
+      projects: ["St Lukes School Project", "Wentworthville Public School", "Norwest Private Hospital"],
       color: "bg-indigo-100",
       textColor: "text-indigo-600"
     }

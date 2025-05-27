@@ -52,46 +52,19 @@ const Services = () => {
               <ServiceCard
                 icon="office"
                 color="bg-indigo-100"
-                title="Duplex Construction"
-                description="Specialized duplex developments that maximize land value and deliver exceptional living spaces for multiple families."
-                delay={0.4}
-                linkTo="/services/duplex-construction"
-              />
-              
-              <ServiceCard
-                icon="building"
-                color="bg-purple-100" 
-                title="Multi-Home Development"
-                description="Premium multi-dwelling developments that provide excellent investment returns while maintaining quality construction."
-                delay={0.6}
-                linkTo="/services/multi-home-construction"
-              />
-
-              <ServiceCard
-                icon="tools"
-                color="bg-emerald-100" 
-                title="Home Renovation & Extension"
-                description="Transform your existing home with expertly crafted renovations, extensions, and additions that enhance livability and value."
-                delay={0.2}
-                linkTo="/services/home-renovation"
-              />
-
-              <ServiceCard
-                icon="office"
-                color="bg-amber-100"
                 title="Commercial Construction"
-                description="Office fitouts, hospitality refurbishments, and retail transformations that maximize your ROI with minimal disruption."
+                description="Premium commercial construction projects including office buildings, retail spaces, and specialized commercial facilities."
                 delay={0.4}
                 linkTo="/services/commercial-construction"
               />
-
+              
               <ServiceCard
                 icon="tools"
-                color="bg-blue-100" 
-                title="Maintenance Services"
-                description="Tailored maintenance solutions for residential and commercial properties that ensure your building remains in perfect condition."
+                color="bg-purple-100" 
+                title="Fit-out Construction"
+                description="Expert fit-out services transforming commercial and retail spaces with premium finishes and custom solutions."
                 delay={0.6}
-                linkTo="/services/maintenance-services"
+                linkTo="/services/commercial-construction"
               />
             </div>
           </div>

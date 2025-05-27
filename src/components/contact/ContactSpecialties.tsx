@@ -9,27 +9,12 @@ const specialties = [
     link: "/services/luxury-home-construction"
   },
   {
-    title: "Duplex Developments",
-    description: "Maximize your land value with our dual occupancy solutions.",
-    link: "/services/duplex-construction"
-  },
-  {
-    title: "Home Extensions & Additions",
-    description: "Expand your living space with seamlessly integrated extensions.",
-    link: "/services/home-renovation"
-  },
-  {
     title: "Commercial Construction",
-    description: "Premium retail and office spaces built to exacting standards.",
+    description: "Premium commercial buildings and office developments.",
     link: "/services/commercial-construction"
   },
   {
-    title: "Maintenance Services",
-    description: "Comprehensive maintenance for residential and commercial properties.",
-    link: "/services/maintenance-services"
-  },
-  {
-    title: "Retail Fit-outs",
+    title: "Fit-out Construction",
     description: "Transform commercial spaces with our specialized fit-out services.",
     link: "/services/commercial-construction"
   }
@@ -53,7 +38,7 @@ const ContactSpecialties = () => {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-3 gap-6">
           {specialties.map((specialty, index) => (
             <motion.div
               key={index}

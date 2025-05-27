@@ -29,7 +29,7 @@ const directors: Director[] = [
     name: "Andrew Beard",
     position: "Director",
     description: "Leadership excellence in WHS compliance and major education and public builds. Andrew's reputation for clear communication and on-time delivery is unmatched.",
-    projects: ["St Lukes School Project", "Wentworthville Public School", "ANSTO Facility"],
+    projects: ["St Lukes School Project", "Wentworthville Public School", "Norwest Private Hospital"],
     color: "bg-indigo-100",
     textColor: "text-indigo-600",
     bio: "Andrew brings over 20 years of construction management experience to Ausvest Projects, with particular expertise in educational, government, and institutional projects. His commitment to safety and compliance has established Ausvest as a trusted partner for projects with strict regulatory requirements. Andrew oversees our residential division and remediation projects, with a focus on delivering outstanding quality and client satisfaction in even the most challenging situations."

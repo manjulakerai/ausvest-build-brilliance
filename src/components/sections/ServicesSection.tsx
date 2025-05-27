@@ -50,25 +50,25 @@ const ServicesSection = () => {
             title="Luxury Home Construction"
             description="Custom-designed luxury residences with premium finishes and exceptional attention to detail, built to exacting standards."
             delay={0.2}
-            linkTo="/services"
+            linkTo="/services/luxury-home-construction"
           />
           
           <ServiceCard
             icon="office"
             color="bg-indigo-100"
-            title="Duplex & Multi-Home Development"
-            description="Specialized duplex and multi-dwelling developments that maximize land value and deliver exceptional investment returns."
+            title="Commercial Construction"
+            description="Premium commercial construction projects including office buildings, retail spaces, and specialized commercial facilities."
             delay={0.4}
-            linkTo="/services"
+            linkTo="/services/commercial-construction"
           />
           
           <ServiceCard
             icon="tools"
             color="bg-purple-100" 
-            title="Home Renovation & Extension"
-            description="Transform your existing home with expertly crafted renovations, extensions, and additions that enhance livability and value."
+            title="Fit-out Construction"
+            description="Expert fit-out services transforming commercial and retail spaces with premium finishes and custom solutions."
             delay={0.6}
-            linkTo="/services"
+            linkTo="/services/commercial-construction"
           />
         </div>
       </div>
