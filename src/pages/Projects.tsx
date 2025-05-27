@@ -9,65 +9,240 @@ import ProjectGallery from "@/components/team/ProjectGallery";
 
 // Sample project data - would be replaced with actual project data
 const projectsData = [
+  // Commercial Projects
   {
     id: 1,
-    title: "Toongabbie Townhouses",
-    category: "residential",
-    description: "Development of six modern townhouses with premium finishes and sustainable features.",
-    challenge: "Limited site access and strict local council requirements.",
-    solution: "Careful staging and proactive council engagement throughout the project.",
-    completion: "Completed 2 weeks ahead of schedule and 3% under budget.",
-    tags: ["New Build", "Multi-Dwelling", "Residential"]
+    title: "Doonside Child Care",
+    category: "commercial",
+    description: "Modern child care facility designed for safety and educational excellence.",
+    challenge: "Creating a safe, engaging environment while meeting strict childcare regulations.",
+    solution: "Innovative design with secure play areas and natural lighting throughout.",
+    completion: "Delivered a state-of-the-art facility that exceeded safety standards.",
+    tags: ["Childcare", "Commercial", "Educational"]
   },
   {
     id: 2,
-    title: "Sunboost Office Headquarters",
+    title: "Little Zacs Blakehurst",
     category: "commercial",
-    description: "Complete office fit-out for a growing renewable energy company.",
-    challenge: "Creating a functional, inspiring workspace while maintaining business operations.",
-    solution: "Phased implementation with after-hours critical work to minimize disruption.",
-    completion: "Zero downtime for the client's operations throughout the project.",
-    tags: ["Office Fit-out", "Commercial", "Sustainable Design"]
+    description: "Complete construction of a new Little Zacs childcare center.",
+    challenge: "Tight construction timeline to meet enrollment deadlines.",
+    solution: "Efficient project management with parallel construction phases.",
+    completion: "Opened on schedule with full enrollment capacity.",
+    tags: ["Childcare", "Commercial", "New Build"]
   },
   {
     id: 3,
-    title: "St Lukes School Extension",
+    title: "Jilliby Warehouse",
     category: "commercial",
-    description: "Design and construction of new classrooms and administration facilities.",
-    challenge: "Working around school term times and ensuring student safety.",
-    solution: "Careful scheduling with major works during holiday periods and strict site security.",
-    completion: "Delivered on time for the start of the new school year.",
-    tags: ["Education", "Commercial", "New Build"]
+    description: "Large-scale warehouse facility for logistics and distribution.",
+    challenge: "Managing complex logistics during construction in operational area.",
+    solution: "Phased construction approach to minimize business disruption.",
+    completion: "Increased storage capacity by 300% with minimal downtime.",
+    tags: ["Warehouse", "Commercial", "Logistics"]
   },
   {
     id: 4,
-    title: "Waterfront Apartment Complex Remediation",
-    category: "remediation",
-    description: "Major water damage and structural repair to a waterfront apartment building.",
-    challenge: "Extensive water damage affecting multiple units and common areas.",
-    solution: "Comprehensive remediation plan with staged repairs to minimize resident disruption.",
-    completion: "Building integrity restored with improved waterproofing systems.",
-    tags: ["Structural Repair", "Water Damage", "Remediation"]
+    title: "Lindt Factory Upgrade",
+    category: "commercial",
+    description: "Specialized facility upgrade for chocolate manufacturing operations.",
+    challenge: "Maintaining food safety standards during construction.",
+    solution: "Strict contamination protocols and specialized equipment installation.",
+    completion: "Enhanced production capacity while maintaining quality standards.",
+    tags: ["Manufacturing", "Commercial", "Food Safety"]
   },
   {
     id: 5,
-    title: "Heritage Home Restoration",
-    category: "residential",
-    description: "Careful restoration of a heritage-listed Federation home with modern additions.",
-    challenge: "Balancing heritage requirements with modern living needs.",
-    solution: "Close collaboration with heritage consultants and sympathetic design approach.",
-    completion: "Award-winning restoration that preserved character while adding functionality.",
-    tags: ["Heritage", "Renovation", "Residential"]
+    title: "South Creek Public School Upgrade",
+    category: "commercial",
+    description: "Comprehensive upgrade of educational facilities and infrastructure.",
+    challenge: "Working around school operations and student safety.",
+    solution: "Careful scheduling with major works during holiday periods.",
+    completion: "Modernized facilities ready for new term with improved learning spaces.",
+    tags: ["Education", "Commercial", "Upgrade"]
   },
   {
     id: 6,
-    title: "ANSTO Facility Upgrade",
-    category: "remediation",
-    description: "Specialized facility upgrade with strict compliance requirements.",
-    challenge: "Working within an operational scientific environment with zero-tolerance for contamination.",
-    solution: "Detailed containment protocols and specialized training for all on-site personnel.",
-    completion: "Successful upgrade with no disruption to sensitive research activities.",
-    tags: ["Specialized", "Compliance", "Government"]
+    title: "Metro Tempe Service Station Upgrade",
+    category: "commercial",
+    description: "Complete modernization of service station facilities and forecourt.",
+    challenge: "Maintaining fuel sales during construction period.",
+    solution: "Strategic phasing to keep essential services operational.",
+    completion: "Modern facility with improved customer experience and safety.",
+    tags: ["Retail", "Commercial", "Upgrade"]
+  },
+  
+  // Residential Projects
+  {
+    id: 7,
+    title: "Kings Park Residence",
+    category: "residential",
+    description: "Luxury family home with modern amenities and premium finishes.",
+    challenge: "Balancing luxury features within budget constraints.",
+    solution: "Strategic material selection and efficient construction methods.",
+    completion: "Stunning family home delivered on time and within budget.",
+    tags: ["Luxury", "Residential", "Family Home"]
+  },
+  {
+    id: 8,
+    title: "Girraween Residence",
+    category: "residential",
+    description: "Contemporary home design with sustainable building practices.",
+    challenge: "Incorporating eco-friendly features while maintaining aesthetics.",
+    solution: "Innovative green building techniques and sustainable materials.",
+    completion: "Energy-efficient home with reduced environmental impact.",
+    tags: ["Sustainable", "Residential", "Contemporary"]
+  },
+  {
+    id: 9,
+    title: "Kellyville Residence",
+    category: "residential",
+    description: "Modern family home with open-plan living and outdoor entertainment areas.",
+    challenge: "Maximizing space on a compact suburban lot.",
+    solution: "Clever design solutions and multi-functional spaces.",
+    completion: "Spacious family home that maximizes every square meter.",
+    tags: ["Family Home", "Residential", "Space Optimization"]
+  },
+  {
+    id: 10,
+    title: "Riverstone Residence",
+    category: "residential",
+    description: "Traditional home with modern conveniences and landscaped gardens.",
+    challenge: "Blending traditional architecture with modern functionality.",
+    solution: "Thoughtful design integration of classic and contemporary elements.",
+    completion: "Perfect harmony of old-world charm and modern living.",
+    tags: ["Traditional", "Residential", "Garden Design"]
+  },
+  {
+    id: 11,
+    title: "Gledswood Hills Residence",
+    category: "residential",
+    description: "Executive home with premium finishes and smart home technology.",
+    challenge: "Integrating advanced technology with traditional construction.",
+    solution: "Careful planning and coordination with technology specialists.",
+    completion: "Future-ready home with seamless technology integration.",
+    tags: ["Executive", "Residential", "Smart Home"]
+  },
+
+  // Fit-out Projects
+  {
+    id: 12,
+    title: "Arndell Park Fit-out",
+    category: "fitout",
+    description: "Complete commercial office fit-out with modern workplace design.",
+    challenge: "Creating flexible workspace within existing building constraints.",
+    solution: "Innovative space planning and modular design elements.",
+    completion: "Dynamic workspace that adapts to changing business needs.",
+    tags: ["Office", "Fit-out", "Workspace Design"]
+  },
+  {
+    id: 13,
+    title: "Eastern Creek Fit-out",
+    category: "fitout",
+    description: "Industrial facility fit-out for manufacturing operations.",
+    challenge: "Meeting specialized equipment requirements and safety standards.",
+    solution: "Custom solutions for equipment installation and workflow optimization.",
+    completion: "Optimized facility layout improving operational efficiency.",
+    tags: ["Industrial", "Fit-out", "Manufacturing"]
+  },
+  {
+    id: 14,
+    title: "The Bond Level 6 Fit-out",
+    category: "fitout",
+    description: "Premium office fit-out in prestigious commercial building.",
+    challenge: "Working within heritage building constraints and regulations.",
+    solution: "Sympathetic design approach respecting building character.",
+    completion: "Elegant office space that honors building heritage.",
+    tags: ["Premium", "Fit-out", "Heritage"]
+  },
+  {
+    id: 15,
+    title: "The Bond Level 4 Fit-out",
+    category: "fitout",
+    description: "Modern office space with collaborative work areas and breakout zones.",
+    challenge: "Maximizing natural light and creating open feel.",
+    solution: "Strategic use of glass partitions and open-plan design.",
+    completion: "Bright, airy workspace promoting collaboration and productivity.",
+    tags: ["Modern", "Fit-out", "Collaborative"]
+  },
+  {
+    id: 16,
+    title: "The Bond Level 3 Fit-out",
+    category: "fitout",
+    description: "Executive office suites with premium finishes and private amenities.",
+    challenge: "Creating privacy while maintaining connection to building amenities.",
+    solution: "Sophisticated layout with discrete access and luxury finishes.",
+    completion: "Executive workspace setting new standards for business luxury.",
+    tags: ["Executive", "Fit-out", "Luxury"]
+  },
+  {
+    id: 17,
+    title: "Kings Street Sydney CBD Level 9",
+    category: "fitout",
+    description: "High-end corporate office with harbor views and premium amenities.",
+    challenge: "Working at height in busy CBD location with strict access restrictions.",
+    solution: "Careful logistics planning and specialized equipment for high-rise work.",
+    completion: "Prestigious office space maximizing harbor views and natural light.",
+    tags: ["Corporate", "Fit-out", "CBD", "High-rise"]
+  },
+  {
+    id: 18,
+    title: "Rouse Hill Office",
+    category: "fitout",
+    description: "Modern office project featuring clean, white contemporary design.",
+    challenge: "Achieving pristine white aesthetic while maintaining functionality.",
+    solution: "Precision construction techniques and premium white finishes.",
+    completion: "Stunning white office space that photographs beautifully.",
+    tags: ["Modern", "Fit-out", "Contemporary", "White Design"]
+  },
+  {
+    id: 19,
+    title: "Retail Fit-out Randwick",
+    category: "fitout",
+    description: "Contemporary retail space designed to enhance customer experience.",
+    challenge: "Creating attractive retail environment within tight timeline.",
+    solution: "Efficient project delivery with focus on customer flow and display.",
+    completion: "Engaging retail space that drives customer engagement and sales.",
+    tags: ["Retail", "Fit-out", "Customer Experience"]
+  },
+  {
+    id: 20,
+    title: "Retail Fit-out Cronulla",
+    category: "fitout",
+    description: "Coastal-inspired retail space reflecting local beach culture.",
+    challenge: "Incorporating coastal themes while meeting retail functionality needs.",
+    solution: "Creative use of materials and colors reflecting seaside location.",
+    completion: "Unique retail environment that captures coastal lifestyle perfectly.",
+    tags: ["Retail", "Fit-out", "Coastal", "Lifestyle"]
+  },
+  {
+    id: 21,
+    title: "Medical Fit-out The Bond 4.10",
+    category: "fitout",
+    description: "Specialized medical practice fit-out with advanced equipment integration.",
+    challenge: "Meeting strict medical facility regulations and infection control standards.",
+    solution: "Specialized medical construction techniques and compliant materials.",
+    completion: "State-of-the-art medical facility exceeding industry standards.",
+    tags: ["Medical", "Fit-out", "Healthcare", "Compliance"]
+  },
+  {
+    id: 22,
+    title: "Hills Kebab Restaurant",
+    category: "fitout",
+    description: "Complete restaurant fit-out with commercial kitchen and dining areas.",
+    challenge: "Integrating complex kitchen equipment within compact space.",
+    solution: "Efficient kitchen design maximizing workflow and customer seating.",
+    completion: "Fully operational restaurant ready for high-volume service.",
+    tags: ["Restaurant", "Fit-out", "Commercial Kitchen"]
+  },
+  {
+    id: 23,
+    title: "Cuppa Coffee Cafe",
+    category: "fitout",
+    description: "Cozy cafe fit-out designed to create welcoming community atmosphere.",
+    challenge: "Creating intimate cafe atmosphere while meeting commercial requirements.",
+    solution: "Warm materials and lighting design promoting customer comfort.",
+    completion: "Inviting cafe space that has become a local community hub.",
+    tags: ["Cafe", "Fit-out", "Community", "Hospitality"]
   }
 ];
 
@@ -95,7 +270,7 @@ const Projects = () => {
             >
               <h1 className="text-4xl md:text-5xl font-bold mb-4">Our Projects</h1>
               <p className="text-xl text-blue-200 max-w-3xl mx-auto">
-                Showcasing our expertise across residential, commercial and remediation projects.
+                Showcasing our expertise across residential, commercial and fit-out construction projects.
               </p>
             </motion.div>
           </div>
@@ -109,7 +284,7 @@ const Projects = () => {
                 { id: "all", label: "All Projects" },
                 { id: "residential", label: "Residential" },
                 { id: "commercial", label: "Commercial" },
-                { id: "remediation", label: "Remediation" }
+                { id: "fitout", label: "Fit-out" }
               ].map((category) => (
                 <Button
                   key={category.id}
