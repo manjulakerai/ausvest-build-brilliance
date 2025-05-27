@@ -39,7 +39,7 @@ const Services = () => {
         {/* Services Overview */}
         <section className="py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid md:grid-cols-3 gap-8 mb-16">
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
               <ServiceCard
                 icon="building"
                 color="bg-blue-100"
@@ -65,6 +65,15 @@ const Services = () => {
                 description="Expert fit-out services transforming commercial and retail spaces with premium finishes and custom solutions."
                 delay={0.6}
                 linkTo="/services/commercial-construction"
+              />
+
+              <ServiceCard
+                icon="hammer"
+                color="bg-amber-100" 
+                title="Fit-out Carpentry"
+                description="Precision custom carpentry for commercial and retail fit-outs, creating bespoke solutions with exceptional craftsmanship."
+                delay={0.8}
+                linkTo="/services/fit-out-carpentry"
               />
             </div>
           </div>
