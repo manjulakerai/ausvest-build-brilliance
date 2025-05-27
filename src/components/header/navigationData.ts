@@ -2,7 +2,7 @@
 export const servicePages = [
   { name: 'Luxury Home Construction', link: '/services/luxury-home-construction' },
   { name: 'Commercial Construction', link: '/services/commercial-construction' },
-  { name: 'Fit-out Construction', link: '/services/commercial-construction' },
+  { name: 'Fit-out Construction', link: '/services/fitout-construction' },
 ];
 
 export const navItems = [

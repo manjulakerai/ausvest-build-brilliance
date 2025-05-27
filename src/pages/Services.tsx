@@ -62,9 +62,9 @@ const Services = () => {
                 icon="tools"
                 color="bg-purple-100" 
                 title="Fit-out Construction"
-                description="Expert fit-out services transforming commercial and retail spaces with premium finishes and custom solutions."
+                description="Expert fit-out services and custom carpentry transforming commercial and retail spaces with premium finishes."
                 delay={0.6}
-                linkTo="/services/commercial-construction"
+                linkTo="/services/fitout-construction"
               />
             </div>
           </div>
