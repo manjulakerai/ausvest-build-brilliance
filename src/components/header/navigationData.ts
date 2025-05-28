@@ -1,13 +1,13 @@
 
 export const servicePages = [
-  { name: 'Luxury Home Construction', link: '/services/luxury-home-construction' },
-  { name: 'Commercial Construction', link: '/services/commercial-construction' },
+  { name: 'Luxury Home Construction', link: '/luxury-home-builders/' },
+  { name: 'Commercial Construction', link: '/retail-commercial-services/' },
   { name: 'Fit-out Construction', link: '/services/fitout-construction' },
 ];
 
 export const navItems = [
-  { name: 'About', link: '/about' },
-  { name: 'Projects', link: '/projects' },
+  { name: 'About', link: '/about-us/' },
+  { name: 'Projects', link: '/projects/' },
   { name: 'Team', link: '/team' },
-  { name: 'Contact', link: '/contact' },
+  { name: 'Contact', link: '/contact-us/' },
 ];

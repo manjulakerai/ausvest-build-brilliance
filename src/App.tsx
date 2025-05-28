@@ -12,6 +12,7 @@ import About from "./pages/About";
 import Team from "./pages/Team";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 
 // Service Pages
 import LuxuryHomeConstruction from "./pages/services/LuxuryHomeConstruction";
@@ -45,17 +46,18 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/services" element={<Services />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/about" element={<About />} />
+          <Route path="/projects/" element={<Projects />} />
+          <Route path="/about-us/" element={<About />} />
           <Route path="/team" element={<Team />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/contact-us/" element={<Contact />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           
-          {/* Service Pages */}
-          <Route path="/services/luxury-home-construction" element={<LuxuryHomeConstruction />} />
+          {/* Service Pages with SEO-friendly slugs */}
+          <Route path="/luxury-home-builders/" element={<LuxuryHomeConstruction />} />
+          <Route path="/retail-commercial-services/" element={<CommercialConstruction />} />
           <Route path="/services/duplex-construction" element={<DuplexConstruction />} />
           <Route path="/services/multi-home-construction" element={<MultiHomeConstruction />} />
           <Route path="/services/home-renovation" element={<HomeRenovation />} />
-          <Route path="/services/commercial-construction" element={<CommercialConstruction />} />
           <Route path="/services/fitout-construction" element={<FitoutConstruction />} />
           <Route path="/services/maintenance-services" element={<MaintenanceServices />} />
           

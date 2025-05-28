@@ -59,7 +59,7 @@ const LuxuryHomeConstruction = () => {
                   "At Ausvest, we take pride in our work culture that ensures efficient communication between you & our team. This communication approach allows us to deliver 100% satisfaction with every project we complete."
                 ]}
                 buttonText="Contact Us"
-                buttonLink="/contact"
+                buttonLink="/contact-us/"
                 featureList={
                   <FeatureList 
                     features={luxuryFeatures}
@@ -112,7 +112,7 @@ const LuxuryHomeConstruction = () => {
         title="Ready to Build Your Dream Luxury Home?"
         description="Let us create a stunning residence that exceeds your expectations"
         buttonText="Schedule a Consultation"
-        buttonLink="/contact"
+        buttonLink="/contact-us/"
         buttonColor="bg-[#3b62c0] hover:bg-blue-700"
       />
     </ServicePageLayout>

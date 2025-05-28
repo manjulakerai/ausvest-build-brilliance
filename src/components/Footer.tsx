@@ -43,10 +43,10 @@ const Footer = () => {
               Company
             </h4>
             <div className="space-y-2 text-gray-400">
-              <Link to="/about" className="block hover:text-white transition-colors">About Us</Link>
+              <Link to="/about-us/" className="block hover:text-white transition-colors">About Us</Link>
               <Link to="/team" className="block hover:text-white transition-colors">Our Team</Link>
-              <Link to="/projects" className="block hover:text-white transition-colors">Projects</Link>
-              <Link to="/contact" className="block hover:text-white transition-colors">Contact</Link>
+              <Link to="/projects/" className="block hover:text-white transition-colors">Projects</Link>
+              <Link to="/contact-us/" className="block hover:text-white transition-colors">Contact</Link>
             </div>
           </div>
           <div>
@@ -65,8 +65,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center text-gray-500">
           <p>&copy; {currentYear} Ausvest Projects. All rights reserved.</p>
           <div className="flex space-x-4 mt-4 md:mt-0">
-            <Link to="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
-            <Link to="/terms" className="hover:text-white transition-colors">Terms of Service</Link>
+            <Link to="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link>
           </div>
         </div>
       </div>

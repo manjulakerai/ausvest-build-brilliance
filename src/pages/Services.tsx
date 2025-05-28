@@ -46,7 +46,7 @@ const Services = () => {
                 title="Luxury Home Construction"
                 description="Custom-designed luxury residences with premium finishes and exceptional attention to detail, built to exacting standards."
                 delay={0.2}
-                linkTo="/services/luxury-home-construction"
+                linkTo="/luxury-home-builders/"
               />
               
               <ServiceCard
@@ -55,7 +55,7 @@ const Services = () => {
                 title="Commercial Construction"
                 description="Premium commercial construction projects including office buildings, retail spaces, and specialized commercial facilities."
                 delay={0.4}
-                linkTo="/services/commercial-construction"
+                linkTo="/retail-commercial-services/"
               />
               
               <ServiceCard
