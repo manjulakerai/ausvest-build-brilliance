@@ -10,23 +10,25 @@ const projectsData = [
   // Commercial Projects
   {
     id: 1,
-    title: "Doonside Child Care",
+    title: "Little Zak's Academy Doonside",
     category: "commercial",
     description: "Modern child care facility designed for safety and educational excellence.",
     challenge: "Creating a safe, engaging environment while meeting strict childcare regulations.",
     solution: "Innovative design with secure play areas and natural lighting throughout.",
     completion: "Delivered a state-of-the-art facility that exceeded safety standards.",
-    tags: ["Childcare", "Commercial", "Educational"]
+    tags: ["Childcare", "Commercial", "Educational"],
+    image: "/lovable-uploads/1697af16-76eb-428e-8c43-92650d913eef.png"
   },
   {
     id: 2,
-    title: "Little Zacs Blakehurst",
+    title: "Little Zak's Academy Blakehurst",
     category: "commercial",
-    description: "Complete construction of a new Little Zacs childcare center.",
+    description: "Complete construction of a new Little Zaks childcare center.",
     challenge: "Tight construction timeline to meet enrollment deadlines.",
     solution: "Efficient project management with parallel construction phases.",
     completion: "Opened on schedule with full enrollment capacity.",
-    tags: ["Childcare", "Commercial", "New Build"]
+    tags: ["Childcare", "Commercial", "New Build"],
+    image: "/lovable-uploads/77ba38ef-d2b7-48ad-b84b-0a98bf67f8dc.png"
   },
   {
     id: 3,
@@ -230,7 +232,8 @@ const projectsData = [
     challenge: "Integrating complex kitchen equipment within compact space.",
     solution: "Efficient kitchen design maximizing workflow and customer seating.",
     completion: "Fully operational restaurant ready for high-volume service.",
-    tags: ["Restaurant", "Fit-out", "Commercial Kitchen"]
+    tags: ["Restaurant", "Fit-out", "Commercial Kitchen"],
+    image: "/lovable-uploads/8fc6745f-a958-47b6-bbc7-d0a414f220ea.png"
   },
   {
     id: 23,
@@ -310,10 +313,18 @@ const Projects = () => {
                   transition={{ duration: 0.6, delay: index % 3 * 0.2 }}
                 >
                   <Card className="h-full border-0 shadow-lg overflow-hidden hover:shadow-xl transition-all">
-                    <div className="bg-gray-200 aspect-video flex items-center justify-center">
-                      <p className="text-gray-500 text-center p-4">
-                        [Suggested image: Photo of {project.title}]
-                      </p>
+                    <div className="bg-gray-200 aspect-video flex items-center justify-center overflow-hidden">
+                      {project.image ? (
+                        <img 
+                          src={project.image} 
+                          alt={project.title}
+                          className="w-full h-full object-cover"
+                        />
+                      ) : (
+                        <p className="text-gray-500 text-center p-4">
+                          [Suggested image: Photo of {project.title}]
+                        </p>
+                      )}
                     </div>
                     <CardContent className="p-6">
                       <div className="flex gap-2 mb-3 flex-wrap">
