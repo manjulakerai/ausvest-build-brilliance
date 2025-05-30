@@ -1,4 +1,3 @@
-
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
@@ -105,8 +104,8 @@ const projectsData = [
     id: 10,
     title: "Gledswood Hills Residence",
     category: "residential",
-    description: "Traditional home with modern conveniences and landscaped gardens.",
-    challenge: "Blending traditional architecture with modern functionality.",
+    description: "Luxury home with modern conveniences and landscaped gardens.",
+    challenge: "Blending luxury architecture with modern functionality.",
     solution: "Thoughtful design integration of classic and contemporary elements.",
     completion: "Perfect harmony of old-world charm and modern living.",
     tags: ["Traditional", "Residential", "Garden Design"]
