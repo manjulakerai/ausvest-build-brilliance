@@ -1,4 +1,3 @@
-
 import { motion } from "framer-motion";
 import ServicePageLayout from "@/components/layouts/ServicePageLayout";
 import ServiceHero from "@/components/services/ServiceHero";
@@ -53,11 +52,11 @@ const CommercialConstruction = () => {
               <ContentBlock
                 tagText="Commercial Excellence"
                 tagColor="bg-amber-50 text-amber-600"
-                title="RETAIL & COMMERCIAL CONSTRUCTION"
+                title="COMMERCIAL CONSTRUCTION"
                 accentColor="bg-amber-600"
                 description={[
-                  "Ausvest has delivered some of the top-rated Retail & Commercial projects throughout Sydney, Bella Vista, & Orange. Our team of experts with a collective experience of more than 20 years ensures that your every project is executed with perfection & precision.",
-                  "We specialize in Commercial & Retail Construction, offering premium-quality, long-term commercial construction solutions. Our fully tailored & professional services cover everything from site clearance to final execution, with a commitment to 100% client satisfaction on every project."
+                  "Ausvest has delivered some of the top-rated Commercial projects throughout Sydney, Bella Vista, & Orange. Our team of experts with a collective experience of more than 20 years ensures that your every project is executed with perfection & precision.",
+                  "We specialize in Commercial Construction, offering premium-quality, long-term commercial construction solutions. Our fully tailored & professional services cover everything from site clearance to final execution, with a commitment to 100% client satisfaction on every project."
                 ]}
                 buttonText="Discuss Your Commercial Project"
                 buttonLink="/contact"

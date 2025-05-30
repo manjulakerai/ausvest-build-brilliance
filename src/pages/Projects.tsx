@@ -48,7 +48,8 @@ const projectsData = [
     challenge: "Maintaining food safety standards during construction.",
     solution: "Strict contamination protocols and specialised equipment installation.",
     completion: "Enhanced production capacity while maintaining quality standards.",
-    tags: ["Manufacturing", "Commercial", "Food Safety"]
+    tags: ["Manufacturing", "Commercial", "Food Safety"],
+    image: "/lovable-uploads/06a98571-87bb-4d7d-808e-bf1dbaa476fe.png"
   },
   {
     id: 5,
