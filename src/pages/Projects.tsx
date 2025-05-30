@@ -5,7 +5,6 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import ProjectGallery from "@/components/team/ProjectGallery";
 
 // Sample project data - would be replaced with actual project data
 const projectsData = [
@@ -44,9 +43,9 @@ const projectsData = [
     id: 4,
     title: "Lindt Factory Upgrade",
     category: "commercial",
-    description: "Specialized facility upgrade for chocolate manufacturing operations.",
+    description: "Specialised facility upgrade for chocolate manufacturing operations.",
     challenge: "Maintaining food safety standards during construction.",
-    solution: "Strict contamination protocols and specialized equipment installation.",
+    solution: "Strict contamination protocols and specialised equipment installation.",
     completion: "Enhanced production capacity while maintaining quality standards.",
     tags: ["Manufacturing", "Commercial", "Food Safety"]
   },
@@ -104,7 +103,7 @@ const projectsData = [
   },
   {
     id: 10,
-    title: "Riverstone Residence",
+    title: "Gledswood Hills Residence",
     category: "residential",
     description: "Traditional home with modern conveniences and landscaped gardens.",
     challenge: "Blending traditional architecture with modern functionality.",
@@ -114,7 +113,7 @@ const projectsData = [
   },
   {
     id: 11,
-    title: "Gledswood Hills Residence",
+    title: "Riverstone Residence",
     category: "residential",
     description: "Executive home with premium finishes and smart home technology.",
     challenge: "Integrating advanced technology with traditional construction.",
@@ -139,7 +138,7 @@ const projectsData = [
     title: "Eastern Creek Fit-out",
     category: "fitout",
     description: "Industrial facility fit-out for manufacturing operations.",
-    challenge: "Meeting specialized equipment requirements and safety standards.",
+    challenge: "Meeting specialised equipment requirements and safety standards.",
     solution: "Custom solutions for equipment installation and workflow optimization.",
     completion: "Optimized facility layout improving operational efficiency.",
     tags: ["Industrial", "Fit-out", "Manufacturing"]
@@ -149,9 +148,9 @@ const projectsData = [
     title: "The Bond Level 6 Fit-out",
     category: "fitout",
     description: "Premium office fit-out in prestigious commercial building.",
-    challenge: "Working within heritage building constraints and regulations.",
+    challenge: "Working within sustainable building constraints and regulations.",
     solution: "Sympathetic design approach respecting building character.",
-    completion: "Elegant office space that honors building heritage.",
+    completion: "Elegant office space that honours building energy efficiency.",
     tags: ["Premium", "Fit-out", "Heritage"]
   },
   {
@@ -180,7 +179,7 @@ const projectsData = [
     category: "fitout",
     description: "High-end corporate office with harbor views and premium amenities.",
     challenge: "Working at height in busy CBD location with strict access restrictions.",
-    solution: "Careful logistics planning and specialized equipment for high-rise work.",
+    solution: "Careful logistics planning and specialised equipment for high-rise work.",
     completion: "Prestigious office space maximizing harbor views and natural light.",
     tags: ["Corporate", "Fit-out", "CBD", "High-rise"]
   },
@@ -218,9 +217,9 @@ const projectsData = [
     id: 21,
     title: "Medical Fit-out The Bond 4.10",
     category: "fitout",
-    description: "Specialized medical practice fit-out with advanced equipment integration.",
+    description: "Specialised medical practice fit-out with advanced equipment integration.",
     challenge: "Meeting strict medical facility regulations and infection control standards.",
-    solution: "Specialized medical construction techniques and compliant materials.",
+    solution: "Specialised medical construction techniques and compliant materials.",
     completion: "State-of-the-art medical facility exceeding industry standards.",
     tags: ["Medical", "Fit-out", "Healthcare", "Compliance"]
   },
@@ -352,9 +351,6 @@ const Projects = () => {
             </div>
           </div>
         </section>
-
-        {/* Portfolio Section */}
-        <ProjectGallery />
       </div>
       <Footer />
     </div>

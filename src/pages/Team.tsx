@@ -5,7 +5,6 @@ import Footer from "@/components/Footer";
 import TeamHero from "@/components/team/TeamHero";
 import LeadershipTeam from "@/components/team/LeadershipTeam";
 import CoreTeam from "@/components/team/CoreTeam";
-import ProjectGallery from "@/components/team/ProjectGallery";
 
 const Team = () => {
   useEffect(() => {
@@ -21,7 +20,6 @@ const Team = () => {
         <TeamHero />
         <LeadershipTeam />
         <CoreTeam />
-        <ProjectGallery />
       </div>
       <Footer />
     </div>

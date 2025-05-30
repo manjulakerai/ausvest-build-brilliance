@@ -15,15 +15,6 @@ interface TeamMember {
 const TeamSection = () => {
   const directors: TeamMember[] = [
     {
-      initials: "MP",
-      name: "Manish Pindoria",
-      position: "Construction Manager",
-      description: "Expert in contract management, costing, and fit-out delivery. Manish brings precision and efficiency to every project, from residential builds to complex commercial fitouts.",
-      projects: ["Toongabbie Townhouses", "Sunboost Office Fitout", "Multiple Commercial Projects"],
-      color: "bg-blue-100",
-      textColor: "text-blue-600"
-    },
-    {
       initials: "AB",
       name: "Andrew Beard",
       position: "Director",
@@ -31,6 +22,15 @@ const TeamSection = () => {
       projects: ["St Lukes School Project", "Wentworthville Public School", "Norwest Private Hospital"],
       color: "bg-indigo-100",
       textColor: "text-indigo-600"
+    },
+    {
+      initials: "MP",
+      name: "Manish Pindoria",
+      position: "Construction Manager",
+      description: "Expert in contract management, costing, and fit-out delivery. Manish brings precision and efficiency to every project, from residential builds to complex commercial fitouts.",
+      projects: ["Multiple Residential Projects", "Sunboost Office Fitout", "Multiple Commercial Projects"],
+      color: "bg-blue-100",
+      textColor: "text-blue-600"
     }
   ];
 

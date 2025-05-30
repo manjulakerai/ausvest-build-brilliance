@@ -15,16 +15,6 @@ interface Director {
 
 const directors: Director[] = [
   {
-    initials: "MP",
-    name: "Manish Pindoria",
-    position: "Managing Director",
-    description: "Expert in contract management, costing, and fit-out delivery. Manish brings precision and efficiency to every project, from residential builds to complex commercial fitouts.",
-    projects: ["Toongabbie Townhouses", "Sunboost Office Fitout", "Multiple Commercial Projects"],
-    color: "bg-blue-100",
-    textColor: "text-blue-600",
-    bio: "With over 15 years of experience in the construction industry, Manish has developed a reputation for meticulous planning and efficient project delivery. His background in quantity surveying gives him unique insight into cost management and value engineering, ensuring clients receive maximum value without compromising on quality. Manish leads our commercial division and specializes in complex fitouts where minimal disruption to business operations is essential."
-  },
-  {
     initials: "AB",
     name: "Andrew Beard",
     position: "Director",
@@ -32,7 +22,17 @@ const directors: Director[] = [
     projects: ["St Lukes School Project", "Wentworthville Public School", "Norwest Private Hospital"],
     color: "bg-indigo-100",
     textColor: "text-indigo-600",
-    bio: "Andrew brings over 20 years of construction management experience to Ausvest Projects, with particular expertise in educational, government, and institutional projects. His commitment to safety and compliance has established Ausvest as a trusted partner for projects with strict regulatory requirements. Andrew oversees our residential division and remediation projects, with a focus on delivering outstanding quality and client satisfaction in even the most challenging situations."
+    bio: "Andrew brings over 20 years of construction management experience to Ausvest Projects, with particular expertise in educational, government, and institutional projects. His commitment to safety and compliance has established Ausvest as a trusted partner for projects with strict regulatory requirements. Andrew leads our commercial division and specialises in complex projects where minimal disruption to business operations is essential."
+  },
+  {
+    initials: "MP",
+    name: "Manish Pindoria",
+    position: "Managing Director",
+    description: "Expert in contract management, costing, and fit-out delivery. Manish brings precision and efficiency to every project, from residential builds to complex commercial fitouts.",
+    projects: ["Multiple Residential Projects", "Sunboost Office Fitout", "Multiple Commercial Projects"],
+    color: "bg-blue-100",
+    textColor: "text-blue-600",
+    bio: "With over 10 years of experience in the construction industry, Manish has developed a reputation for meticulous planning and efficient project delivery. His background in quantity surveying gives him unique insight into cost management and value engineering, ensuring clients receive maximum value without compromising on quality. Manish leads our residential division and oversees our commercial division, with a focus on delivering outstanding quality and client satisfaction in even the most challenging situations."
   }
 ];
 
