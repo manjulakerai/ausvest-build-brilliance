@@ -1,3 +1,4 @@
+
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
@@ -5,13 +6,14 @@ import { Card, CardContent } from "@/components/ui/card";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-// Sample project data - would be replaced with actual project data
+// Updated project data with new categories
 const projectsData = [
-  // Commercial Projects
+  // Commercial Projects - Child Care & Education
   {
     id: 1,
-    title: "Little Zak's Academy Doonside",
+    title: "Doonside Child Care",
     category: "commercial",
+    subcategory: "childcare-education",
     description: "Modern child care facility designed for safety and educational excellence.",
     challenge: "Creating a safe, engaging environment while meeting strict childcare regulations.",
     solution: "Innovative design with secure play areas and natural lighting throughout.",
@@ -21,9 +23,10 @@ const projectsData = [
   },
   {
     id: 2,
-    title: "Little Zak's Academy Blakehurst",
+    title: "Little Zac's, Blakehurst",
     category: "commercial",
-    description: "Complete construction of a new Little Zaks childcare center.",
+    subcategory: "childcare-education",
+    description: "Complete construction of a new Little Zacs childcare center.",
     challenge: "Tight construction timeline to meet enrollment deadlines.",
     solution: "Efficient project management with parallel construction phases.",
     completion: "Opened on schedule with full enrollment capacity.",
@@ -32,8 +35,22 @@ const projectsData = [
   },
   {
     id: 3,
+    title: "South Creek Public School Upgrade",
+    category: "commercial",
+    subcategory: "childcare-education",
+    description: "Comprehensive upgrade of educational facilities and infrastructure.",
+    challenge: "Working around school operations and student safety.",
+    solution: "Careful scheduling with major works during holiday periods.",
+    completion: "Modernized facilities ready for new term with improved learning spaces.",
+    tags: ["Education", "Commercial", "Upgrade"]
+  },
+
+  // Commercial Projects - Industrial & Commercial Upgrades
+  {
+    id: 4,
     title: "Jilliby Warehouse",
     category: "commercial",
+    subcategory: "industrial-commercial",
     description: "Large-scale warehouse facility for logistics and distribution.",
     challenge: "Managing complex logistics during construction in operational area.",
     solution: "Phased construction approach to minimize business disruption.",
@@ -41,9 +58,10 @@ const projectsData = [
     tags: ["Warehouse", "Commercial", "Logistics"]
   },
   {
-    id: 4,
+    id: 5,
     title: "Lindt Factory Upgrade",
     category: "commercial",
+    subcategory: "industrial-commercial",
     description: "Specialised facility upgrade for chocolate manufacturing operations.",
     challenge: "Maintaining food safety standards during construction.",
     solution: "Strict contamination protocols and specialised equipment installation.",
@@ -52,19 +70,10 @@ const projectsData = [
     image: "/lovable-uploads/06a98571-87bb-4d7d-808e-bf1dbaa476fe.png"
   },
   {
-    id: 5,
-    title: "South Creek Public School Upgrade",
-    category: "commercial",
-    description: "Comprehensive upgrade of educational facilities and infrastructure.",
-    challenge: "Working around school operations and student safety.",
-    solution: "Careful scheduling with major works during holiday periods.",
-    completion: "Modernized facilities ready for new term with improved learning spaces.",
-    tags: ["Education", "Commercial", "Upgrade"]
-  },
-  {
     id: 6,
     title: "Metro Tempe Service Station Upgrade",
     category: "commercial",
+    subcategory: "industrial-commercial",
     description: "Complete modernization of service station facilities and forecourt.",
     challenge: "Maintaining fuel sales during construction period.",
     solution: "Strategic phasing to keep essential services operational.",
@@ -75,8 +84,9 @@ const projectsData = [
   // Residential Projects
   {
     id: 7,
-    title: "Kings Park Residence",
+    title: "Kings Park",
     category: "residential",
+    subcategory: "residential",
     description: "Luxury family home with modern amenities and premium finishes.",
     challenge: "Balancing luxury features within budget constraints.",
     solution: "Strategic material selection and efficient construction methods.",
@@ -85,8 +95,9 @@ const projectsData = [
   },
   {
     id: 8,
-    title: "Girraween Residence",
+    title: "Girraween",
     category: "residential",
+    subcategory: "residential",
     description: "Contemporary home design with sustainable building practices.",
     challenge: "Incorporating eco-friendly features while maintaining aesthetics.",
     solution: "Innovative green building techniques and sustainable materials.",
@@ -95,8 +106,9 @@ const projectsData = [
   },
   {
     id: 9,
-    title: "Kellyville Residence",
+    title: "Kellyville",
     category: "residential",
+    subcategory: "residential",
     description: "Modern family home with open-plan living and outdoor entertainment areas.",
     challenge: "Maximizing space on a compact suburban lot.",
     solution: "Clever design solutions and multi-functional spaces.",
@@ -105,30 +117,33 @@ const projectsData = [
   },
   {
     id: 10,
-    title: "Gledswood Hills Residence",
+    title: "Riverstone",
     category: "residential",
-    description: "Luxury home with modern conveniences and landscaped gardens.",
-    challenge: "Blending luxury architecture with modern functionality.",
-    solution: "Thoughtful design integration of classic and contemporary elements.",
-    completion: "Perfect harmony of old-world charm and modern living.",
-    tags: ["Traditional", "Residential", "Garden Design"]
-  },
-  {
-    id: 11,
-    title: "Riverstone Residence",
-    category: "residential",
+    subcategory: "residential",
     description: "Executive home with premium finishes and smart home technology.",
     challenge: "Integrating advanced technology with traditional construction.",
     solution: "Careful planning and coordination with technology specialists.",
     completion: "Future-ready home with seamless technology integration.",
     tags: ["Executive", "Residential", "Smart Home"]
   },
+  {
+    id: 11,
+    title: "Gledswood Hills",
+    category: "residential",
+    subcategory: "residential",
+    description: "Luxury home with modern conveniences and landscaped gardens.",
+    challenge: "Blending luxury architecture with modern functionality.",
+    solution: "Thoughtful design integration of classic and contemporary elements.",
+    completion: "Perfect harmony of old-world charm and modern living.",
+    tags: ["Traditional", "Residential", "Garden Design"]
+  },
 
-  // Fit-out Projects
+  // Fit-out Projects - Commercial Offices
   {
     id: 12,
-    title: "Arndell Park Fit-out",
+    title: "Arndell Park",
     category: "fitout",
+    subcategory: "commercial-offices",
     description: "Complete commercial office fit-out with modern workplace design.",
     challenge: "Creating flexible workspace within existing building constraints.",
     solution: "Innovative space planning and modular design elements.",
@@ -137,8 +152,9 @@ const projectsData = [
   },
   {
     id: 13,
-    title: "Eastern Creek Fit-out",
+    title: "Eastern Creek",
     category: "fitout",
+    subcategory: "commercial-offices",
     description: "Industrial facility fit-out for manufacturing operations.",
     challenge: "Meeting specialised equipment requirements and safety standards.",
     solution: "Custom solutions for equipment installation and workflow optimization.",
@@ -147,18 +163,20 @@ const projectsData = [
   },
   {
     id: 14,
-    title: "The Bond Level 6 Fit-out",
+    title: "The Bond – Level 3",
     category: "fitout",
-    description: "Premium office fit-out in prestigious commercial building.",
-    challenge: "Working within sustainable building constraints and regulations.",
-    solution: "Sympathetic design approach respecting building character.",
-    completion: "Elegant office space that honours building energy efficiency.",
-    tags: ["Premium", "Fit-out", "Heritage"]
+    subcategory: "commercial-offices",
+    description: "Executive office suites with premium finishes and private amenities.",
+    challenge: "Creating privacy while maintaining connection to building amenities.",
+    solution: "Sophisticated layout with discrete access and luxury finishes.",
+    completion: "Executive workspace setting new standards for business luxury.",
+    tags: ["Executive", "Fit-out", "Luxury"]
   },
   {
     id: 15,
-    title: "The Bond Level 4 Fit-out",
+    title: "The Bond – Level 4",
     category: "fitout",
+    subcategory: "commercial-offices",
     description: "Modern office space with collaborative work areas and breakout zones.",
     challenge: "Maximizing natural light and creating open feel.",
     solution: "Strategic use of glass partitions and open-plan design.",
@@ -167,18 +185,20 @@ const projectsData = [
   },
   {
     id: 16,
-    title: "The Bond Level 3 Fit-out",
+    title: "The Bond – Level 6",
     category: "fitout",
-    description: "Executive office suites with premium finishes and private amenities.",
-    challenge: "Creating privacy while maintaining connection to building amenities.",
-    solution: "Sophisticated layout with discrete access and luxury finishes.",
-    completion: "Executive workspace setting new standards for business luxury.",
-    tags: ["Executive", "Fit-out", "Luxury"]
+    subcategory: "commercial-offices",
+    description: "Premium office fit-out in prestigious commercial building.",
+    challenge: "Working within sustainable building constraints and regulations.",
+    solution: "Sympathetic design approach respecting building character.",
+    completion: "Elegant office space that honours building energy efficiency.",
+    tags: ["Premium", "Fit-out", "Heritage"]
   },
   {
     id: 17,
-    title: "Kings Street Sydney CBD Level 9",
+    title: "Kings Street, Sydney CBD – Level 9",
     category: "fitout",
+    subcategory: "commercial-offices",
     description: "High-end corporate office with harbor views and premium amenities.",
     challenge: "Working at height in busy CBD location with strict access restrictions.",
     solution: "Careful logistics planning and specialised equipment for high-rise work.",
@@ -187,18 +207,22 @@ const projectsData = [
   },
   {
     id: 18,
-    title: "Rouse Hill Office",
+    title: "Rouse Hill – "This Office White" project",
     category: "fitout",
+    subcategory: "commercial-offices",
     description: "Modern office project featuring clean, white contemporary design.",
     challenge: "Achieving pristine white aesthetic while maintaining functionality.",
     solution: "Precision construction techniques and premium white finishes.",
     completion: "Stunning white office space that photographs beautifully.",
     tags: ["Modern", "Fit-out", "Contemporary", "White Design"]
   },
+
+  // Fit-out Projects - Retail Fit-Outs
   {
     id: 19,
-    title: "Retail Fit-out Randwick",
+    title: "Randwick",
     category: "fitout",
+    subcategory: "retail",
     description: "Contemporary retail space designed to enhance customer experience.",
     challenge: "Creating attractive retail environment within tight timeline.",
     solution: "Efficient project delivery with focus on customer flow and display.",
@@ -207,28 +231,35 @@ const projectsData = [
   },
   {
     id: 20,
-    title: "Retail Fit-out Cronulla",
+    title: "Cronulla",
     category: "fitout",
+    subcategory: "retail",
     description: "Coastal-inspired retail space reflecting local beach culture.",
     challenge: "Incorporating coastal themes while meeting retail functionality needs.",
     solution: "Creative use of materials and colors reflecting seaside location.",
     completion: "Unique retail environment that captures coastal lifestyle perfectly.",
     tags: ["Retail", "Fit-out", "Coastal", "Lifestyle"]
   },
+
+  // Fit-out Projects - Medical Fit-Outs
   {
     id: 21,
-    title: "Medical Fit-out The Bond 4.10",
+    title: "The Bond – Suite 4.10",
     category: "fitout",
+    subcategory: "medical",
     description: "Specialised medical practice fit-out with advanced equipment integration.",
     challenge: "Meeting strict medical facility regulations and infection control standards.",
     solution: "Specialised medical construction techniques and compliant materials.",
     completion: "State-of-the-art medical facility exceeding industry standards.",
     tags: ["Medical", "Fit-out", "Healthcare", "Compliance"]
   },
+
+  // Fit-out Projects - Restaurant Fit-Outs
   {
     id: 22,
-    title: "Hills Kebab Restaurant",
+    title: "Hills Kebab",
     category: "fitout",
+    subcategory: "restaurant",
     description: "Complete restaurant fit-out with commercial kitchen and dining areas.",
     challenge: "Integrating complex kitchen equipment within compact space.",
     solution: "Efficient kitchen design maximizing workflow and customer seating.",
@@ -238,8 +269,9 @@ const projectsData = [
   },
   {
     id: 23,
-    title: "Cuppa Coffee Cafe",
+    title: "Cuppa Coffee Café",
     category: "fitout",
+    subcategory: "restaurant",
     description: "Cozy cafe fit-out designed to create welcoming community atmosphere.",
     challenge: "Creating intimate cafe atmosphere while meeting commercial requirements.",
     solution: "Warm materials and lighting design promoting customer comfort.",
@@ -250,10 +282,37 @@ const projectsData = [
 
 const Projects = () => {
   const [filter, setFilter] = useState("all");
+  const [subcategoryFilter, setSubcategoryFilter] = useState("all");
 
-  const filteredProjects = filter === "all" 
-    ? projectsData 
-    : projectsData.filter(project => project.category === filter);
+  const filteredProjects = projectsData.filter(project => {
+    if (filter === "all") return true;
+    if (filter !== project.category) return false;
+    if (subcategoryFilter === "all") return true;
+    return project.subcategory === subcategoryFilter;
+  });
+
+  const getSubcategories = (category: string) => {
+    if (category === "commercial") {
+      return [
+        { id: "childcare-education", label: "Child Care & Education" },
+        { id: "industrial-commercial", label: "Industrial & Commercial Upgrades" }
+      ];
+    }
+    if (category === "fitout") {
+      return [
+        { id: "commercial-offices", label: "Commercial Offices" },
+        { id: "retail", label: "Retail Fit-Outs" },
+        { id: "medical", label: "Medical Fit-Outs" },
+        { id: "restaurant", label: "Restaurant Fit-Outs" }
+      ];
+    }
+    return [];
+  };
+
+  const handleCategoryChange = (newCategory: string) => {
+    setFilter(newCategory);
+    setSubcategoryFilter("all");
+  };
 
   return (
     <div className="min-h-screen bg-white">
@@ -281,23 +340,49 @@ const Projects = () => {
         {/* Filter Controls */}
         <section className="py-8 border-b">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex flex-wrap gap-4 justify-center">
+            {/* Main category filters */}
+            <div className="flex flex-wrap gap-4 justify-center mb-6">
               {[
                 { id: "all", label: "All Projects" },
-                { id: "residential", label: "Residential" },
-                { id: "commercial", label: "Commercial" },
-                { id: "fitout", label: "Fit-out" }
+                { id: "commercial", label: "Commercial Projects" },
+                { id: "residential", label: "Residential Projects" },
+                { id: "fitout", label: "Fit-Out Projects" }
               ].map((category) => (
                 <Button
                   key={category.id}
                   variant={filter === category.id ? "default" : "outline"}
-                  onClick={() => setFilter(category.id)}
+                  onClick={() => handleCategoryChange(category.id)}
                   className={filter === category.id ? "bg-[#3b62c0]" : ""}
                 >
                   {category.label}
                 </Button>
               ))}
             </div>
+
+            {/* Subcategory filters */}
+            {filter !== "all" && filter !== "residential" && getSubcategories(filter).length > 0 && (
+              <div className="flex flex-wrap gap-2 justify-center">
+                <Button
+                  variant={subcategoryFilter === "all" ? "default" : "outline"}
+                  size="sm"
+                  onClick={() => setSubcategoryFilter("all")}
+                  className={subcategoryFilter === "all" ? "bg-[#3b62c0]" : ""}
+                >
+                  All {filter === "commercial" ? "Commercial" : "Fit-Out"}
+                </Button>
+                {getSubcategories(filter).map((subcategory) => (
+                  <Button
+                    key={subcategory.id}
+                    variant={subcategoryFilter === subcategory.id ? "default" : "outline"}
+                    size="sm"
+                    onClick={() => setSubcategoryFilter(subcategory.id)}
+                    className={subcategoryFilter === subcategory.id ? "bg-[#3b62c0]" : ""}
+                  >
+                    {subcategory.label}
+                  </Button>
+                ))}
+              </div>
+            )}
           </div>
         </section>
 
