@@ -1,3 +1,4 @@
+
 import { motion } from "framer-motion";
 import ServicePageLayout from "@/components/layouts/ServicePageLayout";
 import ServiceHero from "@/components/services/ServiceHero";
@@ -9,20 +10,35 @@ import OurProcess from "@/components/about/OurProcess";
 const CommercialConstruction = () => {
   const commercialFeatures = [
     {
-      content: "Office fit-outs & refurbishments"
+      content: "New Commercial Building Construction & Upgrades"
     },
     {
-      content: "Retail space construction"
+      content: "Industrial Facility Development"
     },
     {
-      content: "Restaurant & café construction"
+      content: "Hospitality Venue Construction"
     },
     {
-      content: "Gym & fitness center development"
+      content: "Childcare centres and medical centres"
+    },
+    {
+      content: "Structural Remediation and Compliance Rectification"
+    },
+    {
+      content: "Insurance-Related Construction and Repair Works"
     }
   ];
 
   const fitoutFeatures = [
+    {
+      content: "Office fit-outs & refurbishments"
+    },
+    {
+      content: "Retail, restaurant & café fit-outs"
+    },
+    {
+      content: "Gym & fitness centre fit-outs"
+    },
     {
       content: "Custom joinery & cabinetry"
     },
@@ -30,7 +46,7 @@ const CommercialConstruction = () => {
       content: "Premium flooring solutions"
     },
     {
-      content: "Lighting & electrical installations"
+      content: "Lighting & electrical installation"
     },
     {
       content: "Branded environmental design"
@@ -40,7 +56,7 @@ const CommercialConstruction = () => {
   return (
     <ServicePageLayout>
       <ServiceHero 
-        title="Commercial & Retail Construction"
+        title="Commercial Construction"
         description="Premium commercial construction and fit-out solutions for businesses across Sydney."
       />
 
@@ -55,23 +71,26 @@ const CommercialConstruction = () => {
                 title="COMMERCIAL CONSTRUCTION"
                 accentColor="bg-amber-600"
                 description={[
-                  "Ausvest has delivered some of the top-rated Commercial projects throughout Sydney, Bella Vista, & Orange. Our team of experts with a collective experience of more than 20 years ensures that your every project is executed with perfection & precision.",
-                  "We specialize in Commercial Construction, offering premium-quality, long-term commercial construction solutions. Our fully tailored & professional services cover everything from site clearance to final execution, with a commitment to 100% client satisfaction on every project."
+                  "Ausvest has delivered some of the most reliable commercial construction projects across Greater Sydney. With over 30 years of combined expertise, our team ensures every project is executed with accuracy, speed, and unmatched quality.",
+                  "We specialise in Commercial Construction, offering durable, high-performing solutions for businesses that demand results. From ground-up builds to structural remediation, our fully managed services are designed to keep your project running smoothly, on time and within budget."
                 ]}
                 buttonText="Discuss Your Commercial Project"
                 buttonLink="/contact"
                 featureList={
-                  <FeatureList 
-                    features={commercialFeatures}
-                    iconColor="bg-amber-600"
-                  />
+                  <div className="mb-6">
+                    <h3 className="text-lg font-semibold text-slate-900 mb-4">Our Services Include:</h3>
+                    <FeatureList 
+                      features={commercialFeatures}
+                      iconColor="bg-amber-600"
+                    />
+                  </div>
                 }
               />
             </div>
             <div className="md:col-span-2">
               <div className="bg-gray-200 rounded-md aspect-[4/3] flex items-center justify-center">
                 <p className="text-gray-500 text-center p-4">
-                  [Suggested image: Modern retail or commercial space]
+                  [Suggested image: Modern commercial construction]
                 </p>
               </div>
             </div>
@@ -94,17 +113,21 @@ const CommercialConstruction = () => {
               <ContentBlock
                 tagText="Premium Fit-Outs"
                 tagColor="bg-amber-50 text-amber-600"
-                title="FIT-OUTS"
+                title="FIT-OUT CONSTRUCTION"
                 accentColor="bg-amber-600"
                 description={[
-                  "Our fit-out specialists ensure your retail or commercial space looks pristine & presentable. We collaborate with leading architects to oversee your fit-out requirements and deliver exceptional results.",
-                  "We ensure top-quality fit-outs for restaurants, gyms, cafes, offices, and retail spaces that create the perfect environment for your business to thrive."
+                  "At Ausvest, we specialise in delivering high-quality commercial fit-out projects across Greater Sydney. With over 30 years of combined industry experience, our team ensures each space is completed with precision, professionalism, and long-term value in mind.",
+                  "We offer fully tailored fit-out solutions, managing everything from site preparation to final finishes, with a strong commitment to 100% client satisfaction.",
+                  "Our fit-out specialists work closely with leading architects and designers to transform restaurants, cafés, gyms, offices, and retail spaces into functional, stylish environments where businesses thrive."
                 ]}
                 featureList={
-                  <FeatureList 
-                    features={fitoutFeatures}
-                    iconColor="bg-amber-600"
-                  />
+                  <div className="mb-6">
+                    <h3 className="text-lg font-semibold text-slate-900 mb-4">Fit-Out Services:</h3>
+                    <FeatureList 
+                      features={fitoutFeatures}
+                      iconColor="bg-amber-600"
+                    />
+                  </div>
                 }
               />
             </div>
