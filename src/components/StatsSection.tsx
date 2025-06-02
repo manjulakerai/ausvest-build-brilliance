@@ -40,11 +40,10 @@ const StatsSection = () => {
   return (
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-12 text-center">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
           <StatItem value="500+" label="Projects Completed" delay={0.1} />
           <StatItem value="$60M+" label="Total Project Value" delay={0.2} />
           <StatItem value="15+" label="Years Experience" delay={0.3} />
-          <StatItem value="98%" label="On-Time Delivery" delay={0.4} />
         </div>
       </div>
     </section>
