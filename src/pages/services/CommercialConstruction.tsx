@@ -29,35 +29,11 @@ const CommercialConstruction = () => {
     }
   ];
 
-  const fitoutFeatures = [
-    {
-      content: "Office fit-outs & refurbishments"
-    },
-    {
-      content: "Retail, restaurant & café fit-outs"
-    },
-    {
-      content: "Gym & fitness centre fit-outs"
-    },
-    {
-      content: "Custom joinery & cabinetry"
-    },
-    {
-      content: "Premium flooring solutions"
-    },
-    {
-      content: "Lighting & electrical installation"
-    },
-    {
-      content: "Branded environmental design"
-    }
-  ];
-
   return (
     <ServicePageLayout>
       <ServiceHero 
         title="Commercial Construction"
-        description="Premium commercial construction and fit-out solutions for businesses across Sydney."
+        description="Premium commercial construction solutions for businesses across Sydney."
       />
 
       {/* Main Content */}
@@ -93,43 +69,6 @@ const CommercialConstruction = () => {
                   [Suggested image: Modern commercial construction]
                 </p>
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Fit-Out Section */}
-      <section className="py-16 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-5 gap-8 items-center">
-            <div className="md:col-span-2">
-              <div className="bg-gray-200 rounded-md aspect-[4/3] flex items-center justify-center">
-                <p className="text-gray-500 text-center p-4">
-                  [Suggested image: Premium commercial fit-out]
-                </p>
-              </div>
-            </div>
-            <div className="md:col-span-3">
-              <ContentBlock
-                tagText="Premium Fit-Outs"
-                tagColor="bg-amber-50 text-amber-600"
-                title="FIT-OUT CONSTRUCTION"
-                accentColor="bg-amber-600"
-                description={[
-                  "At Ausvest, we specialise in delivering high-quality commercial fit-out projects across Greater Sydney. With over 30 years of combined industry experience, our team ensures each space is completed with precision, professionalism, and long-term value in mind.",
-                  "We offer fully tailored fit-out solutions, managing everything from site preparation to final finishes, with a strong commitment to 100% client satisfaction.",
-                  "Our fit-out specialists work closely with leading architects and designers to transform restaurants, cafés, gyms, offices, and retail spaces into functional, stylish environments where businesses thrive."
-                ]}
-                featureList={
-                  <div className="mb-6">
-                    <h3 className="text-lg font-semibold text-slate-900 mb-4">Fit-Out Services:</h3>
-                    <FeatureList 
-                      features={fitoutFeatures}
-                      iconColor="bg-amber-600"
-                    />
-                  </div>
-                }
-              />
             </div>
           </div>
         </div>
@@ -192,7 +131,7 @@ const CommercialConstruction = () => {
 
       <ServiceCTA 
         title="Looking to Create an Exceptional Commercial Space?"
-        description="Partner with Ausvest for premium construction and fit-out services"
+        description="Partner with Ausvest for premium construction services"
         buttonText="Request Commercial Consultation"
         buttonLink="/contact"
         buttonColor="bg-amber-600 hover:bg-amber-700"

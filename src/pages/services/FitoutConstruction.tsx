@@ -10,43 +10,25 @@ import OurProcess from "@/components/about/OurProcess";
 const FitoutConstruction = () => {
   const fitoutFeatures = [
     {
+      content: "Office fit-outs & refurbishments"
+    },
+    {
+      content: "Retail, restaurant & café fit-outs"
+    },
+    {
+      content: "Gym & fitness centre fit-outs"
+    },
+    {
       content: "Custom joinery & cabinetry"
     },
     {
       content: "Premium flooring solutions"
     },
     {
-      content: "Lighting & electrical installations"
+      content: "Lighting & electrical installation"
     },
     {
       content: "Branded environmental design"
-    },
-    {
-      content: "Complete shopfitting services"
-    },
-    {
-      content: "Suspended ceiling systems"
-    }
-  ];
-
-  const carpentryFeatures = [
-    {
-      content: "Bespoke furniture design & construction"
-    },
-    {
-      content: "Custom storage solutions"
-    },
-    {
-      content: "Feature wall installations"
-    },
-    {
-      content: "Reception desk construction"
-    },
-    {
-      content: "Built-in shelving systems"
-    },
-    {
-      content: "Specialized joinery work"
     }
   ];
 
@@ -54,7 +36,7 @@ const FitoutConstruction = () => {
     <ServicePageLayout>
       <ServiceHero 
         title="Fit-out Construction"
-        description="Premium fit-out and carpentry solutions transforming commercial and retail spaces across Sydney."
+        description="Premium fit-out solutions transforming commercial and retail spaces across Sydney."
       />
 
       {/* Main Content */}
@@ -68,16 +50,20 @@ const FitoutConstruction = () => {
                 title="FIT-OUT CONSTRUCTION"
                 accentColor="bg-purple-600"
                 description={[
-                  "Our fit-out specialists ensure your retail or commercial space looks pristine & presentable. We collaborate with leading architects to oversee your fit-out requirements and deliver exceptional results.",
-                  "We ensure top-quality fit-outs for restaurants, gyms, cafes, offices, and retail spaces that create the perfect environment for your business to thrive."
+                  "At Ausvest, we specialise in delivering high-quality commercial fit-out projects across Greater Sydney. With over 30 years of combined industry experience, our team ensures each space is completed with precision, professionalism, and long-term value in mind.",
+                  "We offer fully tailored fit-out solutions, managing everything from site preparation to final finishes, with a strong commitment to 100% client satisfaction.",
+                  "Our fit-out specialists work closely with leading architects and designers to transform restaurants, cafés, gyms, offices, and retail spaces into functional, stylish environments where businesses thrive."
                 ]}
                 buttonText="Discuss Your Fit-Out Project"
                 buttonLink="/contact"
                 featureList={
-                  <FeatureList 
-                    features={fitoutFeatures}
-                    iconColor="bg-purple-600"
-                  />
+                  <div className="mb-6">
+                    <h3 className="text-lg font-semibold text-slate-900 mb-4">Fit-Out Services:</h3>
+                    <FeatureList 
+                      features={fitoutFeatures}
+                      iconColor="bg-purple-600"
+                    />
+                  </div>
                 }
               />
             </div>
@@ -92,39 +78,6 @@ const FitoutConstruction = () => {
         </div>
       </section>
 
-      {/* Carpentry Section */}
-      <section className="py-16 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-5 gap-8 items-center">
-            <div className="md:col-span-2">
-              <div className="bg-gray-200 rounded-md aspect-[4/3] flex items-center justify-center">
-                <p className="text-gray-500 text-center p-4">
-                  [Suggested image: Custom carpentry work]
-                </p>
-              </div>
-            </div>
-            <div className="md:col-span-3">
-              <ContentBlock
-                tagText="Custom Carpentry"
-                tagColor="bg-purple-50 text-purple-600"
-                title="CARPENTRY & JOINERY"
-                accentColor="bg-purple-600"
-                description={[
-                  "Our skilled carpenters create bespoke furniture and joinery solutions that perfectly complement your space. From custom reception desks to built-in storage systems, we deliver craftsmanship that combines functionality with aesthetic appeal.",
-                  "Every piece is designed and constructed to meet your specific requirements, ensuring a perfect fit and finish that enhances your business environment."
-                ]}
-                featureList={
-                  <FeatureList 
-                    features={carpentryFeatures}
-                    iconColor="bg-purple-600"
-                  />
-                }
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Our Process Section */}
       <OurProcess />
 
@@ -134,7 +87,7 @@ const FitoutConstruction = () => {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-slate-900 mb-4">Featured Fit-Out Projects</h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Our premium fit-out and carpentry portfolio across Sydney
+              Our premium fit-out portfolio across Sydney
             </p>
           </div>
 
@@ -182,7 +135,7 @@ const FitoutConstruction = () => {
 
       <ServiceCTA 
         title="Ready to Transform Your Space?"
-        description="Partner with Ausvest for premium fit-out construction and custom carpentry services"
+        description="Partner with Ausvest for premium fit-out construction services"
         buttonText="Request Fit-Out Consultation"
         buttonLink="/contact"
         buttonColor="bg-purple-600 hover:bg-purple-700"
