@@ -28,3 +28,46 @@ export const validateEnvironment = (): boolean => {
 export const getApiBaseUrl = (): string => {
   return getEnvVar('VITE_API_BASE_URL', window.location.origin);
 };
+
+// Enhanced security validation
+export const validateSecurityConfig = (): { isValid: boolean; warnings: string[] } => {
+  const warnings: string[] = [];
+  
+  // Check if we're in production
+  const isProduction = import.meta.env.PROD;
+  
+  if (isProduction) {
+    // Production-specific checks
+    if (window.location.protocol !== 'https:') {
+      warnings.push('Application should be served over HTTPS in production');
+    }
+    
+    if (!import.meta.env.VITE_API_BASE_URL) {
+      warnings.push('API base URL should be explicitly set in production');
+    }
+  }
+  
+  // Check for development flags in production
+  if (isProduction && import.meta.env.DEV) {
+    warnings.push('Development mode detected in production build');
+  }
+  
+  return {
+    isValid: warnings.length === 0,
+    warnings
+  };
+};
+
+// Initialize security validation on app start
+export const initSecurityValidation = (): void => {
+  const { isValid, warnings } = validateSecurityConfig();
+  
+  if (!isValid) {
+    console.warn('Security configuration warnings:', warnings);
+  }
+  
+  // Validate environment
+  if (!validateEnvironment()) {
+    console.warn('Environment validation failed');
+  }
+};
