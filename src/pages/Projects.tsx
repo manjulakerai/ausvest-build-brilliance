@@ -1,3 +1,4 @@
+
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
@@ -7,41 +8,41 @@ import Footer from "@/components/Footer";
 
 // Updated project data with new categories
 const projectsData = [
-  // Commercial Projects - Child Care & Education
+  // Commercial Projects - Gym & Fitness Centre Builds
   {
     id: 1,
-    title: "Doonside Child Care",
+    title: "Fitness First Doonside",
     category: "commercial",
-    subcategory: "childcare-education",
-    description: "Modern child care facility designed for safety and educational excellence.",
-    challenge: "Creating a safe, engaging environment while meeting strict childcare regulations.",
-    solution: "Innovative design with secure play areas and natural lighting throughout.",
-    completion: "Delivered a state-of-the-art facility that exceeded safety standards.",
-    tags: ["Childcare", "Commercial", "Educational"],
+    subcategory: "gym-fitness",
+    description: "Modern fitness center designed for maximum functionality and member experience.",
+    challenge: "Creating an open, motivating environment while managing acoustics and equipment placement.",
+    solution: "Strategic zoning with sound dampening materials and optimal equipment layout.",
+    completion: "Delivered a state-of-the-art fitness facility that maximizes member engagement.",
+    tags: ["Fitness", "Commercial", "Health"],
     image: "/lovable-uploads/1697af16-76eb-428e-8c43-92650d913eef.png"
   },
   {
     id: 2,
-    title: "Little Zac's, Blakehurst",
+    title: "Anytime Fitness Blakehurst",
     category: "commercial",
-    subcategory: "childcare-education",
-    description: "Complete construction of a new Little Zacs childcare center.",
-    challenge: "Tight construction timeline to meet enrollment deadlines.",
-    solution: "Efficient project management with parallel construction phases.",
-    completion: "Opened on schedule with full enrollment capacity.",
-    tags: ["Childcare", "Commercial", "New Build"],
+    subcategory: "gym-fitness",
+    description: "24/7 fitness center with advanced security and access control systems.",
+    challenge: "Implementing secure 24/7 access while maintaining safety and equipment protection.",
+    solution: "Advanced access control integration with CCTV and emergency response systems.",
+    completion: "Opened with full 24/7 operation and enhanced member security.",
+    tags: ["Fitness", "Commercial", "24/7 Access"],
     image: "/lovable-uploads/77ba38ef-d2b7-48ad-b84b-0a98bf67f8dc.png"
   },
   {
     id: 3,
-    title: "South Creek Public School Upgrade",
+    title: "F45 Training South Creek",
     category: "commercial",
-    subcategory: "childcare-education",
-    description: "Comprehensive upgrade of educational facilities and infrastructure.",
-    challenge: "Working around school operations and student safety.",
-    solution: "Careful scheduling with major works during holiday periods.",
-    completion: "Modernized facilities ready for new term with improved learning spaces.",
-    tags: ["Education", "Commercial", "Upgrade"]
+    subcategory: "gym-fitness",
+    description: "High-intensity functional training studio with specialized equipment zones.",
+    challenge: "Creating flexible space for varied workout formats and group training.",
+    solution: "Modular design with moveable equipment stations and versatile flooring.",
+    completion: "Dynamic training space ready for diverse fitness programs.",
+    tags: ["F45", "Commercial", "Functional Training"]
   },
 
   // Commercial Projects - Industrial & Commercial Upgrades
@@ -240,17 +241,17 @@ const projectsData = [
     tags: ["Retail", "Fit-out", "Coastal", "Lifestyle"]
   },
 
-  // Fit-out Projects - Medical Fit-Outs
+  // Fit-out Projects - Gym & Fitness Centre Fit-Outs
   {
     id: 21,
-    title: "The Bond – Suite 4.10",
+    title: "Plus Fitness Parramatta",
     category: "fitout",
-    subcategory: "medical",
-    description: "Specialised medical practice fit-out with advanced equipment integration.",
-    challenge: "Meeting strict medical facility regulations and infection control standards.",
-    solution: "Specialised medical construction techniques and compliant materials.",
-    completion: "State-of-the-art medical facility exceeding industry standards.",
-    tags: ["Medical", "Fit-out", "Healthcare", "Compliance"]
+    subcategory: "gym-fitness",
+    description: "Complete gym fit-out with state-of-the-art equipment and member facilities.",
+    challenge: "Maximizing equipment density while maintaining safe movement corridors.",
+    solution: "Strategic equipment placement with clear sight lines and emergency access.",
+    completion: "Fully operational fitness center with optimal member flow and safety.",
+    tags: ["Fitness", "Fit-out", "Equipment", "Safety"]
   },
 
   // Fit-out Projects - Restaurant Fit-Outs
@@ -293,7 +294,7 @@ const Projects = () => {
   const getSubcategories = (category: string) => {
     if (category === "commercial") {
       return [
-        { id: "childcare-education", label: "Child Care & Education" },
+        { id: "gym-fitness", label: "Gym & Fitness Centre Builds" },
         { id: "industrial-commercial", label: "Industrial & Commercial Upgrades" }
       ];
     }
@@ -301,7 +302,7 @@ const Projects = () => {
       return [
         { id: "commercial-offices", label: "Commercial Offices" },
         { id: "retail", label: "Retail Fit-Outs" },
-        { id: "medical", label: "Medical Fit-Outs" },
+        { id: "gym-fitness", label: "Gym & Fitness Centre Fit-Outs" },
         { id: "restaurant", label: "Restaurant Fit-Outs" }
       ];
     }
