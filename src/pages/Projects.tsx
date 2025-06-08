@@ -206,7 +206,7 @@ const projectsData = [
   },
   {
     id: 18,
-    title: "Rouse Hill – "This Office White" project",
+    title: "Rouse Hill – \"This Office White\" project",
     category: "fitout",
     subcategory: "commercial-offices",
     description: "Modern office project featuring clean, white contemporary design.",
