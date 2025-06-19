@@ -132,17 +132,6 @@ const projectsData = [
     tags: ["Executive", "Residential", "Smart Home"],
     image: "/lovable-uploads/b26da777-edb0-42fd-937a-cf0d365fff63.png"
   },
-  {
-    id: 11,
-    title: "Gledswood Hills",
-    category: "residential",
-    subcategory: "residential",
-    description: "Luxury home with modern conveniences and landscaped gardens.",
-    challenge: "Blending luxury architecture with modern functionality.",
-    solution: "Thoughtful design integration of classic and contemporary elements.",
-    completion: "Perfect harmony of old-world charm and modern living.",
-    tags: ["Traditional", "Residential", "Garden Design"]
-  },
 
   // Fit-out Projects - Commercial Offices
   {
@@ -211,17 +200,6 @@ const projectsData = [
     solution: "Careful logistics planning and specialised equipment for high-rise work.",
     completion: "Prestigious office space maximizing harbor views and natural light.",
     tags: ["Corporate", "Fit-out", "CBD", "High-rise"]
-  },
-  {
-    id: 18,
-    title: "Rouse Hill – \"This Office White\" project",
-    category: "fitout",
-    subcategory: "commercial-offices",
-    description: "Modern office project featuring clean, white contemporary design.",
-    challenge: "Achieving pristine white aesthetic while maintaining functionality.",
-    solution: "Precision construction techniques and premium white finishes.",
-    completion: "Stunning white office space that photographs beautifully.",
-    tags: ["Modern", "Fit-out", "Contemporary", "White Design"]
   },
 
   // Fit-out Projects - Retail Fit-Outs
