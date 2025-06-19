@@ -1,4 +1,3 @@
-
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
@@ -56,7 +55,8 @@ const projectsData = [
     challenge: "Managing complex logistics during construction in operational area.",
     solution: "Phased construction approach to minimize business disruption.",
     completion: "Increased storage capacity by 300% with minimal downtime.",
-    tags: ["Warehouse", "Commercial", "Logistics"]
+    tags: ["Warehouse", "Commercial", "Logistics"],
+    image: "/lovable-uploads/53798310-14a6-414b-beed-744113cec38d.png"
   },
   {
     id: 5,
