@@ -239,8 +239,7 @@ const projectsData = [
     challenge: "Integrating complex kitchen equipment within compact space.",
     solution: "Efficient kitchen design maximizing workflow and customer seating.",
     completion: "Fully operational restaurant ready for high-volume service.",
-    tags: ["Restaurant", "Fit-out", "Commercial Kitchen"],
-    image: "/lovable-uploads/8fc6745f-a958-47b6-bbc7-d0a414f220ea.png"
+    tags: ["Restaurant", "Fit-out", "Commercial Kitchen"]
   },
   {
     id: 23,
@@ -251,7 +250,8 @@ const projectsData = [
     challenge: "Creating intimate cafe atmosphere while meeting commercial requirements.",
     solution: "Warm materials and lighting design promoting customer comfort.",
     completion: "Inviting cafe space that has become a local community hub.",
-    tags: ["Cafe", "Fit-out", "Community", "Hospitality"]
+    tags: ["Cafe", "Fit-out", "Community", "Hospitality"],
+    image: "/lovable-uploads/cef296b5-180e-457f-96cf-44fc893ef3ad.png"
   }
 ];
 
