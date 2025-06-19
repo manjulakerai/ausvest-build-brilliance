@@ -129,7 +129,8 @@ const projectsData = [
     challenge: "Integrating advanced technology with traditional construction.",
     solution: "Careful planning and coordination with technology specialists.",
     completion: "Future-ready home with seamless technology integration.",
-    tags: ["Executive", "Residential", "Smart Home"]
+    tags: ["Executive", "Residential", "Smart Home"],
+    image: "/lovable-uploads/b26da777-edb0-42fd-937a-cf0d365fff63.png"
   },
   {
     id: 11,
