@@ -154,7 +154,8 @@ const projectsData = [
     challenge: "Creating flexible workspace within existing building constraints.",
     solution: "Innovative space planning and modular design elements.",
     completion: "Dynamic workspace that adapts to changing business needs.",
-    tags: ["Office", "Fit-out", "Workspace Design"]
+    tags: ["Office", "Fit-out", "Workspace Design"],
+    image: "/lovable-uploads/7ec25450-d980-4a58-8078-134f8a170185.png"
   },
   {
     id: 13,
