@@ -191,17 +191,6 @@ const projectsData = [
     completion: "Elegant office space that honours building energy efficiency.",
     tags: ["Premium", "Fit-out", "Heritage"]
   },
-  {
-    id: 17,
-    title: "Kings Street, Sydney CBD – Level 9",
-    category: "fitout",
-    subcategory: "commercial-offices",
-    description: "High-end corporate office with harbor views and premium amenities.",
-    challenge: "Working at height in busy CBD location with strict access restrictions.",
-    solution: "Careful logistics planning and specialised equipment for high-rise work.",
-    completion: "Prestigious office space maximizing harbor views and natural light.",
-    tags: ["Corporate", "Fit-out", "CBD", "High-rise"]
-  },
 
   // Fit-out Projects - Retail Fit-Outs
   {
