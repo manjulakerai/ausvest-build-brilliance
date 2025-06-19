@@ -239,7 +239,8 @@ const projectsData = [
     challenge: "Integrating complex kitchen equipment within compact space.",
     solution: "Efficient kitchen design maximizing workflow and customer seating.",
     completion: "Fully operational restaurant ready for high-volume service.",
-    tags: ["Restaurant", "Fit-out", "Commercial Kitchen"]
+    tags: ["Restaurant", "Fit-out", "Commercial Kitchen"],
+    image: "/lovable-uploads/060e63bd-846b-4147-8c98-8e9f82afb2c2.png"
   },
   {
     id: 23,
