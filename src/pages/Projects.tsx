@@ -105,8 +105,7 @@ const projectsData = [
     challenge: "Incorporating eco-friendly features while maintaining aesthetics.",
     solution: "Innovative green building techniques and sustainable materials.",
     completion: "Energy-efficient home with reduced environmental impact.",
-    tags: ["Sustainable", "Residential", "Contemporary"],
-    image: "/lovable-uploads/e69c9bc1-42a5-46b3-a110-ba7c00d2173f.png"
+    tags: ["Sustainable", "Residential", "Contemporary"]
   },
   {
     id: 9,
