@@ -41,7 +41,8 @@ const projectsData = [
     challenge: "Working around school operations and student safety.",
     solution: "Careful scheduling with major works during holiday periods.",
     completion: "Modernized facilities ready for new term with improved learning spaces.",
-    tags: ["Education", "Commercial", "Upgrade"]
+    tags: ["Education", "Commercial", "Upgrade"],
+    image: "/lovable-uploads/097b40a6-0d14-40b8-aa1a-473ce09409b6.png"
   },
 
   // Commercial Projects - Industrial & Commercial Upgrades
