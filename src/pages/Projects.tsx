@@ -155,7 +155,8 @@ const projectsData = [
     challenge: "Meeting specialised equipment requirements and safety standards.",
     solution: "Custom solutions for equipment installation and workflow optimization.",
     completion: "Optimized facility layout improving operational efficiency.",
-    tags: ["Industrial", "Fit-out", "Manufacturing"]
+    tags: ["Industrial", "Fit-out", "Manufacturing"],
+    image: "/lovable-uploads/cdac30f9-f399-4c2b-98b7-0e75a421757b.png"
   },
   {
     id: 14,
