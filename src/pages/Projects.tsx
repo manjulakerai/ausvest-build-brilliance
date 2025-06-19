@@ -117,7 +117,8 @@ const projectsData = [
     challenge: "Maximizing space on a compact suburban lot.",
     solution: "Clever design solutions and multi-functional spaces.",
     completion: "Spacious family home that maximizes every square meter.",
-    tags: ["Family Home", "Residential", "Space Optimization"]
+    tags: ["Family Home", "Residential", "Space Optimization"],
+    image: "/lovable-uploads/7685dcfe-e04a-4934-a4ef-089c7dd9d0b7.png"
   },
   {
     id: 10,
