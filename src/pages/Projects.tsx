@@ -98,7 +98,7 @@ const projectsData = [
   },
   {
     id: 8,
-    title: "Girraween",
+    title: "Kings Park 2",
     category: "residential",
     subcategory: "residential",
     description: "Contemporary home design with sustainable building practices.",
