@@ -1,3 +1,4 @@
+
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
@@ -78,7 +79,8 @@ const projectsData = [
     challenge: "Maintaining fuel sales during construction period.",
     solution: "Strategic phasing to keep essential services operational.",
     completion: "Modern facility with improved customer experience and safety.",
-    tags: ["Retail", "Commercial", "Upgrade"]
+    tags: ["Retail", "Commercial", "Upgrade"],
+    image: "/lovable-uploads/71596cb7-a2d3-49b5-8864-e3f4a2e42098.png"
   },
   
   // Residential Projects
