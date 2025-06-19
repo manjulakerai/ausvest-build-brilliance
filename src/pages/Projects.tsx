@@ -93,7 +93,8 @@ const projectsData = [
     challenge: "Balancing luxury features within budget constraints.",
     solution: "Strategic material selection and efficient construction methods.",
     completion: "Stunning family home delivered on time and within budget.",
-    tags: ["Luxury", "Residential", "Family Home"]
+    tags: ["Luxury", "Residential", "Family Home"],
+    image: "/lovable-uploads/e54b552f-9118-4bf3-adf4-377fe79c87f7.png"
   },
   {
     id: 8,
