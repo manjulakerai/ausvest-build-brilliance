@@ -7,6 +7,7 @@ import ContentBlock from "@/components/services/ContentBlock";
 import FeatureList from "@/components/services/FeatureList";
 import OurProcess from "@/components/about/OurProcess";
 import { projectsData } from "@/data/projectsData";
+import fitoutConstructionImage from "@/assets/fitout-construction.jpg";
 
 const FitoutConstruction = () => {
   const fitoutFeatures = [
@@ -69,11 +70,11 @@ const FitoutConstruction = () => {
               />
             </div>
             <div className="md:col-span-2">
-              <div className="bg-gray-200 rounded-md aspect-[4/3] flex items-center justify-center">
-                <p className="text-gray-500 text-center p-4">
-                  [Suggested image: Modern fit-out construction]
-                </p>
-              </div>
+              <img 
+                src={fitoutConstructionImage} 
+                alt="Modern fit-out construction"
+                className="w-full h-full object-cover rounded-md aspect-[4/3]"
+              />
             </div>
           </div>
         </div>

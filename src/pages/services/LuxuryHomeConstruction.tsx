@@ -6,6 +6,7 @@ import ServiceCTA from "@/components/services/ServiceCTA";
 import ContentBlock from "@/components/services/ContentBlock";
 import FeatureList from "@/components/services/FeatureList";
 import { projectsData } from "@/data/projectsData";
+import luxuryHomeImage from "@/assets/luxury-home-construction.jpg";
 
 const LuxuryHomeConstruction = () => {
   const luxuryFeatures = [
@@ -70,11 +71,11 @@ const LuxuryHomeConstruction = () => {
               />
             </div>
             <div className="md:col-span-2">
-              <div className="bg-gray-200 rounded-md aspect-[4/3] flex items-center justify-center">
-                <p className="text-gray-500 text-center p-4">
-                  [Suggested image: Luxury home with premium finishes]
-                </p>
-              </div>
+              <img 
+                src={luxuryHomeImage} 
+                alt="Luxury home with premium finishes"
+                className="w-full h-full object-cover rounded-md aspect-[4/3]"
+              />
             </div>
           </div>
         </div>
