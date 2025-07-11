@@ -26,7 +26,7 @@ const HeroSection = () => {
             style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.8), 0 0 20px rgba(0,0,0,0.5)' }}
           >
             Crafting Luxury<br />
-            <span className="text-[#6f8fda] drop-shadow-2xl" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.8), 0 0 20px rgba(0,0,0,0.5)' }}>For Over 30 Years</span>
+            <span className="text-[#3b62c0] drop-shadow-2xl" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.8), 0 0 20px rgba(0,0,0,0.5)' }}>For Over 30 Years</span>
           </motion.h1>
           
           <motion.p 
