@@ -38,95 +38,114 @@ const directors: Director[] = [
 
 const LeadershipTeam = () => {
   return (
-    <section className="py-16">
+    <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
+        <div className="text-center mb-16">
           <motion.div
             initial={{ opacity: 0, y: -20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="inline-block px-4 py-1 bg-blue-50 rounded-full text-[#3b62c0] font-medium mb-4"
+            className="inline-block px-6 py-2 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-full text-[#3b62c0] font-semibold mb-6 border border-blue-100"
           >
-            Leadership
+            Leadership Excellence
           </motion.div>
           <motion.h2
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-3xl md:text-4xl font-bold text-slate-900 mb-4"
+            className="text-4xl md:text-5xl font-bold text-slate-900 mb-6"
           >
             Our Directors
           </motion.h2>
           <motion.div
             initial={{ width: 0 }}
-            whileInView={{ width: "80px" }}
+            whileInView={{ width: "100px" }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="h-1 bg-[#3b62c0] mx-auto mb-4"
+            className="h-1.5 bg-gradient-to-r from-[#3b62c0] to-indigo-500 mx-auto mb-6 rounded-full"
           ></motion.div>
           <motion.p
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.6 }}
-            className="text-xl text-gray-600 max-w-3xl mx-auto"
+            className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed"
           >
             Industry leaders with proven track records delivering excellence across all project types.
           </motion.p>
         </div>
         
-        <div className="grid md:grid-cols-2 gap-12">
+        <div className="grid lg:grid-cols-2 gap-10">
           {directors.map((director, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.2 * index }}
+              transition={{ duration: 0.7, delay: 0.2 * index }}
+              className="group"
             >
-              <Card className="border-0 shadow-xl hover:shadow-2xl transition-all duration-300">
+              <Card className="border-0 shadow-2xl hover:shadow-3xl transition-all duration-500 overflow-hidden bg-white hover:-translate-y-2">
                 <CardContent className="p-0">
-                  <div className="grid md:grid-cols-3">
-                    <div className={`${director.color} ${director.textColor} p-8 flex flex-col items-center justify-center`}>
-                      <div className="w-32 h-32 rounded-full bg-white/80 flex items-center justify-center mb-4">
-                        <span className="text-4xl font-bold">{director.initials}</span>
+                  {/* Header Section */}
+                  <div className={`${director.color} relative overflow-hidden`}>
+                    <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent"></div>
+                    <div className="relative p-8 text-center">
+                      <div className="w-28 h-28 rounded-full bg-white/90 backdrop-blur-sm flex items-center justify-center mb-6 mx-auto shadow-lg group-hover:scale-110 transition-transform duration-300">
+                        <span className={`text-4xl font-bold ${director.textColor}`}>{director.initials}</span>
                       </div>
-                      <h3 className="text-2xl font-bold text-slate-900 text-center mb-1">{director.name}</h3>
-                      <p className="font-medium text-center mb-4">{director.position}</p>
+                      <h3 className="text-2xl font-bold text-slate-900 mb-2">{director.name}</h3>
+                      <div className="inline-block px-4 py-1 bg-white/80 backdrop-blur-sm rounded-full">
+                        <p className={`font-semibold ${director.textColor}`}>{director.position}</p>
+                      </div>
                     </div>
-                    <div className="md:col-span-2 p-8">
-                      <p className="text-gray-600 mb-6">{director.bio}</p>
-                      <div className="mb-4">
-                        <h4 className="font-semibold text-slate-900 mb-2">Key Projects:</h4>
-                        <div className="space-y-2">
-                          {director.projects.map((project, i) => (
-                            <div key={i} className="flex items-center">
-                              <div className="w-1.5 h-1.5 rounded-full bg-[#3b62c0] mr-2"></div>
-                              <span className="text-gray-600">{project}</span>
-                            </div>
-                          ))}
-                        </div>
+                  </div>
+                  
+                  {/* Content Section */}
+                  <div className="p-8">
+                    <div className="mb-8">
+                      <p className="text-gray-700 leading-relaxed text-lg">{director.bio}</p>
+                    </div>
+                    
+                    {/* Key Projects */}
+                    <div className="mb-8">
+                      <div className="flex items-center mb-4">
+                        <div className={`w-2 h-6 ${director.color} rounded-full mr-3`}></div>
+                        <h4 className="font-bold text-slate-900 text-lg">Key Projects</h4>
                       </div>
-                      <div>
-                        <h4 className="font-semibold text-slate-900 mb-2">Expertise:</h4>
-                        <div className="flex flex-wrap gap-2">
-                          {[
-                            "Project Management", 
-                            "Contract Negotiation", 
-                            "Quality Assurance",
-                            index === 0 ? "Cost Management" : "Safety Compliance",
-                            index === 0 ? "Commercial Fitouts" : "Public Projects"
-                          ].map((skill, i) => (
-                            <span 
-                              key={i} 
-                              className={`px-3 py-1 ${index === 0 ? 'bg-blue-50 text-blue-600' : 'bg-indigo-50 text-indigo-600'} text-sm font-medium rounded-full`}
-                            >
-                              {skill}
-                            </span>
-                          ))}
-                        </div>
+                      <div className="grid gap-3">
+                        {director.projects.map((project, i) => (
+                          <div key={i} className="flex items-center group/item">
+                            <div className={`w-2 h-2 rounded-full ${director.color.replace('bg-', 'bg-opacity-60 bg-')} mr-3 group-hover/item:scale-125 transition-transform duration-200`}></div>
+                            <span className="text-gray-600 group-hover/item:text-gray-800 transition-colors duration-200">{project}</span>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                    
+                    {/* Expertise */}
+                    <div>
+                      <div className="flex items-center mb-4">
+                        <div className={`w-2 h-6 ${director.color} rounded-full mr-3`}></div>
+                        <h4 className="font-bold text-slate-900 text-lg">Expertise</h4>
+                      </div>
+                      <div className="flex flex-wrap gap-3">
+                        {[
+                          "Project Management", 
+                          "Contract Negotiation", 
+                          "Quality Assurance",
+                          index === 0 ? "Cost Management" : "Safety Compliance",
+                          index === 0 ? "Commercial Fitouts" : "Public Projects"
+                        ].map((skill, i) => (
+                          <span 
+                            key={i} 
+                            className={`px-4 py-2 ${index === 0 ? 'bg-gradient-to-r from-blue-50 to-blue-100 text-blue-700 border border-blue-200' : 'bg-gradient-to-r from-indigo-50 to-indigo-100 text-indigo-700 border border-indigo-200'} text-sm font-semibold rounded-full hover:scale-105 transition-transform duration-200 cursor-default`}
+                          >
+                            {skill}
+                          </span>
+                        ))}
                       </div>
                     </div>
                   </div>
