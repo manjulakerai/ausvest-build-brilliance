@@ -11,7 +11,7 @@ const specialties = [
   {
     title: "Commercial Construction",
     description: "Premium commercial buildings and office developments.",
-    link: "/services/commercial-construction"
+    link: "/retail-commercial-services"
   },
   {
     title: "Fit-out Construction",
