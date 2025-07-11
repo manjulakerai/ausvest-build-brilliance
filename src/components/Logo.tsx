@@ -12,7 +12,7 @@ const Logo = ({ className = "", style }: LogoProps) => {
       <img 
         src="/lovable-uploads/efe4365f-10ee-45b4-a6c4-7d80dbdedad0.png" 
         alt="Ausvest Projects" 
-        className="h-20 w-auto md:h-24"
+        className="h-24 w-auto md:h-28 lg:h-32 drop-shadow-lg"
       />
     </div>
   );
