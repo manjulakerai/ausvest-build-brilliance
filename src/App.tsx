@@ -35,28 +35,19 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/about-us" element={<About />} />
-          <Route path="/about-us/" element={<About />} />
           <Route path="/services" element={<Services />} />
           <Route path="/team" element={<Team />} />
           <Route path="/projects" element={<Projects />} />
-          <Route path="/projects/" element={<Projects />} />
           <Route path="/contact-us" element={<Contact />} />
-          <Route path="/contact-us/" element={<Contact />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           
           {/* Service routes */}
           <Route path="/luxury-home-builders" element={<LuxuryHomeConstruction />} />
-          <Route path="/luxury-home-builders/" element={<LuxuryHomeConstruction />} />
           <Route path="/duplex-builders" element={<DuplexConstruction />} />
-          <Route path="/duplex-builders/" element={<DuplexConstruction />} />
           <Route path="/multi-home-builders" element={<MultiHomeConstruction />} />
-          <Route path="/multi-home-builders/" element={<MultiHomeConstruction />} />
           <Route path="/home-renovation" element={<HomeRenovation />} />
-          <Route path="/home-renovation/" element={<HomeRenovation />} />
           <Route path="/maintenance-services" element={<MaintenanceServices />} />
-          <Route path="/maintenance-services/" element={<MaintenanceServices />} />
           <Route path="/retail-commercial-services" element={<CommercialConstruction />} />
-          <Route path="/retail-commercial-services/" element={<CommercialConstruction />} />
           <Route path="/services/fitout-construction" element={<FitoutConstruction />} />
           
           {/* Catch all route */}
