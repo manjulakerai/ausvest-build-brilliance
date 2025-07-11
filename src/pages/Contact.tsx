@@ -3,9 +3,9 @@ import { useEffect } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ContactHero from "@/components/contact/ContactHero";
-import ContactForm from "@/components/contact/ContactForm";
+
 import ContactMap from "@/components/contact/ContactMap";
-import ContactSpecialities from "@/components/contact/ContactSpecialties";
+import ContactSpecialties from "@/components/contact/ContactSpecialties";
 import ContactInfo from "@/components/contact/ContactInfo";
 
 const Contact = () => {
@@ -22,7 +22,7 @@ const Contact = () => {
         <ContactHero />
         <ContactInfo />
         <ContactMap />
-        <ContactSpecialities />
+        <ContactSpecialties />
       </div>
       <Footer />
     </div>
