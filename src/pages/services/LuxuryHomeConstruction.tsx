@@ -121,7 +121,7 @@ const LuxuryHomeConstruction = () => {
 
           <div className="grid md:grid-cols-3 gap-8">
             {projectsData
-              .filter(project => project.category === "residential")
+              .filter(project => project.category === "residential" && project.image)
               .slice(0, 6)
               .map((project, index) => (
                 <motion.div

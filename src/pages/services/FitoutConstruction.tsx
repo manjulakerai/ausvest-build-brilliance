@@ -94,7 +94,7 @@ const FitoutConstruction = () => {
 
           <div className="grid md:grid-cols-3 gap-8">
             {projectsData
-              .filter(project => project.category === "fitout")
+              .filter(project => project.category === "fitout" && project.image)
               .slice(0, 6)
               .map((project, index) => (
                 <motion.div

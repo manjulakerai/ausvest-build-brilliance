@@ -90,7 +90,7 @@ const CommercialConstruction = () => {
 
           <div className="grid md:grid-cols-3 gap-8">
             {projectsData
-              .filter(project => project.category === "commercial")
+              .filter(project => project.category === "commercial" && project.image)
               .slice(0, 6)
               .map((project, index) => (
                 <motion.div
