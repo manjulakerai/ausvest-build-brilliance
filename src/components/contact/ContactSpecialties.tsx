@@ -6,7 +6,7 @@ const specialties = [
   {
     title: "Luxury Home Construction",
     description: "Custom-designed luxury homes with premium finishes and features.",
-    link: "/services/luxury-home-construction"
+    link: "/luxury-home-builders"
   },
   {
     title: "Commercial Construction",
