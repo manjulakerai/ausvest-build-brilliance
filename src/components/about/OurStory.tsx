@@ -17,7 +17,7 @@ const OurStory = () => {
           >
             <div className="aspect-[4/3] overflow-hidden rounded-lg shadow-lg">
               <img 
-                src="/src/assets/leadership-team.jpg" 
+                src="/lovable-uploads/969da309-b9ef-47ad-814e-6912f0538e8a.png" 
                 alt="Ausvest Projects leadership team in professional office setting with architectural plans"
                 className="w-full h-full object-cover"
               />
