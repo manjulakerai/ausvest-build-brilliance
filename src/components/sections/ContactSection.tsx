@@ -56,50 +56,32 @@ const ContactSection = () => {
           >
             <Card className="border-0 shadow-xl">
               <CardContent className="p-8">
-                <h3 className="text-2xl font-bold text-slate-900 mb-6">Send us a message</h3>
-                <form className="space-y-6">
-                  <div className="grid grid-cols-2 gap-4">
-                    <div>
-                      <label className="block text-sm font-medium text-gray-700 mb-2">Name</label>
-                      <input 
-                        type="text" 
-                        className="w-full px-4 py-3 border border-gray-300 focus:ring-2 focus:ring-[#3b62c0] focus:border-transparent outline-none"
-                      />
+                <h3 className="text-2xl font-bold text-slate-900 mb-6">Get in touch with us</h3>
+                <div className="space-y-4">
+                  <p className="text-gray-600">
+                    Ready to discuss your construction project? Contact us directly using the information below.
+                  </p>
+                  <div className="space-y-3">
+                    <div className="flex items-center">
+                      <span className="font-semibold text-slate-900 mr-2">Phone:</span>
+                      <a href="tel:0412995208" className="text-[#3b62c0] hover:underline">0412 995 208</a>
                     </div>
-                    <div>
-                      <label className="block text-sm font-medium text-gray-700 mb-2">Phone</label>
-                      <input 
-                        type="tel" 
-                        className="w-full px-4 py-3 border border-gray-300 focus:ring-2 focus:ring-[#3b62c0] focus:border-transparent outline-none"
-                      />
+                    <div className="flex items-center">
+                      <span className="font-semibold text-slate-900 mr-2">Email:</span>
+                      <a href="mailto:hello@ausvestprojects.com.au" className="text-[#3b62c0] hover:underline">hello@ausvestprojects.com.au</a>
+                    </div>
+                    <div className="flex items-start">
+                      <span className="font-semibold text-slate-900 mr-2">Address:</span>
+                      <span className="text-gray-600">38/1 Limestone Road, Rouse Hill, 2155</span>
                     </div>
                   </div>
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">Email</label>
-                    <input 
-                      type="email" 
-                      className="w-full px-4 py-3 border border-gray-300 focus:ring-2 focus:ring-[#3b62c0] focus:border-transparent outline-none"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">Project Type</label>
-                    <select className="w-full px-4 py-3 border border-gray-300 focus:ring-2 focus:ring-[#3b62c0] focus:border-transparent outline-none">
-                      <option>Residential</option>
-                      <option>Commercial</option>
-                      <option>Remediation</option>
-                    </select>
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">Message</label>
-                    <textarea 
-                      rows={4}
-                      className="w-full px-4 py-3 border border-gray-300 focus:ring-2 focus:ring-[#3b62c0] focus:border-transparent outline-none"
-                    ></textarea>
-                  </div>
-                  <Button className="w-full bg-[#3b62c0] hover:bg-blue-700 text-white px-6 py-3 rounded-none transform hover:-translate-y-0.5 transition-all shadow-lg">
-                    Send Message
+                  <Button 
+                    onClick={() => window.location.href = '/contact'}
+                    className="w-full bg-[#3b62c0] hover:bg-blue-700 text-white px-6 py-3 rounded-none transform hover:-translate-y-0.5 transition-all shadow-lg"
+                  >
+                    Visit Our Contact Page
                   </Button>
-                </form>
+                </div>
               </CardContent>
             </Card>
           </motion.div>
