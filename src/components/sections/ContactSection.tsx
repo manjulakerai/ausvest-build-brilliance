@@ -64,7 +64,7 @@ const ContactSection = () => {
                   <div className="space-y-3">
                     <div className="flex items-center">
                       <span className="font-semibold text-slate-900 mr-2">Phone:</span>
-                      <a href="tel:0412995208" className="text-[#3b62c0] hover:underline">0412 995 208</a>
+                      <a href="tel:+61412995208" className="text-[#3b62c0] hover:underline">0412 995 208</a>
                     </div>
                     <div className="flex items-center">
                       <span className="font-semibold text-slate-900 mr-2">Email:</span>

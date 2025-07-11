@@ -32,7 +32,7 @@ const ContactInfo = () => {
               <Phone className="h-8 w-8 text-[#3b62c0]" />
             </div>
             <h3 className="text-xl font-semibold mb-3">Phone</h3>
-            <a href="tel:0412995208" className="text-[#3b62c0] hover:underline text-lg">
+            <a href="tel:+61412995208" className="text-[#3b62c0] hover:underline text-lg">
               0412 995 208
             </a>
           </motion.div>

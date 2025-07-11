@@ -46,7 +46,7 @@ const HeroSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 4.4 }}
           >
-            <a href="tel:0412995208" aria-label="Call Ausvest Projects at 0412 995 208">
+            <a href="tel:+61412995208" aria-label="Call Ausvest Projects at 0412 995 208">
               <Button 
                 size="lg" 
                 className="bg-[#3b62c0] hover:bg-blue-700 text-white px-8 py-6 text-lg rounded-none transition-all hover:-translate-y-0.5 shadow-lg focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2"

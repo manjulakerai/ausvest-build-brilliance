@@ -86,7 +86,7 @@ const Footer = () => {
               Contact
             </h4>
             <div className="space-y-2 text-gray-400">
-              <a href="tel:0412995208" className="hover:text-white transition-colors">0412 995 208</a>
+              <a href="tel:+61412995208" className="hover:text-white transition-colors">0412 995 208</a>
               <a href="mailto:hello@ausvestprojects.com.au" className="block hover:text-white transition-colors">hello@ausvestprojects.com.au</a>
               <a 
                 href="https://maps.google.com/?q=38/1+Limestone+Road,+Rouse+Hill+NSW+2155,+Australia"

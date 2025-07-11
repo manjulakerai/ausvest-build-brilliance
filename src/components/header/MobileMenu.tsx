@@ -82,7 +82,7 @@ const MobileMenu = ({ isOpen, onClose, servicePages, navItems }: MobileMenuProps
           </Link>
         ))}
         
-        <a href="tel:0412995208" onClick={onClose}>
+        <a href="tel:+61412995208" onClick={onClose}>
           <Button 
             className="w-full bg-[#3b62c0] hover:bg-blue-700 text-white rounded-none flex items-center justify-center gap-2"
           >

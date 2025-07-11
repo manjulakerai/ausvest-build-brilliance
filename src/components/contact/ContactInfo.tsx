@@ -8,7 +8,7 @@ const ContactInfo = () => {
       icon: Phone,
       title: "Phone",
       content: "0412 995 208",
-      href: "tel:0412995208",
+      href: "tel:+61412995208",
       description: "Call us during business hours"
     },
     {

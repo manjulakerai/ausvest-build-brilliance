@@ -151,7 +151,7 @@ const PrivacyPolicy = () => {
                   <div className="bg-gray-50 p-6 rounded-lg">
                     <p className="text-gray-600 mb-2"><strong>Ausvest Projects</strong></p>
                     <p className="text-gray-600 mb-2">38/1 Limestone Road, Rouse Hill, NSW 2155</p>
-                    <p className="text-gray-600 mb-2">Phone: <a href="tel:0412995208" className="text-[#3b62c0] hover:underline">0412 995 208</a></p>
+                    <p className="text-gray-600 mb-2">Phone: <a href="tel:+61412995208" className="text-[#3b62c0] hover:underline">0412 995 208</a></p>
                     <p className="text-gray-600">Email: <a href="mailto:hello@ausvestprojects.com.au" className="text-[#3b62c0] hover:underline">hello@ausvestprojects.com.au</a></p>
                   </div>
                 </div>

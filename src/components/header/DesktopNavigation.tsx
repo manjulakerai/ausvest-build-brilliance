@@ -66,7 +66,7 @@ const DesktopNavigation = ({ servicePages, navItems, isHomepage = false, scrolle
         </Link>
       ))}
       
-      <a href="tel:0412995208">
+      <a href="tel:+61412995208">
         <Button className="bg-blue-800 hover:bg-blue-900 text-white px-6 py-2 rounded-none transition-all hover:-translate-y-0.5 shadow-lg flex items-center gap-2">
           <Phone className="h-4 w-4" /> Call Us Now
         </Button>

@@ -83,7 +83,7 @@ const Services = () => {
               <p className="text-xl text-blue-200 max-w-3xl mx-auto mb-8">
                 Let us handle everything from conceptualization to completion with our end-to-end project management solutions.
               </p>
-              <a href="tel:0412995208">
+              <a href="tel:+61412995208">
                 <Button size="lg" className="bg-[#3b62c0] hover:bg-blue-700 rounded-none text-white px-8 flex items-center gap-2">
                   <Phone className="h-5 w-5" /> Call Us Now
                 </Button>
