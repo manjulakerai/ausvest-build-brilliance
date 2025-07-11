@@ -73,13 +73,18 @@ const HeroSection = () => {
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8, delay: 4.6 }}
       >
-        <motion.div
+        <motion.button
           animate={{ y: [0, 10, 0] }}
           transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-          aria-hidden="true"
+          onClick={() => {
+            const nextSection = document.querySelector('section:nth-of-type(2)');
+            nextSection?.scrollIntoView({ behavior: 'smooth' });
+          }}
+          className="cursor-pointer hover:scale-110 transition-transform focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-slate-900 rounded-full p-2"
+          aria-label="Scroll to content"
         >
           <ChevronDown className="text-white size-8" />
-        </motion.div>
+        </motion.button>
       </motion.div>
       
       <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent" aria-hidden="true"></div>
