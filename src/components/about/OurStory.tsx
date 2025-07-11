@@ -15,10 +15,12 @@ const OurStory = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <div className="bg-gray-200 aspect-[4/3] flex items-center justify-center">
-              <p className="text-gray-500 text-center p-4">
-                [Suggested image: Founders or leadership team in professional setting]
-              </p>
+            <div className="aspect-[4/3] overflow-hidden rounded-lg shadow-lg">
+              <img 
+                src="/src/assets/leadership-team.jpg" 
+                alt="Ausvest Projects leadership team in professional office setting with architectural plans"
+                className="w-full h-full object-cover"
+              />
             </div>
           </motion.div>
           <motion.div

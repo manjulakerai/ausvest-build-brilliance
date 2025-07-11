@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom';
 
 const HeroSection = () => {
   return (
-    <section className="relative h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800 flex items-center">
-      <div className="absolute inset-0 bg-[url('/lovable-uploads/2a70cfa3-f02b-4a19-b64b-97bf622bd4e6.png')] bg-cover bg-center opacity-20 mix-blend-overlay"></div>
+    <section className="relative h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800 flex items-center" role="banner">
+      <div className="absolute inset-0 bg-[url('/lovable-uploads/2a70cfa3-f02b-4a19-b64b-97bf622bd4e6.png')] bg-cover bg-center opacity-15 mix-blend-overlay" aria-hidden="true"></div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 relative z-10">
         <div className="text-center lg:text-left">
           <motion.div
@@ -44,19 +44,19 @@ const HeroSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 4.4 }}
           >
-            <a href="tel:0412995208">
+            <a href="tel:0412995208" aria-label="Call Ausvest Projects at 0412 995 208">
               <Button 
                 size="lg" 
-                className="bg-[#3b62c0] hover:bg-blue-700 text-white px-8 py-6 text-lg rounded-none transition-all hover:-translate-y-0.5 shadow-lg"
+                className="bg-[#3b62c0] hover:bg-blue-700 text-white px-8 py-6 text-lg rounded-none transition-all hover:-translate-y-0.5 shadow-lg focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2"
               >
                 Call Us Now
               </Button>
             </a>
-            <Link to="/projects">
+            <Link to="/projects" aria-label="View our construction projects portfolio">
               <Button 
                 size="lg" 
                 variant="outline" 
-                className="border-white bg-white text-slate-900 hover:bg-white hover:text-slate-900 px-8 py-6 text-lg rounded-none transition-all hover:-translate-y-0.5"
+                className="border-white bg-white text-slate-900 hover:bg-white hover:text-slate-900 px-8 py-6 text-lg rounded-none transition-all hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-slate-900"
               >
                 View Our Projects
               </Button>
@@ -74,12 +74,13 @@ const HeroSection = () => {
         <motion.div
           animate={{ y: [0, 10, 0] }}
           transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+          aria-hidden="true"
         >
           <ArrowDown className="text-white/70" />
         </motion.div>
       </motion.div>
       
-      <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent"></div>
+      <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent" aria-hidden="true"></div>
     </section>
   );
 };

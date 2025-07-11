@@ -6,6 +6,7 @@ import ContactHero from "@/components/contact/ContactHero";
 import ContactForm from "@/components/contact/ContactForm";
 import ContactMap from "@/components/contact/ContactMap";
 import ContactSpecialities from "@/components/contact/ContactSpecialties";
+import ContactInfo from "@/components/contact/ContactInfo";
 
 const Contact = () => {
   useEffect(() => {
@@ -19,6 +20,7 @@ const Contact = () => {
       {/* Page Content with top padding to account for the fixed header */}
       <div className="pt-28 pb-20">
         <ContactHero />
+        <ContactInfo />
         <ContactMap />
         <ContactSpecialities />
       </div>
