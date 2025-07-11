@@ -13,8 +13,7 @@ const HeroSection = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 3.8 }}
-            className="inline-block mb-6 px-4 py-1.5 bg-[#3b62c0]/10 border border-[#3b62c0]/20 rounded-full text-[#6f8fda] drop-shadow-lg"
-            style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.7)' }}
+            className="inline-block mb-6 px-6 py-3 bg-white/90 border-2 border-white rounded-full text-slate-900 font-semibold text-lg drop-shadow-xl backdrop-blur-sm"
           >
             Sydney's Premier Luxury Builder - Established 1993
           </motion.div>
