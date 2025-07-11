@@ -16,7 +16,7 @@ const specialties = [
   {
     title: "Fit-out Construction",
     description: "Transform commercial spaces with our specialized fit-out services.",
-    link: "/services/commercial-construction"
+    link: "/services/fitout-construction"
   }
 ];
 
