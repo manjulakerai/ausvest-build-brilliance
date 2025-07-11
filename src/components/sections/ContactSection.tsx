@@ -72,7 +72,14 @@ const ContactSection = () => {
                     </div>
                     <div className="flex items-start">
                       <span className="font-semibold text-slate-900 mr-2">Address:</span>
-                      <span className="text-gray-600">38/1 Limestone Road, Rouse Hill, 2155</span>
+                      <a 
+                        href="https://maps.google.com/?q=38/1+Limestone+Road,+Rouse+Hill+NSW+2155,+Australia"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-[#3b62c0] hover:underline"
+                      >
+                        38/1 Limestone Road, Rouse Hill, 2155
+                      </a>
                     </div>
                   </div>
                   <Button 

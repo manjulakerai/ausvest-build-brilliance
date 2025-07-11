@@ -64,9 +64,14 @@ const ContactInfo = () => {
               <MapPin className="h-8 w-8 text-[#3b62c0]" />
             </div>
             <h3 className="text-xl font-semibold mb-3">Location</h3>
-            <p className="text-gray-600 text-lg">
+            <a 
+              href="https://maps.google.com/?q=38/1+Limestone+Road,+Rouse+Hill+NSW+2155,+Australia"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#3b62c0] hover:text-blue-700 text-lg underline"
+            >
               38/1 Limestone Road, Rouse Hill, 2155
-            </p>
+            </a>
           </motion.div>
         </div>
       </div>
