@@ -8,8 +8,11 @@ import { projectsData } from "@/data/projectsData";
 import ProjectGrid from "@/components/projects/ProjectGrid";
 import ProjectFilters from "@/components/projects/ProjectFilters";
 import ProjectHero from "@/components/projects/ProjectHero";
+import { useScrollToTop } from "@/hooks/useScrollToTop";
 
 const Projects = () => {
+  useScrollToTop();
+  
   const [filter, setFilter] = useState("all");
   const [subcategoryFilter, setSubcategoryFilter] = useState("all");
 

@@ -6,8 +6,11 @@ import OurStory from "@/components/about/OurStory";
 import OurValues from "@/components/about/OurValues";
 import OurProcess from "@/components/about/OurProcess";
 import AboutCTA from "@/components/about/AboutCTA";
+import { useScrollToTop } from "@/hooks/useScrollToTop";
 
 const About = () => {
+  useScrollToTop();
+  
   return (
     <div className="min-h-screen bg-white">
       <Header />
