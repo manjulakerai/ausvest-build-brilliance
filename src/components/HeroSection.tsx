@@ -19,20 +19,22 @@ const HeroSection = () => {
           </motion.div>
           
           <motion.h1 
-            className="text-4xl md:text-6xl xl:text-7xl font-bold text-white mb-6 leading-tight"
+            className="text-4xl md:text-6xl xl:text-7xl font-bold text-white mb-6 leading-tight drop-shadow-2xl"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 4.0 }}
+            style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.8), 0 0 20px rgba(0,0,0,0.5)' }}
           >
             Crafting Luxury<br />
-            <span className="text-[#6f8fda]">For Over 30 Years</span>
+            <span className="text-[#6f8fda] drop-shadow-2xl" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.8), 0 0 20px rgba(0,0,0,0.5)' }}>For Over 30 Years</span>
           </motion.h1>
           
           <motion.p 
-            className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto lg:mx-0"
+            className="text-xl text-white mb-8 max-w-2xl mx-auto lg:mx-0 drop-shadow-lg"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 4.2 }}
+            style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.7)' }}
           >
             From stunning residential estates to premium commercial spaces — we create extraordinary 
             buildings with impeccable attention to detail, delivering exceptional quality on time and on budget.
