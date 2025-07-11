@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { Button } from "@/components/ui/button";
-import { ArrowDown } from "lucide-react";
+import { ChevronDown } from "lucide-react";
 import { Link } from 'react-router-dom';
 
 const HeroSection = () => {
@@ -78,7 +78,7 @@ const HeroSection = () => {
           transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
           aria-hidden="true"
         >
-          <ArrowDown className="text-white/70" />
+          <ChevronDown className="text-white size-8" />
         </motion.div>
       </motion.div>
       
