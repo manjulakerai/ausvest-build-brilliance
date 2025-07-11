@@ -19,7 +19,6 @@ const Contact = () => {
       {/* Page Content with top padding to account for the fixed header */}
       <div className="pt-28 pb-20">
         <ContactHero />
-        <ContactForm />
         <ContactMap />
         <ContactSpecialities />
       </div>

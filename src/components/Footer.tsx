@@ -44,21 +44,33 @@ const Footer = () => {
             </h4>
             <div className="space-y-2 text-gray-400">
               <Link 
-                to="/about-us/" 
+                to="/about-us" 
                 className="block hover:text-white transition-colors"
                 onClick={() => window.scrollTo(0, 0)}
               >
                 About Us
               </Link>
-              <Link to="/team" className="block hover:text-white transition-colors">Our Team</Link>
               <Link 
-                to="/projects/" 
+                to="/team" 
+                className="block hover:text-white transition-colors"
+                onClick={() => window.scrollTo(0, 0)}
+              >
+                Our Team
+              </Link>
+              <Link 
+                to="/projects" 
                 className="block hover:text-white transition-colors"
                 onClick={() => window.scrollTo(0, 0)}
               >
                 Projects
               </Link>
-              <Link to="/contact-us/" className="block hover:text-white transition-colors">Contact</Link>
+              <Link 
+                to="/contact-us" 
+                className="block hover:text-white transition-colors"
+                onClick={() => window.scrollTo(0, 0)}
+              >
+                Contact
+              </Link>
             </div>
           </div>
           <div>

@@ -29,9 +29,9 @@ const teamMembers: TeamMember[] = [
   },
   {
     name: "Manjula Kerai",
-    position: "Administrative Assistant",
+    position: "IT Manager",
     color: "bg-blue-100",
-    description: "Provides essential administrative support and client communication coordination."
+    description: "Manages IT infrastructure and digital systems to support efficient project delivery."
   }
 ];
 
