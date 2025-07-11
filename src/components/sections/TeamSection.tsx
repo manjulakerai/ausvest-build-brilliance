@@ -10,6 +10,7 @@ interface TeamMember {
   projects: string[];
   color: string;
   textColor: string;
+  photo?: string;
 }
 
 const TeamSection = () => {
@@ -30,7 +31,8 @@ const TeamSection = () => {
       description: "Expert in contract management, costing, and fit-out delivery. Manish brings precision and efficiency to every project, from residential builds to complex commercial fitouts.",
       projects: ["Multiple Residential Projects", "Sunboost Office Fitout", "Multiple Commercial Projects"],
       color: "bg-blue-100",
-      textColor: "text-blue-600"
+      textColor: "text-blue-600",
+      photo: "/lovable-uploads/2f871d28-d606-48f5-ad43-8b503a79ef47.png"
     }
   ];
 
@@ -85,8 +87,16 @@ const TeamSection = () => {
             >
               <Card className="border-0 shadow-xl hover:shadow-2xl transition-all duration-300 group">
                 <CardContent className="p-8">
-                  <div className={`w-24 h-24 ${director.color} ${director.textColor} flex items-center justify-center mb-6 transition-all duration-300 group-hover:scale-110`}>
-                    <span className="text-2xl font-bold">{director.initials}</span>
+                  <div className={`w-24 h-24 ${director.color} ${director.textColor} flex items-center justify-center mb-6 transition-all duration-300 group-hover:scale-110 overflow-hidden`}>
+                    {director.photo ? (
+                      <img 
+                        src={director.photo} 
+                        alt={director.name}
+                        className="w-full h-full object-cover"
+                      />
+                    ) : (
+                      <span className="text-2xl font-bold">{director.initials}</span>
+                    )}
                   </div>
                   <h3 className="text-2xl font-bold text-slate-900 mb-2">{director.name}</h3>
                   <p className="text-[#3b62c0] font-semibold mb-4">{director.position}</p>
