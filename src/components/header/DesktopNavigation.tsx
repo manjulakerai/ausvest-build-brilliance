@@ -26,7 +26,7 @@ const DesktopNavigation = ({ servicePages, navItems, isHomepage = false, scrolle
     <nav className="hidden lg:flex items-center space-x-8">
       <Link 
         to="/"
-        className={`${textColor} ${textShadow} ${hoverColor} font-medium transition-all duration-300 relative px-3 py-2 rounded-md before:content-[''] before:absolute before:inset-0 before:bg-white/10 before:rounded-md before:scale-0 hover:before:scale-100 before:transition-transform before:duration-300 after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-[#3b62c0] after:transition-all hover:after:w-full z-10`}
+        className={`${textColor} ${textShadow} ${hoverColor} font-medium transition-all duration-300 relative px-3 py-2 rounded-md border border-transparent hover:border-white before:content-[''] before:absolute before:inset-0 before:bg-white/10 before:rounded-md before:scale-0 hover:before:scale-100 before:transition-transform before:duration-300 after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-[#3b62c0] after:transition-all hover:after:w-full z-10`}
       >
         <span className="relative z-10">Home</span>
       </Link>
@@ -35,7 +35,7 @@ const DesktopNavigation = ({ servicePages, navItems, isHomepage = false, scrolle
       <div className="relative group">
         <Link 
           to="/services"
-          className={`${textColor} ${textShadow} ${hoverColor} font-medium transition-all duration-300 flex items-center gap-1 relative px-3 py-2 rounded-md before:content-[''] before:absolute before:inset-0 before:bg-white/10 before:rounded-md before:scale-0 group-hover:before:scale-100 before:transition-transform before:duration-300 after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-[#3b62c0] after:transition-all group-hover:after:w-full z-10`}
+          className={`${textColor} ${textShadow} ${hoverColor} font-medium transition-all duration-300 flex items-center gap-1 relative px-3 py-2 rounded-md border border-transparent group-hover:border-white before:content-[''] before:absolute before:inset-0 before:bg-white/10 before:rounded-md before:scale-0 group-hover:before:scale-100 before:transition-transform before:duration-300 after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-[#3b62c0] after:transition-all group-hover:after:w-full z-10`}
         >
           <span className="relative z-10">Services</span>
           <ChevronDown className="h-4 w-4 relative z-10" />
@@ -60,7 +60,7 @@ const DesktopNavigation = ({ servicePages, navItems, isHomepage = false, scrolle
         <Link 
           key={item.name}
           to={item.link}
-          className={`${textColor} ${textShadow} ${hoverColor} font-medium transition-all duration-300 relative px-3 py-2 rounded-md before:content-[''] before:absolute before:inset-0 before:bg-white/10 before:rounded-md before:scale-0 hover:before:scale-100 before:transition-transform before:duration-300 after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-[#3b62c0] after:transition-all hover:after:w-full z-10`}
+          className={`${textColor} ${textShadow} ${hoverColor} font-medium transition-all duration-300 relative px-3 py-2 rounded-md border border-transparent hover:border-white before:content-[''] before:absolute before:inset-0 before:bg-white/10 before:rounded-md before:scale-0 hover:before:scale-100 before:transition-transform before:duration-300 after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-[#3b62c0] after:transition-all hover:after:w-full z-10`}
         >
           <span className="relative z-10">{item.name}</span>
         </Link>
