@@ -25,13 +25,6 @@ const ContactInfo = () => {
       href: "https://maps.google.com/?q=38/1+Limestone+Road+Rouse+Hill+NSW+2155",
       description: "Visit our office"
     },
-    {
-      icon: Clock,
-      title: "Business Hours",
-      content: "Mon-Fri: 7:00 AM - 5:00 PM",
-      href: null,
-      description: "Saturday by appointment"
-    }
   ];
 
   return (
@@ -53,7 +46,7 @@ const ContactInfo = () => {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-3 gap-6">
           {contactDetails.map((detail, index) => {
             const IconComponent = detail.icon;
             return (
