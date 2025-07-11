@@ -88,7 +88,14 @@ const Footer = () => {
             <div className="space-y-2 text-gray-400">
               <a href="tel:0412995208" className="hover:text-white transition-colors">0412 995 208</a>
               <a href="mailto:hello@ausvestprojects.com.au" className="block hover:text-white transition-colors">hello@ausvestprojects.com.au</a>
-              <div className="hover:text-white transition-colors">38/1 Limestone Road, Rouse Hill, 2155</div>
+              <a 
+                href="https://maps.google.com/?q=38/1+Limestone+Road,+Rouse+Hill+NSW+2155,+Australia"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block hover:text-white transition-colors"
+              >
+                38/1 Limestone Road, Rouse Hill, 2155
+              </a>
             </div>
           </div>
         </div>
