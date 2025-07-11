@@ -6,6 +6,7 @@ import ServiceCTA from "@/components/services/ServiceCTA";
 import ContentBlock from "@/components/services/ContentBlock";
 import FeatureList from "@/components/services/FeatureList";
 import OurProcess from "@/components/about/OurProcess";
+import { projectsData } from "@/data/projectsData";
 
 const CommercialConstruction = () => {
   const commercialFeatures = [
@@ -88,43 +89,44 @@ const CommercialConstruction = () => {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            {[
-              {
-                name: "Bella Vista Office",
-                type: "Corporate Headquarters",
-                description: "Modern office space with premium finishes and innovative workspace design."
-              },
-              {
-                name: "Sydney CBD Restaurant", 
-                type: "Hospitality",
-                description: "High-end restaurant fit-out featuring custom joinery and specialized lighting systems."
-              },
-              {
-                name: "Orange Retail Complex", 
-                type: "Retail Development",
-                description: "Multi-tenant retail development with contemporary design and custom storefronts."
-              },
-            ].map((item, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                className="bg-white shadow-lg overflow-hidden"
-              >
-                <div className="bg-gray-200 aspect-video w-full flex items-center justify-center">
-                  <p className="text-gray-500">
-                    [Suggested image: {item.name} project]
-                  </p>
-                </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-bold text-slate-900 mb-1">{item.name}</h3>
-                  <p className="text-amber-600 font-medium mb-3">{item.type}</p>
-                  <p className="text-gray-600">{item.description}</p>
-                </div>
-              </motion.div>
-            ))}
+            {projectsData
+              .filter(project => project.category === "commercial")
+              .slice(0, 6)
+              .map((project, index) => (
+                <motion.div
+                  key={project.id}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6, delay: index * 0.1 }}
+                  className="bg-white shadow-lg overflow-hidden"
+                >
+                  <div className="aspect-video w-full overflow-hidden">
+                    {project.image ? (
+                      <img 
+                        src={project.image} 
+                        alt={project.title}
+                        className="w-full h-full object-cover"
+                      />
+                    ) : (
+                      <div className="bg-gray-200 w-full h-full flex items-center justify-center">
+                        <p className="text-gray-500">Project Image</p>
+                      </div>
+                    )}
+                  </div>
+                  <div className="p-6">
+                    <h3 className="text-xl font-bold text-slate-900 mb-1">{project.title}</h3>
+                    <div className="flex flex-wrap gap-2 mb-3">
+                      {project.tags.map((tag, tagIndex) => (
+                        <span key={tagIndex} className="px-2 py-1 bg-amber-50 text-amber-600 text-xs rounded">
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
+                    <p className="text-gray-600">{project.description}</p>
+                  </div>
+                </motion.div>
+              ))}
           </div>
         </div>
       </section>

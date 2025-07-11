@@ -5,6 +5,7 @@ import ServiceHero from "@/components/services/ServiceHero";
 import ServiceCTA from "@/components/services/ServiceCTA";
 import ContentBlock from "@/components/services/ContentBlock";
 import FeatureList from "@/components/services/FeatureList";
+import { projectsData } from "@/data/projectsData";
 
 const LuxuryHomeConstruction = () => {
   const luxuryFeatures = [
@@ -104,6 +105,59 @@ const LuxuryHomeConstruction = () => {
                 <p className="text-gray-600">{item.description}</p>
               </motion.div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Featured Projects Section */}
+      <section className="py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-slate-900 mb-4">Featured Luxury Projects</h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              Our premium luxury home portfolio across Sydney
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {projectsData
+              .filter(project => project.category === "residential")
+              .slice(0, 6)
+              .map((project, index) => (
+                <motion.div
+                  key={project.id}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6, delay: index * 0.1 }}
+                  className="bg-white shadow-lg overflow-hidden"
+                >
+                  <div className="aspect-video w-full overflow-hidden">
+                    {project.image ? (
+                      <img 
+                        src={project.image} 
+                        alt={project.title}
+                        className="w-full h-full object-cover"
+                      />
+                    ) : (
+                      <div className="bg-gray-200 w-full h-full flex items-center justify-center">
+                        <p className="text-gray-500">Project Image</p>
+                      </div>
+                    )}
+                  </div>
+                  <div className="p-6">
+                    <h3 className="text-xl font-bold text-slate-900 mb-1">{project.title}</h3>
+                    <div className="flex flex-wrap gap-2 mb-3">
+                      {project.tags.map((tag, tagIndex) => (
+                        <span key={tagIndex} className="px-2 py-1 bg-blue-50 text-[#3b62c0] text-xs rounded">
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
+                    <p className="text-gray-600">{project.description}</p>
+                  </div>
+                </motion.div>
+              ))}
           </div>
         </div>
       </section>
