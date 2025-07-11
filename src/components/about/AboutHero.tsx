@@ -18,27 +18,6 @@ const AboutHero = () => {
           </p>
         </motion.div>
       </div>
-      
-      {/* Scroll indicator */}
-      <motion.div 
-        className="absolute bottom-4 left-1/2 transform -translate-x-1/2"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.8, delay: 0.8 }}
-      >
-        <motion.button
-          animate={{ y: [0, 8, 0] }}
-          transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-          onClick={() => {
-            const nextSection = document.querySelector('section:nth-of-type(2)');
-            nextSection?.scrollIntoView({ behavior: 'smooth' });
-          }}
-          className="cursor-pointer hover:scale-110 transition-transform focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-slate-900 rounded-full p-2"
-          aria-label="Scroll to content"
-        >
-          <ChevronDown className="text-white size-6" />
-        </motion.button>
-      </motion.div>
     </section>
   );
 };
