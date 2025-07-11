@@ -19,15 +19,14 @@ interface DesktopNavigationProps {
 const DesktopNavigation = ({ servicePages, navItems, isHomepage = false, scrolled = false }: DesktopNavigationProps) => {
   // Use white text only on homepage when not scrolled, otherwise use dark blue
   const textColor = isHomepage && !scrolled ? 'text-white' : 'text-blue-900';
-  const textShadow = isHomepage && !scrolled ? 'drop-shadow-[2px_2px_4px_rgba(0,0,0,0.8)]' : '';
-  const textBg = isHomepage && !scrolled ? 'bg-black/20 px-3 py-1 rounded-md backdrop-blur-sm' : '';
+  const textShadow = isHomepage && !scrolled ? 'drop-shadow-lg' : '';
   const hoverColor = 'hover:text-[#3b62c0]';
 
   return (
     <nav className="hidden lg:flex items-center space-x-8">
       <Link 
         to="/"
-        className={`${textColor} ${textShadow} ${textBg} ${hoverColor} font-semibold text-lg transition-all relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-[#3b62c0] after:transition-all hover:after:w-full`}
+        className={`${textColor} ${textShadow} ${hoverColor} font-medium transition-colors relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-[#3b62c0] after:transition-all hover:after:w-full`}
       >
         Home
       </Link>
@@ -36,7 +35,7 @@ const DesktopNavigation = ({ servicePages, navItems, isHomepage = false, scrolle
       <div className="relative group">
         <Link 
           to="/services"
-          className={`${textColor} ${textShadow} ${textBg} ${hoverColor} font-semibold text-lg transition-all flex items-center gap-1 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-[#3b62c0] after:transition-all group-hover:after:w-full`}
+          className={`${textColor} ${textShadow} ${hoverColor} font-medium transition-colors flex items-center gap-1 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-[#3b62c0] after:transition-all group-hover:after:w-full`}
         >
           Services <ChevronDown className="h-4 w-4" />
         </Link>
@@ -60,7 +59,7 @@ const DesktopNavigation = ({ servicePages, navItems, isHomepage = false, scrolle
         <Link 
           key={item.name}
           to={item.link}
-          className={`${textColor} ${textShadow} ${textBg} ${hoverColor} font-semibold text-lg transition-all relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-[#3b62c0] after:transition-all hover:after:w-full`}
+          className={`${textColor} ${textShadow} ${hoverColor} font-medium transition-colors relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-[#3b62c0] after:transition-all hover:after:w-full`}
         >
           {item.name}
         </Link>
