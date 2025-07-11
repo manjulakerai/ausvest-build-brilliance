@@ -35,8 +35,7 @@ const DesktopNavigation = ({ servicePages, navItems, isHomepage = false, scrolle
       <div className="relative group">
         <Link 
           to="/services"
-          data-services-link
-          className={`${textColor} ${textShadow} group-hover:text-white font-medium transition-all duration-300 flex items-center gap-1 relative px-3 py-2 rounded-md group-hover:[text-shadow:_-1px_-1px_0_white,_1px_-1px_0_white,_-1px_1px_0_white,_1px_1px_0_white] before:content-[''] before:absolute before:inset-0 before:bg-white/10 before:rounded-md before:scale-0 group-hover:before:scale-100 before:transition-transform before:duration-300 after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-[#3b62c0] after:transition-all group-hover:after:w-full z-10`}
+          className={`${textColor} ${textShadow} ${hoverColor} font-medium transition-all duration-300 flex items-center gap-1 relative px-3 py-2 rounded-md group-hover:[text-shadow:_-1px_-1px_0_white,_1px_-1px_0_white,_-1px_1px_0_white,_1px_1px_0_white] before:content-[''] before:absolute before:inset-0 before:bg-white/10 before:rounded-md before:scale-0 group-hover:before:scale-100 before:transition-transform before:duration-300 after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-[#3b62c0] after:transition-all group-hover:after:w-full z-10`}
         >
           <span className="relative z-10">Services</span>
           <ChevronDown className="h-4 w-4 relative z-10" />
@@ -49,13 +48,6 @@ const DesktopNavigation = ({ servicePages, navItems, isHomepage = false, scrolle
                 key={service.name}
                 to={service.link}
                 className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-[#3b62c0]"
-                onMouseEnter={() => {
-                  // Keep parent Services link highlighted
-                  const servicesLink = document.querySelector('[data-services-link]');
-                  if (servicesLink) {
-                    servicesLink.classList.add('text-white');
-                  }
-                }}
               >
                 {service.name}
               </Link>
