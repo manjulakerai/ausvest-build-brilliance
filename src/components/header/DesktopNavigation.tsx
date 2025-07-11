@@ -20,7 +20,7 @@ const DesktopNavigation = ({ servicePages, navItems, isHomepage = false, scrolle
   // Use white text only on homepage when not scrolled, otherwise use dark blue
   const textColor = isHomepage && !scrolled ? 'text-white' : 'text-blue-900';
   const textShadow = isHomepage && !scrolled ? 'drop-shadow-lg' : '';
-  const hoverColor = 'hover:text-[#3b62c0]';
+  const hoverColor = 'hover:text-blue-800';
 
   return (
     <nav className="hidden lg:flex items-center space-x-8">
