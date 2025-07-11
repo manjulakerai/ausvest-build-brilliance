@@ -11,6 +11,7 @@ interface Director {
   color: string;
   textColor: string;
   bio: string;
+  photo?: string;
 }
 
 const directors: Director[] = [
@@ -32,7 +33,8 @@ const directors: Director[] = [
     projects: ["Multiple Residential Projects", "Sunboost Office Fitout", "Multiple Commercial Projects"],
     color: "bg-blue-100",
     textColor: "text-blue-600",
-    bio: "With over 10 years of experience in the construction industry, Manish has developed a reputation for meticulous planning and efficient project delivery. His background in quantity surveying gives him unique insight into cost management and value engineering, ensuring clients receive maximum value without compromising on quality. Manish leads our residential division and oversees our commercial division, with a focus on delivering outstanding quality and client satisfaction in even the most challenging situations."
+    bio: "With over 10 years of experience in the construction industry, Manish has developed a reputation for meticulous planning and efficient project delivery. His background in quantity surveying gives him unique insight into cost management and value engineering, ensuring clients receive maximum value without compromising on quality. Manish leads our residential division and oversees our commercial division, with a focus on delivering outstanding quality and client satisfaction in even the most challenging situations.",
+    photo: "/lovable-uploads/2f871d28-d606-48f5-ad43-8b503a79ef47.png"
   }
 ];
 
@@ -93,8 +95,16 @@ const LeadershipTeam = () => {
                   <div className={`${director.color} relative overflow-hidden`}>
                     <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent"></div>
                     <div className="relative p-8 text-center">
-                      <div className="w-28 h-28 rounded-full bg-white/90 backdrop-blur-sm flex items-center justify-center mb-6 mx-auto shadow-lg group-hover:scale-110 transition-transform duration-300">
-                        <span className={`text-4xl font-bold ${director.textColor}`}>{director.initials}</span>
+                      <div className="w-28 h-28 rounded-full bg-white/90 backdrop-blur-sm flex items-center justify-center mb-6 mx-auto shadow-lg group-hover:scale-110 transition-transform duration-300 overflow-hidden">
+                        {director.photo ? (
+                          <img 
+                            src={director.photo} 
+                            alt={director.name}
+                            className="w-full h-full object-cover rounded-full"
+                          />
+                        ) : (
+                          <span className={`text-4xl font-bold ${director.textColor}`}>{director.initials}</span>
+                        )}
                       </div>
                       <h3 className="text-2xl font-bold text-slate-900 mb-2">{director.name}</h3>
                       <div className="inline-block px-4 py-1 bg-white/80 backdrop-blur-sm rounded-full">
