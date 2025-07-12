@@ -68,14 +68,15 @@ const HeroSection = () => {
       
       {/* Scroll Down Button */}
       <motion.div 
-        className="absolute bottom-5 left-1/2 transform -translate-x-1/2 hidden md:block"
+        className="absolute bottom-5 left-1/2 transform -translate-x-1/2 hidden md:block z-[9999]"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8, delay: 4.6 }}
+        style={{ pointerEvents: 'auto' }}
       >
         <a 
           href="#next-section" 
-          className="scroll-down block w-[30px] h-[50px] border-2 border-white rounded-[25px] cursor-pointer no-underline z-[9999] relative"
+          className="scroll-down block w-[30px] h-[50px] border-2 border-white rounded-[25px] cursor-pointer no-underline relative hover:scale-110 transition-transform duration-300"
           onClick={(e) => {
             e.preventDefault();
             const nextSection = document.querySelector('section:nth-of-type(2)');
@@ -90,12 +91,13 @@ const HeroSection = () => {
               });
             }
           }}
+          style={{ pointerEvents: 'auto' }}
         >
-          <span className="absolute top-[10px] left-1/2 w-[6px] h-[6px] bg-white rounded-full transform -translate-x-1/2 animate-scroll"></span>
+          <span className="absolute top-[10px] left-1/2 w-[6px] h-[6px] bg-white rounded-full transform -translate-x-1/2 animate-scroll pointer-events-none"></span>
         </a>
       </motion.div>
       
-      <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent" aria-hidden="true"></div>
+      <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent pointer-events-none" aria-hidden="true"></div>
     </section>
   );
 };
