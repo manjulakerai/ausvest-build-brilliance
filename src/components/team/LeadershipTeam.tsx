@@ -23,7 +23,8 @@ const directors: Director[] = [
     projects: ["St Lukes School Project", "Wentworthville Public School", "Norwest Private Hospital"],
     color: "bg-indigo-100",
     textColor: "text-indigo-600",
-    bio: "Andrew brings over 20 years of construction management experience to Ausvest Projects, with particular expertise in educational, government, and institutional projects. His commitment to safety and compliance has established Ausvest as a trusted partner for projects with strict regulatory requirements. Andrew leads our commercial division and specialises in complex projects where minimal disruption to business operations is essential."
+    bio: "Andrew brings over 20 years of construction management experience to Ausvest Projects, with particular expertise in educational, government, and institutional projects. His commitment to safety and compliance has established Ausvest as a trusted partner for projects with strict regulatory requirements. Andrew leads our commercial division and specialises in complex projects where minimal disruption to business operations is essential.",
+    photo: "/lovable-uploads/4fb55219-7579-4aaa-83a6-c309531d4e53.png"
   },
   {
     initials: "MP",
@@ -34,7 +35,7 @@ const directors: Director[] = [
     color: "bg-blue-100",
     textColor: "text-blue-600",
     bio: "With over 10 years of experience in the construction industry, Manish has developed a reputation for meticulous planning and efficient project delivery. His background in quantity surveying gives him unique insight into cost management and value engineering, ensuring clients receive maximum value without compromising on quality. Manish leads our residential division and oversees our commercial division, with a focus on delivering outstanding quality and client satisfaction in even the most challenging situations.",
-    photo: "/lovable-uploads/2f871d28-d606-48f5-ad43-8b503a79ef47.png"
+    photo: "/lovable-uploads/35c22bd7-1c45-4dfe-bf44-f061c112ff87.png"
   }
 ];
 

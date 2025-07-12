@@ -22,7 +22,8 @@ const TeamSection = () => {
       description: "Leadership excellence in WHS compliance and major education and public builds. Andrew's reputation for clear communication and on-time delivery is unmatched.",
       projects: ["St Lukes School Project", "Wentworthville Public School", "Norwest Private Hospital"],
       color: "bg-indigo-100",
-      textColor: "text-indigo-600"
+      textColor: "text-indigo-600",
+      photo: "/lovable-uploads/4fb55219-7579-4aaa-83a6-c309531d4e53.png"
     },
     {
       initials: "MP",
@@ -32,7 +33,7 @@ const TeamSection = () => {
       projects: ["Multiple Residential Projects", "Sunboost Office Fitout", "Multiple Commercial Projects"],
       color: "bg-blue-100",
       textColor: "text-blue-600",
-      photo: "/lovable-uploads/2f871d28-d606-48f5-ad43-8b503a79ef47.png"
+      photo: "/lovable-uploads/35c22bd7-1c45-4dfe-bf44-f061c112ff87.png"
     }
   ];
 

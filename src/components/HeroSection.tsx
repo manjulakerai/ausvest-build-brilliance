@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion';
 import { Button } from "@/components/ui/button";
-import { ChevronDown } from "lucide-react";
 import { Link } from 'react-router-dom';
 
 const HeroSection = () => {
@@ -67,24 +66,33 @@ const HeroSection = () => {
         </div>
       </div>
       
+      {/* Scroll Down Button */}
       <motion.div 
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
+        className="absolute bottom-5 left-1/2 transform -translate-x-1/2 hidden md:block"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8, delay: 4.6 }}
       >
-        <motion.button
-          animate={{ y: [0, 10, 0] }}
-          transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-          onClick={() => {
+        <a 
+          href="#next-section" 
+          className="scroll-down block w-[30px] h-[50px] border-2 border-white rounded-[25px] cursor-pointer no-underline z-[9999] relative"
+          onClick={(e) => {
+            e.preventDefault();
             const nextSection = document.querySelector('section:nth-of-type(2)');
-            nextSection?.scrollIntoView({ behavior: 'smooth' });
+            if (nextSection) {
+              const headerOffset = 80; // Account for sticky header
+              const elementPosition = nextSection.getBoundingClientRect().top;
+              const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+              
+              window.scrollTo({
+                top: offsetPosition,
+                behavior: "smooth"
+              });
+            }
           }}
-          className="cursor-pointer hover:scale-110 transition-transform focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-slate-900 rounded-full p-2"
-          aria-label="Scroll to content"
         >
-          <ChevronDown className="text-white size-8" />
-        </motion.button>
+          <span className="absolute top-[10px] left-1/2 w-[6px] h-[6px] bg-white rounded-full transform -translate-x-1/2 animate-scroll"></span>
+        </a>
       </motion.div>
       
       <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent" aria-hidden="true"></div>

@@ -104,3 +104,23 @@
     @apply bg-gradient-to-r from-blue-600 to-orange-500 bg-clip-text text-transparent;
   }
 }
+
+/* Scroll animation for hero section */
+@keyframes scroll {
+  0% {
+    opacity: 1;
+    top: 10px;
+  }
+  50% {
+    opacity: 0;
+    top: 30px;
+  }
+  100% {
+    opacity: 1;
+    top: 10px;
+  }
+}
+
+.animate-scroll {
+  animation: scroll 2s infinite;
+}

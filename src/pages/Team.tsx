@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import TeamHero from "@/components/team/TeamHero";
 import LeadershipTeam from "@/components/team/LeadershipTeam";
 import CoreTeam from "@/components/team/CoreTeam";
+import MobilePhoneBar from "@/components/MobilePhoneBar";
 
 const Team = () => {
   useEffect(() => {
@@ -22,6 +23,7 @@ const Team = () => {
         <CoreTeam />
       </div>
       <Footer />
+      <MobilePhoneBar />
     </div>
   );
 };

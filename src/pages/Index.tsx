@@ -10,6 +10,7 @@ import TeamSection from "@/components/sections/TeamSection";
 import CtaSection from "@/components/sections/CtaSection";
 import ContactInfo from "@/components/sections/ContactInfo";
 import Footer from "@/components/Footer";
+import MobilePhoneBar from "@/components/MobilePhoneBar";
 
 const Index = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -57,6 +58,9 @@ const Index = () => {
 
       {/* Footer */}
       <Footer />
+      
+      {/* Mobile Phone Bar */}
+      <MobilePhoneBar />
     </div>
   );
 };
