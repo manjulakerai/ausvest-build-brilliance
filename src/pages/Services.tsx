@@ -6,6 +6,7 @@ import Header from "@/components/Header";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import Footer from "@/components/Footer";
+import MobilePhoneBar from "@/components/MobilePhoneBar";
 import { Phone } from "lucide-react";
 
 const Services = () => {
@@ -93,6 +94,7 @@ const Services = () => {
         </section>
       </div>
       <Footer />
+      <MobilePhoneBar />
     </div>
   );
 };

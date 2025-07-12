@@ -2,6 +2,7 @@
 import { useEffect } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import MobilePhoneBar from "@/components/MobilePhoneBar";
 import { motion } from "framer-motion";
 
 const PrivacyPolicy = () => {
@@ -181,6 +182,7 @@ const PrivacyPolicy = () => {
         </section>
       </div>
       <Footer />
+      <MobilePhoneBar />
     </div>
   );
 };

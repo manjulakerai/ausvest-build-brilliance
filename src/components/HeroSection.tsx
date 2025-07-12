@@ -75,7 +75,7 @@ const HeroSection = () => {
       >
         <a 
           href="#next-section" 
-          className="scroll-down block w-[30px] h-[50px] border-2 border-white rounded-[25px] cursor-pointer no-underline z-[9999] relative"
+          className="scroll-down block w-[30px] h-[50px] border-2 border-white rounded-[25px] cursor-pointer no-underline z-[999] relative"
           onClick={(e) => {
             e.preventDefault();
             const nextSection = document.querySelector('section:nth-of-type(2)');

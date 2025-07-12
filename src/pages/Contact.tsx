@@ -7,6 +7,7 @@ import ContactHero from "@/components/contact/ContactHero";
 import ContactMap from "@/components/contact/ContactMap";
 import ContactSpecialties from "@/components/contact/ContactSpecialties";
 import ContactInfo from "@/components/contact/ContactInfo";
+import MobilePhoneBar from "@/components/MobilePhoneBar";
 
 const Contact = () => {
   useEffect(() => {
@@ -25,6 +26,7 @@ const Contact = () => {
         <ContactSpecialties />
       </div>
       <Footer />
+      <MobilePhoneBar />
     </div>
   );
 };

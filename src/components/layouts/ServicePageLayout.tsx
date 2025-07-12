@@ -2,6 +2,7 @@
 import { ReactNode, useEffect } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import MobilePhoneBar from "@/components/MobilePhoneBar";
 
 interface ServicePageLayoutProps {
   children: ReactNode;
@@ -21,6 +22,7 @@ const ServicePageLayout = ({ children }: ServicePageLayoutProps) => {
         {children}
       </div>
       <Footer />
+      <MobilePhoneBar />
     </div>
   );
 };

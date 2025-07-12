@@ -36,7 +36,7 @@ const Header = () => {
 
   return (
     <motion.header 
-      className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-[9999] transition-all duration-300 ${
         scrolled 
           ? 'bg-white/95 backdrop-blur-md shadow-md py-3' 
           : 'bg-transparent py-6'

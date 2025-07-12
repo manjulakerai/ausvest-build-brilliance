@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import MobilePhoneBar from "@/components/MobilePhoneBar";
 import { projectsData } from "@/data/projectsData";
 import ProjectGrid from "@/components/projects/ProjectGrid";
 import ProjectFilters from "@/components/projects/ProjectFilters";
@@ -67,6 +68,7 @@ const Projects = () => {
         <ProjectGrid projects={filteredProjects} />
       </div>
       <Footer />
+      <MobilePhoneBar />
     </div>
   );
 };
