@@ -57,7 +57,7 @@ const FitoutConstruction = () => {
                   "Our fit-out specialists work closely with leading architects and designers to transform restaurants, cafés, gyms, offices, and retail spaces into functional, stylish environments where businesses thrive."
                 ]}
                 buttonText="Discuss Your Fit-Out Project"
-                buttonLink="/contact"
+                buttonLink="/contact-us"
                 featureList={
                   <div className="mb-6">
                     <h3 className="text-lg font-semibold text-slate-900 mb-4">Fit-Out Services:</h3>
@@ -140,7 +140,7 @@ const FitoutConstruction = () => {
         title="Ready to Transform Your Space?"
         description="Partner with Ausvest for premium fit-out construction services"
         buttonText="Request Fit-Out Consultation"
-        buttonLink="/contact"
+        buttonLink="/contact-us"
         buttonColor="bg-purple-600 hover:bg-purple-700"
       />
     </ServicePageLayout>

@@ -53,7 +53,7 @@ const CommercialConstruction = () => {
                   "We specialise in Commercial Construction, offering durable, high-performing solutions for businesses that demand results. From ground-up builds to structural remediation, our fully managed services are designed to keep your project running smoothly, on time and within budget."
                 ]}
                 buttonText="Discuss Your Commercial Project"
-                buttonLink="/contact"
+                buttonLink="/contact-us"
                 featureList={
                   <div className="mb-6">
                     <h3 className="text-lg font-semibold text-slate-900 mb-4">Our Services Include:</h3>
@@ -136,7 +136,7 @@ const CommercialConstruction = () => {
         title="Looking to Create an Exceptional Commercial Space?"
         description="Partner with Ausvest for premium construction services"
         buttonText="Request Commercial Consultation"
-        buttonLink="/contact"
+        buttonLink="/contact-us"
         buttonColor="bg-amber-600 hover:bg-amber-700"
       />
     </ServicePageLayout>
